@@ -1,0 +1,15 @@
+export interface Recipe {
+  id: number;
+  title: string;
+  shortDescription: string;
+  fullDescription: string;
+  category: string;
+  prepTime: string;
+  cookTime: string;
+  servings: number;
+  ingredients: string[];
+  instructions: string[];
+  kashrutNotes?: string;
+  imageSrc: string;
+  relatedProducts?: number[];
+}

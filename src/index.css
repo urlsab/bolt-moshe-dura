@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #800000; /* Deep burgundy */
+  --secondary: #D4AF37; /* Gold */
+  --tertiary: #1F3A5F; /* Deep blue */
+  --light: #F9F6EF; /* Cream */
+  --dark: #1A1A1A; /* Almost black */
+}
+
+html {
+  direction: rtl;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  @apply bg-light text-dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Frank Ruhl Libre', serif;
+  @apply font-bold;
+}
+
+/* Custom component classes */
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white py-2 px-6 rounded-md transition-all duration-300 hover:bg-primary-800;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-dark py-2 px-6 rounded-md transition-all duration-300 hover:bg-secondary-600;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary py-2 px-6 rounded-md transition-all duration-300 hover:bg-primary hover:text-white;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl mb-2 text-primary;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-dark/70 mb-8;
+  }
+  
+  .form-input {
+    @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+  
+  .form-label {
+    @apply block mb-2 text-dark font-semibold;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300;
+  }
+
+  .product-card {
+    @apply card flex flex-col h-full;
+  }
+
+  .product-image {
+    @apply w-full h-48 object-cover;
+  }
+
+  .kashrut-badge {
+    @apply inline-block bg-secondary-200 text-dark text-xs px-2 py-1 rounded-full ml-2;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes slideRight {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slideRight {
+  animation: slideRight 0.5s ease-out;
+}
+
+/* Responsive utilities */
+.rtl-grid {
+  display: grid;
+  direction: rtl;
+}

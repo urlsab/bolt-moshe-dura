@@ -1,0 +1,34 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import HomePage from './pages/HomePage';
+import ProductsPage from './pages/ProductsPage';
+import KashrutPage from './pages/KashrutPage';
+import RecipesPage from './pages/RecipesPage';
+import PromotionsPage from './pages/PromotionsPage';
+import ContactPage from './pages/ContactPage';
+import ProductDetailPage from './pages/ProductDetailPage';
+import RecipeDetailPage from './pages/RecipeDetailPage';
+import ArticleDetailPage from './pages/ArticleDetailPage';
+import NotFoundPage from './pages/NotFoundPage';
+
+function App() {
+  return (
+    <Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/products/:id" element={<ProductDetailPage />} />
+        <Route path="/kashrut" element={<KashrutPage />} />
+        <Route path="/articles/:id" element={<ArticleDetailPage />} />
+        <Route path="/recipes" element={<RecipesPage />} />
+        <Route path="/recipes/:id" element={<RecipeDetailPage />} />
+        <Route path="/promotions" element={<PromotionsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </Layout>
+  );
+}
+
+export default App;
