@@ -13,7 +13,7 @@ import { Check, Award, Leaf, ShieldCheck } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
-  
+
   const featuredProducts = products.filter(product => product.isPromoted).slice(0, 3);
   const featuredRecipes = recipes.slice(0, 3);
   

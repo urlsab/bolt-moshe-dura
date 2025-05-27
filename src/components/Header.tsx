@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, ShoppingBag } from 'lucide-react';
+
+// , ShoppingBag
+import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
 
 const Header: React.FC = () => {
@@ -35,6 +37,7 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { name: t('common.nav.home'), path: '/' },
+    { name: t('common.nav.rabbis'), path: '/rabbis' },
     { name: t('common.nav.products'), path: '/products' },
     { name: t('common.nav.kashrut'), path: '/kashrut' },
     { name: t('common.nav.recipes'), path: '/recipes' },

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
@@ -10,6 +10,7 @@ import ContactPage from './pages/ContactPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import RecipeDetailPage from './pages/RecipeDetailPage';
 import ArticleDetailPage from './pages/ArticleDetailPage';
+import Rabbis from './pages/Rabbis';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/rabbis" element={<Rabbis />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/:id" element={<ProductDetailPage />} />
         <Route path="/kashrut" element={<KashrutPage />} />
