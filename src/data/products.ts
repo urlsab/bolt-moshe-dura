@@ -1,5 +1,13 @@
 import { Product } from '../types/product';
 
+// רשימת רבנים בסרטון לפי הסדר
+
+// הרב יגאל כהן
+// הרב רפאל זר
+// הרב דוד פריוף
+// הרב רחמים נימני
+// הרב עודד שרעבי
+
 const products: Product[] = [
   // Beef Products
   
