@@ -15,8 +15,7 @@ const ProductsPage: React.FC = () => {
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
       // Apply search filter
-      const matchesSearch = product.name.includes(searchTerm) || 
-                             product.shortDescription.includes(searchTerm);
+      const matchesSearch = product.name.includes(searchTerm) || product.shortDescription.includes(searchTerm);
       
       // Apply category filter
       const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
