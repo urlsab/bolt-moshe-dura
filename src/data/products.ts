@@ -2,7 +2,7 @@ import { Product } from '../types/product';
 
 // רשימת רבנים בסרטון לפי הסדר
 
-// הרב יגאל כהן
+// הרב יוסף כהן
 // הרב רפאל זר
 // הרב דוד פריוף
 // הרב רחמים נימני
@@ -12,7 +12,7 @@ const products: Product[] = [
   // Beef Products
   
   {
-    id: 24,
+    id: 1,
     name: 'דניס',
     category: 'fish',
     shortDescription: 'דניס טרי, דג ים בעל בשר לבן ועדין',
@@ -24,7 +24,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 25,
+    id: 2,
     name: 'לברק',
     category: 'fish',
     shortDescription: 'לברק טרי, דג ים בעל בשר לבן וטעים',
@@ -36,7 +36,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 26,
+    id: 3,
     name: 'בורי',
     category: 'fish',
     shortDescription: 'בורי טרי, דג ים בעל בשר לבן ועדין',
@@ -48,7 +48,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 27,
+    id: 4,
     name: 'מושט',
     category: 'fish',
     shortDescription: 'מושט טרי, דג ים בעל בשר לבן וטעים',
@@ -60,7 +60,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 28,
+    id: 5,
     name: 'סטייק סלמון',
     category: 'fish',
     shortDescription: 'סטייק סלמון טרי',
@@ -72,7 +72,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 29,
+    id: 6,
     name: 'פילה סול',
     category: 'fish',
     shortDescription: 'פילה סול טרי',
@@ -84,7 +84,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 30,
+    id: 7,
     name: 'טונה לבנה',
     category: 'fish',
     shortDescription: 'טונה לבנה טרייה',
@@ -96,7 +96,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 31,
+    id: 8,
     name: 'טונה חומה',
     category: 'fish',
     shortDescription: 'טונה חומה טרייה',
@@ -108,7 +108,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 32,
+    id: 9,
     name: 'פילה אמנון בגריל',
     category: 'fish',
     shortDescription: 'פילה אמנון בגריל',
@@ -120,7 +120,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 33,
+    id: 10,
     name: 'פילה אמנון בציפוי',
     category: 'fish',
     shortDescription: 'פילה אמנון בציפוי',
@@ -132,7 +132,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 34,
+    id: 11,
     name: 'פילה ברמונדי לוקוס',
     category: 'fish',
     shortDescription: 'פילה ברמונדי לוקוס',
@@ -144,7 +144,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 35,
+    id: 12,
     name: 'פילה אנד ציפס',
     category: 'fish',
     shortDescription: 'פילה אנד ציפס',
@@ -156,7 +156,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 36,
+    id: 13,
     name: 'קציצות דג לבישול',
     category: 'fish',
     shortDescription: 'קציצות דג לבישול',
@@ -168,7 +168,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 37,
+    id: 14,
     name: 'מקלוני דג שגב',
     category: 'fish',
     shortDescription: 'מקלוני דג שגב',
@@ -180,7 +180,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 38,
+    id: 15,
     name: 'לברק',
     category: 'fish',
     shortDescription: 'דג לברק טרי',
@@ -192,7 +192,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 39,
+    id: 16,
     name: 'פילה הליבוט',
     category: 'fish',
     shortDescription: 'פילה הליבוט טרי',
@@ -204,7 +204,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 40,
+    id: 17,
     name: 'קציצות דג מטוגנות',
     category: 'fish',
     shortDescription: 'קציצות דג מטוגנות',
@@ -216,7 +216,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 41,
+    id: 18,
     name: 'מרלוזה הייק קפוא',
     category: 'fish',
     shortDescription: 'מרלוזה הייק קפוא',
@@ -228,7 +228,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 42,
+    id: 19,
     name: 'בקלה',
     category: 'fish',
     shortDescription: 'דג בקלה טרי',
@@ -240,7 +240,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 43,
+    id: 20,
     name: 'טונה אדומה',
     category: 'fish',
     shortDescription: 'טונה אדומה טרייה',
@@ -252,7 +252,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 44,
+    id: 21,
     name: 'פילה אמנון קפוא',
     category: 'fish',
     shortDescription: 'פילה אמנון קפוא',
@@ -265,7 +265,7 @@ const products: Product[] = [
   },
   // Lamb Products (added from images)
   {
-    id: 45,
+    id: 22,
     name: 'רבע כבש',
     category: 'lamb',
     shortDescription: 'רבע כבש טרי',
@@ -277,7 +277,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 46,
+    id: 23,
     name: 'צלעות טלה',
     category: 'lamb',
     shortDescription: 'צלעות טלה מובחרות',
@@ -289,7 +289,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 47,
+    id: 24,
     name: 'צוואר טלה',
     category: 'lamb',
     shortDescription: 'צוואר טלה טרי',
@@ -301,7 +301,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 48,
+    id: 25,
     name: 'כתף טלה קפוא',
     category: 'lamb',
     shortDescription: 'כתף טלה קפוא',
@@ -313,7 +313,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 49,
+    id: 26,
     name: 'שומן כבש',
     category: 'lamb',
     shortDescription: 'שומן כבש טרי',
@@ -325,7 +325,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 50,
+    id: 27,
     name: 'אסאדו טלה',
     category: 'lamb',
     shortDescription: 'אסאדו טלה טרי',
@@ -337,7 +337,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 51,
+    id: 28,
     name: 'שיפודי כבש',
     category: 'lamb',
     shortDescription: 'שיפודי כבש מוכנים לצלייה',
@@ -349,7 +349,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 52,
+    id: 29,
     name: 'כתף טלה טרי',
     category: 'lamb',
     shortDescription: 'כתף טלה טרי',
@@ -361,7 +361,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 53,
+    id: 30,
     name: 'ראש טלה מפורק',
     category: 'lamb',
     shortDescription: 'ראש טלה מפורק',
@@ -373,7 +373,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 54,
+    id: 31,
     name: 'זרוע טלה',
     category: 'lamb',
     shortDescription: 'זרוע טלה טרייה',
@@ -385,7 +385,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 55,
+    id: 32,
     name: 'חצי ראש כבש',
     category: 'lamb',
     shortDescription: 'חצי ראש כבש',
@@ -397,7 +397,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 56,
+    id: 33,
     name: 'אליה',
     category: 'lamb',
     shortDescription: 'אליה כבש',
@@ -409,7 +409,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 57,
+    id: 34,
     name: 'כבש לבישול',
     category: 'lamb',
     shortDescription: 'כבש לבישול',
@@ -422,7 +422,7 @@ const products: Product[] = [
   },
   // Veal Products (added from images)
   {
-    id: 58,
+    id: 35,
     name: 'שוקי עגל',
     category: 'deli',
     shortDescription: 'שוקי עגל טריים',
@@ -434,7 +434,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 59,
+    id: 36,
     name: 'בשר ראש טרי',
     category: 'deli',
     shortDescription: 'בשר ראש עגל טרי',
@@ -446,7 +446,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 60,
+    id: 37,
     name: 'אשכי עגל',
     category: 'deli',
     shortDescription: 'אשכי עגל טריים',
@@ -458,7 +458,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 61,
+    id: 38,
     name: 'לשון עגל טרי',
     category: 'deli',
     shortDescription: 'לשון עגל טרי',
@@ -470,7 +470,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 62,
+    id: 39,
     name: 'ריאות עגל',
     category: 'deli',
     shortDescription: 'ריאות עגל טריות',
@@ -482,7 +482,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 63,
+    id: 40,
     name: 'כבד עגל',
     category: 'deli',
     shortDescription: 'כבד עגל טרי',
@@ -494,7 +494,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 64,
+    id: 41,
     name: 'זנב עגל',
     category: 'deli',
     shortDescription: 'זנב עגל טרי',
@@ -506,7 +506,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 65,
+    id: 42,
     name: 'מעיים',
     category: 'deli',
     shortDescription: 'מעיים עגל טריים',
@@ -518,7 +518,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 66,
+    id: 43,
     name: 'מוח עגל בד״צ',
     category: 'deli',
     shortDescription: 'מוח עגל בד״צ',
@@ -530,7 +530,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 67,
+    id: 44,
     name: 'לב עגל',
     category: 'deli',
     shortDescription: 'לב עגל טרי',
@@ -543,7 +543,7 @@ const products: Product[] = [
   },
   // Beef & Mixed Products (added from images)
   {
-    id: 68,
+    id: 45,
     name: 'בקר טחון טרי',
     category: 'beef',
     shortDescription: 'בקר טחון טרי',
@@ -555,7 +555,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 69,
+    id: 46,
     name: 'שיירי חזה הודו',
     category: 'beef',
     shortDescription: 'שיירי חזה הודו',
@@ -567,7 +567,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 70,
+    id: 47,
     name: 'פילה מדומה',
     category: 'beef',
     shortDescription: 'פילה מדומה',
@@ -579,7 +579,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 71,
+    id: 48,
     name: 'שיירי חזה הודו',
     category: 'beef',
     shortDescription: 'שיירי חזה הודו',
@@ -591,7 +591,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 72,
+    id: 49,
     name: 'אנגוס',
     category: 'beef',
     shortDescription: 'בקר אנגוס מובחר',
@@ -603,7 +603,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 73,
+    id: 50,
     name: 'אנטריקוט עם עצם',
     category: 'beef',
     shortDescription: 'אנטריקוט עם עצם',
@@ -615,7 +615,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 74,
+    id: 51,
     name: 'צוואר',
     category: 'beef',
     shortDescription: 'צוואר בקר טרי',
@@ -627,7 +627,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 75,
+    id: 52,
     name: 'צלעות',
     category: 'beef',
     shortDescription: 'צלעות בקר טריות',
@@ -639,7 +639,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 76,
+    id: 53,
     name: 'אסאדו',
     category: 'beef',
     shortDescription: 'אסאדו בקר טרי',
@@ -651,7 +651,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 77,
+    id: 54,
     name: 'אנטריקוט עגל',
     category: 'deli',
     shortDescription: 'אנטריקוט עגל טרי',
@@ -663,7 +663,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 78,
+    id: 55,
     name: 'סינטה פיקניה',
     category: 'beef',
     shortDescription: 'סינטה פיקניה',
@@ -675,7 +675,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 79,
+    id: 56,
     name: 'סטייק פרימיום',
     category: 'beef',
     shortDescription: 'סטייק פרימיום',
@@ -687,7 +687,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 80,
+    id: 57,
     name: 'רוטפליש',
     category: 'beef',
     shortDescription: 'רוטפליש בקר',
@@ -699,7 +699,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 81,
+    id: 58,
     name: 'פילה עגל',
     category: 'deli',
     shortDescription: 'פילה עגל טרי',
@@ -711,7 +711,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 82,
+    id: 59,
     name: 'אוסובוקו עגל',
     category: 'deli',
     shortDescription: 'אוסובוקו עגל טרי',
@@ -723,7 +723,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 83,
+    id: 60,
     name: 'בקר טחון מבצע',
     category: 'beef',
     shortDescription: 'בקר טחון מבצע',
@@ -735,7 +735,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 84,
+    id: 61,
     name: 'בקר טחון עם כבש',
     category: 'beef',
     shortDescription: 'בקר טחון עם כבש',
@@ -747,7 +747,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 85,
+    id: 62,
     name: 'אוסובוקו עגל',
     category: 'deli',
     shortDescription: 'אוסובוקו עגל טרי',
@@ -759,7 +759,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 86,
+    id: 63,
     name: 'עצמות מוח',
     category: 'beef',
     shortDescription: 'עצמות מוח בקר',
@@ -771,7 +771,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 87,
+    id: 64,
     name: 'רוטפליש מושחר',
     category: 'beef',
     shortDescription: 'רוטפליש מושחר',
@@ -784,7 +784,7 @@ const products: Product[] = [
   },
   // Turkey Products (added from images)
   {
-    id: 88,
+    id: 65,
     name: 'הודו שלם',
     category: 'turkey',
     shortDescription: 'הודו שלם טרי',
@@ -796,7 +796,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 89,
+    id: 66,
     name: 'הודו מפורק',
     category: 'turkey',
     shortDescription: 'הודו מפורק טרי',
@@ -808,7 +808,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 90,
+    id: 67,
     name: 'שווארמה',
     category: 'turkey',
     shortDescription: 'שווארמה הודו',
@@ -820,7 +820,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 91,
+    id: 68,
     name: 'שווארמה נקבה',
     category: 'turkey',
     shortDescription: 'שווארמה הודו נקבה',
@@ -832,7 +832,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 92,
+    id: 69,
     name: 'שוק הודו מפורק',
     category: 'turkey',
     shortDescription: 'שוק הודו מפורק',
@@ -844,7 +844,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 93,
+    id: 70,
     name: 'חזה הודו שלם',
     category: 'turkey',
     shortDescription: 'חזה הודו שלם',
@@ -856,7 +856,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 94,
+    id: 71,
     name: 'שוקיים הודו',
     category: 'turkey',
     shortDescription: 'שוקיים הודו טריים',
@@ -868,7 +868,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 95,
+    id: 72,
     name: 'כנף הודו',
     category: 'turkey',
     shortDescription: 'כנף הודו טרי',
@@ -880,7 +880,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 96,
+    id: 73,
     name: 'שניצל הודו',
     category: 'turkey',
     shortDescription: 'שניצל הודו טרי',
@@ -892,7 +892,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 97,
+    id: 74,
     name: 'גרון הודו',
     category: 'turkey',
     shortDescription: 'גרון הודו טרי',
@@ -904,7 +904,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 98,
+    id: 75,
     name: 'נתחי הודו',
     category: 'turkey',
     shortDescription: 'נתחי הודו טריים',
@@ -916,7 +916,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 99,
+    id: 76,
     name: 'אשכי הודו',
     category: 'turkey',
     shortDescription: 'אשכי הודו טריים',
@@ -928,7 +928,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 100,
+    id: 77,
     name: 'הודו אדום טחון',
     category: 'turkey',
     shortDescription: 'הודו אדום טחון',
@@ -940,7 +940,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 101,
+    id: 78,
     name: 'שישליק הודו',
     category: 'turkey',
     shortDescription: 'שישליק הודו',
@@ -951,9 +951,8 @@ const products: Product[] = [
     imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
     isPromoted: false
   },
-  // Chicken Products (added from images)
   {
-    id: 102,
+    id: 79,
     name: 'עוף שלם',
     category: 'chicken',
     shortDescription: 'עוף שלם טרי',
@@ -965,7 +964,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 103,
+    id: 80,
     name: 'עוף מפורק',
     category: 'chicken',
     shortDescription: 'עוף מפורק טרי',
@@ -977,7 +976,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 104,
+    id: 81,
     name: 'שניצל עוף',
     category: 'chicken',
     shortDescription: 'שניצל עוף טרי',
@@ -989,7 +988,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 105,
+    id: 82,
     name: 'כרעיים',
     category: 'chicken',
     shortDescription: 'כרעיים עוף טריים',
@@ -1001,7 +1000,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 106,
+    id: 83,
     name: 'שוקיים',
     category: 'chicken',
     shortDescription: 'שוקיים עוף טריים',
@@ -1013,7 +1012,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 107,
+    id: 84,
     name: 'כנפיים',
     category: 'chicken',
     shortDescription: 'כנפיים עוף טריות',
@@ -1025,7 +1024,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 108,
+    id: 85,
     name: 'פרגיות',
     category: 'chicken',
     shortDescription: 'פרגיות עוף טריות',
@@ -1037,7 +1036,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 109,
+    id: 86,
     name: 'חזה עוף',
     category: 'chicken',
     shortDescription: 'חזה עוף טרי',
@@ -1049,7 +1048,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 110,
+    id: 87,
     name: 'כבד',
     category: 'chicken',
     shortDescription: 'כבד עוף טרי',
@@ -1061,7 +1060,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 111,
+    id: 88,
     name: 'לבבות',
     category: 'chicken',
     shortDescription: 'לבבות עוף טריים',
@@ -1073,7 +1072,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 112,
+    id: 89,
     name: 'טחול',
     category: 'chicken',
     shortDescription: 'טחול עוף טרי',
@@ -1085,7 +1084,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 113,
+    id: 90,
     name: 'קורקבן',
     category: 'chicken',
     shortDescription: 'קורקבן עוף טרי',
@@ -1097,7 +1096,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 114,
+    id: 91,
     name: 'גרון עוף',
     category: 'chicken',
     shortDescription: 'גרון עוף טרי',
@@ -1109,7 +1108,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 115,
+    id: 92,
     name: 'פרגית/עוף עם עור/עצם',
     category: 'chicken',
     shortDescription: 'פרגית/עוף עם עור/עצם',
@@ -1121,7 +1120,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 116,
+    id: 93,
     name: 'טחון עוף',
     category: 'chicken',
     shortDescription: 'טחון עוף טרי',
@@ -1133,7 +1132,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 117,
+    id: 94,
     name: 'פרגית משופד',
     category: 'chicken',
     shortDescription: 'פרגית משופד',
@@ -1145,7 +1144,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 118,
+    id: 95,
     name: 'פילה עוף',
     category: 'chicken',
     shortDescription: 'פילה עוף טרי',
@@ -1157,7 +1156,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 119,
+    id: 96,
     name: 'עוף יונים',
     category: 'chicken',
     shortDescription: 'עוף יונים טרי',
@@ -1169,7 +1168,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 120,
+    id: 97,
     name: 'כנפיים חצי ונקי',
     category: 'chicken',
     shortDescription: 'כנפיים חצי ונקי',
@@ -1181,7 +1180,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 121,
+    id: 98,
     name: 'עוף ללא עצם',
     category: 'chicken',
     shortDescription: 'עוף ללא עצם טרי',
@@ -1193,7 +1192,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 122,
+    id: 99,
     name: 'שניצל פרמיום',
     category: 'chicken',
     shortDescription: 'שניצל פרמיום עוף',
@@ -1205,7 +1204,7 @@ const products: Product[] = [
     isPromoted: false
   },
   {
-    id: 123,
+    id: 100,
     name: 'עוף טחון מחוזק',
     category: 'chicken',
     shortDescription: 'עוף טחון מחוזק',
