@@ -1,526 +1,557 @@
 import { Product } from '../types/product';
-
-// רשימת רבנים בסרטון לפי הסדר
-
-// הרב יוסף כהן
-// הרב רפאל זר
-// הרב דוד פריוף
-// הרב רחמים נימני
-// הרב עודד שרעבי
+import amnonimor from '../Assets/amnonimor.jpg';
+import amnonleloor from '../Assets/amnonleloor.jpg';
+import nilusparus from '../Assets/nilusparus.jpg';
+import filesalmon from '../Assets/filesalmon.jpg';
+import salamonmanot from '../Assets/salamonmanot.jpg';
+import salamonleloor from '../Assets/salamonmanotleloor.jpg';
+import marlozalelomaim from '../Assets/marlozelelomaim.jpg';
+import stakesalamon from '../Assets/stakesalamon.jpg';
+import filesol from '../Assets/filesol.jpg';
+import tunalevana from '../Assets/tunalevana.jpg';
+import tunahuma from '../Assets/tunahuma.jpg';
+import filabarbunia from '../Assets/filebarbunia.jpg';
+import fileamnonbetsipui from '../Assets/filaamnonbetsipui.jpg';
+import filebabylokus from '../Assets/filebabylokus.webp';
+import fishandchips from '../Assets/fish-and-chips.jpg';
+import ktsitsotdaglebishul from '../Assets/ktsitsotdagimlebishul.jpg';
+import maklonedagsegev from '../Assets/maklonedagsegev.jpg';
+import lebrak from '../Assets/lebrak.png';
+import filehalibut from '../Assets/filehalibut.jpg';
+import ktsitotdagmetuganot from '../Assets/ktsitotdagmetuganot.jpg';
+import merlozahike from '../Assets/merlozahike.jpg';
+import bakla from '../Assets/bakla.jpg';
+import tunaaduma from '../Assets/tunaaduma.jpg';
+import fileamnonmetugan from '../Assets/fileamnonmetugan.jpg';
+import revakeves from '../Assets/revakeves.jpeg';
+import tslaottale from '../Assets/tslaotale.jpg';
+import lambneck from '../Assets/lambneck.jpg';
+import kateftalekafu from '../Assets/kateftalekafu.jpg';
+import shumankeves from '../Assets/shumankeves.jpeg';
+import asadotale from '../Assets/asadotale.jpg';
+import shipudekeves from '../Assets/shipudekeves.jpg';
+import kateftaletari from '../Assets/kateftaletari.jpg';
+import roshtalemeforak from '../Assets/roshtalemeforak.webp';
+import zroatale from '../Assets/zroatale.jpg';
+import halfroshkeves from '../Assets/halfroshkeves.jpg';
+import alia from '../Assets/alia.webp';
+import keveslebishul from '../Assets/keveslebishul.webp';
+import shkedeegel from '../Assets/shkedeegel.jpg';
+import reotegel from '../Assets/reotegel.jpg';
+import kavedegel from '../Assets/kavedegel.jpg';
+import zanavegel from '../Assets/zanavegel.jpg';
+import meaimegel from '../Assets/meaimegel.jpg';
 
 const products: Product[] = [
-  // Beef Products
-  
+
   {
     id: 1,
-    name: 'דניס',
+    name: 'אמנון עם עור',
     category: 'fish',
     shortDescription: 'דניס טרי, דג ים בעל בשר לבן ועדין',
     fullDescription: 'דניס טרי, דג ים בעל בשר לבן ועדין. מתאים לצלייה, בישול או טיגון. טעים במיוחד עם תבלינים ים תיכוניים.',
-    price: 80,
+    price: 44,
     weight: '1 ק"ג',
     kashrutLevel: 'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/1321942/pexels-photo-1321942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageSrc: `${amnonimor}`,
     isPromoted: false
   },
   {
     id: 2,
-    name: 'לברק',
+    name: 'אמנון ללא עור',
     category: 'fish',
     shortDescription: 'לברק טרי, דג ים בעל בשר לבן וטעים',
     fullDescription: 'לברק טרי, דג ים בעל בשר לבן וטעים. מתאים לצלייה, בישול או טיגון. עשיר בחלבון ודל בשומן.',
-    price: 90,
+    price: 48,
     weight: '1 ק"ג',
     kashrutLevel: 'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/19088046/pexels-photo-19088046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageSrc: `${amnonleloor}`,
     isPromoted: false
   },
   {
     id: 3,
-    name: 'בורי',
+    name: 'נילוס פרוס',
     category: 'fish',
     shortDescription: 'בורי טרי, דג ים בעל בשר לבן ועדין',
     fullDescription: 'בורי טרי, דג ים בעל בשר לבן ועדין. מתאים לצלייה, בישול או טיגון. טעים במיוחד עם תבלינים ים תיכוניים.',
-    price: 70,
+    price: 75,
     weight: '1 ק"ג',
     kashrutLevel: 'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/8753657/pexels-photo-8753657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageSrc: `${nilusparus}`,
     isPromoted: false
   },
   {
     id: 4,
-    name: 'מושט',
+    name: 'פילה סלמון',
     category: 'fish',
     shortDescription: 'מושט טרי, דג ים בעל בשר לבן וטעים',
     fullDescription: 'מושט טרי, דג ים בעל בשר לבן וטעים. מתאים לצלייה, בישול או טיגון. עשיר בחלבון ודל בשומן.',
-    price: 85,
+    price: 78,
     weight: '1 ק"ג',
     kashrutLevel: 'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/4199094/pexels-photo-4199094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageSrc: `${filesalmon}`,
     isPromoted: false
   },
   {
     id: 5,
-    name: 'סטייק סלמון',
+    name: 'סלמון מנות',
     category: 'fish',
     shortDescription: 'סטייק סלמון טרי',
     fullDescription: 'סטייק סלמון טרי, עשיר באומגה 3, מתאים לצלייה או אפייה.',
-    price: 65.00,
+    price: 95,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${salamonmanot}`,
     isPromoted: false
   },
   {
     id: 6,
-    name: 'פילה סול',
+    name: 'סלמון מנות ללא עור',
     category: 'fish',
     shortDescription: 'פילה סול טרי',
     fullDescription: 'פילה סול טרי, מתאים לטיגון או בישול.',
-    price: 45.00,
+    price: 120,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${salamonleloor}`,
     isPromoted: false
   },
   {
     id: 7,
-    name: 'טונה לבנה',
+    name: 'מרלוזה ללא מים',
     category: 'fish',
     shortDescription: 'טונה לבנה טרייה',
     fullDescription: 'טונה לבנה טרייה, מתאימה לצלייה או בישול.',
-    price: 65.00,
+    price: 45,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg',
+    imageSrc: `${marlozalelomaim}`,
     isPromoted: false
   },
   {
     id: 8,
-    name: 'טונה חומה',
+    name: 'סטייק סלומון',
     category: 'fish',
     shortDescription: 'טונה חומה טרייה',
     fullDescription: 'טונה חומה טרייה, מתאימה לצלייה או בישול.',
-    price: 55.00,
+    price: 65,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${stakesalamon}`,
     isPromoted: false
   },
   {
     id: 9,
-    name: 'פילה אמנון בגריל',
+    name: 'פילה סול',
     category: 'fish',
     shortDescription: 'פילה אמנון בגריל',
     fullDescription: 'פילה אמנון בגריל, מתאים לצלייה או טיגון.',
-    price: 32.00,
+    price: 45,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${filesol}`,
     isPromoted: false
   },
   {
     id: 10,
-    name: 'פילה אמנון בציפוי',
+    name: 'טונה לבנה',
     category: 'fish',
     shortDescription: 'פילה אמנון בציפוי',
     fullDescription: 'פילה אמנון בציפוי, מתאים לטיגון.',
-    price: 29.00,
+    price: 65,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${tunalevana}`,
     isPromoted: false
   },
   {
     id: 11,
-    name: 'פילה ברמונדי לוקוס',
+    name: 'טונה חומה',
     category: 'fish',
     shortDescription: 'פילה ברמונדי לוקוס',
     fullDescription: 'פילה ברמונדי לוקוס, מתאים לצלייה או טיגון.',
-    price: 55.00,
+    price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${tunahuma}`,
     isPromoted: false
   },
   {
     id: 12,
-    name: 'פילה אנד ציפס',
+    name: 'פילה ברבוניה',
     category: 'fish',
     shortDescription: 'פילה אנד ציפס',
     fullDescription: 'פילה אנד ציפס, מתאים לטיגון.',
-    price: 55.00,
+    price: 32,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${filabarbunia}`,
     isPromoted: false
   },
   {
     id: 13,
-    name: 'קציצות דג לבישול',
+    name: 'פילה אמנון בציפוי',
     category: 'fish',
     shortDescription: 'קציצות דג לבישול',
     fullDescription: 'קציצות דג לבישול, מתאימות לבישול במגוון רטבים.',
-    price: 32.00,
+    price: 23,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${fileamnonbetsipui}`,
     isPromoted: false
   },
   {
     id: 14,
-    name: 'מקלוני דג שגב',
+    name: 'פילה בייבי לוקוס',
     category: 'fish',
     shortDescription: 'מקלוני דג שגב',
     fullDescription: 'מקלוני דג שגב, מתאימים לטיגון.',
-    price: 28.00,
+    price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${filebabylokus}`,
     isPromoted: false
   },
   {
     id: 15,
-    name: 'לברק',
+    name: "פיש אנד צ'יפס",
     category: 'fish',
     shortDescription: 'דג לברק טרי',
     fullDescription: 'דג לברק טרי, מתאים לצלייה או אפייה.',
-    price: 58.00,
+    price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${fishandchips}`,
     isPromoted: false
   },
   {
     id: 16,
-    name: 'פילה הליבוט',
+    name: 'קציצות דג לבישול',
     category: 'fish',
     shortDescription: 'פילה הליבוט טרי',
     fullDescription: 'פילה הליבוט טרי, מתאים לצלייה או טיגון.',
-    price: 89.00,
+    price: 32,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${ktsitsotdaglebishul}`,
     isPromoted: false
   },
   {
     id: 17,
-    name: 'קציצות דג מטוגנות',
+    name: 'מקלוני דג שגב',
     category: 'fish',
     shortDescription: 'קציצות דג מטוגנות',
     fullDescription: 'קציצות דג מטוגנות, מוכנות לאכילה.',
-    price: 35.00,
+    price: 28,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${maklonedagsegev}`,
     isPromoted: false
   },
   {
     id: 18,
-    name: 'מרלוזה הייק קפוא',
+    name: 'לברק',
     category: 'fish',
     shortDescription: 'מרלוזה הייק קפוא',
     fullDescription: 'מרלוזה הייק קפוא, מתאימה לטיגון או בישול.',
-    price: 19.90,
+    price: 58,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${lebrak}`,
     isPromoted: false
   },
   {
     id: 19,
-    name: 'בקלה',
+    name: 'פילה הליבוט',
     category: 'fish',
     shortDescription: 'דג בקלה טרי',
     fullDescription: 'דג בקלה טרי, מתאים לטיגון או בישול.',
-    price: 28.00,
+    price: 89,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${filehalibut}`,
     isPromoted: false
   },
   {
     id: 20,
-    name: 'טונה אדומה',
+    name: 'קציצות דג מטוגנות',
     category: 'fish',
     shortDescription: 'טונה אדומה טרייה',
     fullDescription: 'טונה אדומה טרייה, מתאימה לסושי, צלייה או בישול.',
-    price: 75.00,
+    price: 35,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${ktsitotdagmetuganot}`,
     isPromoted: false
   },
   {
     id: 21,
-    name: 'פילה אמנון קפוא',
+    name: 'מרלוזה הייק 100% דג',
     category: 'fish',
     shortDescription: 'פילה אמנון קפוא',
     fullDescription: 'פילה אמנון קפוא, מתאים לטיגון או בישול.',
-    price: 39.00,
+    price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg',
+    imageSrc: `${merlozahike}`,
     isPromoted: false
   },
-  // Lamb Products (added from images)
   {
     id: 22,
-    name: 'רבע כבש',
-    category: 'lamb',
+    name: 'בקלה',
+    category: 'fish',
     shortDescription: 'רבע כבש טרי',
     fullDescription: 'רבע כבש טרי, מתאים לצלייה או בישול.',
-    price: 145.00,
+    price: 28,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${bakla}`,
     isPromoted: false
   },
   {
     id: 23,
-    name: 'צלעות טלה',
-    category: 'lamb',
+    name: 'טונה אדומה',
+    category: 'fish',
     shortDescription: 'צלעות טלה מובחרות',
     fullDescription: 'צלעות טלה מובחרות, מתאימות לגריל או צלייה.',
-    price: 260.00,
+    price: 75,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${tunaaduma}`,
     isPromoted: false
   },
   {
     id: 24,
-    name: 'צוואר טלה',
-    category: 'lamb',
+    name: ' פילה אמנון מטוגן',
+    category: 'fish',
     shortDescription: 'צוואר טלה טרי',
     fullDescription: 'צוואר טלה טרי, מתאים לבישול ארוך.',
-    price: 110.00,
+    price: 30,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${fileamnonmetugan}`,
     isPromoted: false
   },
   {
     id: 25,
-    name: 'כתף טלה קפוא',
+    name: 'רבע כבש',
     category: 'lamb',
     shortDescription: 'כתף טלה קפוא',
     fullDescription: 'כתף טלה קפוא, מתאים לצלייה או בישול.',
-    price: 140.00,
+    price: 145,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${revakeves}`,
     isPromoted: false
   },
   {
     id: 26,
-    name: 'שומן כבש',
+    name: 'צלעות טלה',
     category: 'lamb',
     shortDescription: 'שומן כבש טרי',
     fullDescription: 'שומן כבש טרי, מתאים לתיבול ובישול.',
-    price: 210.00,
+    price: 260,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${tslaottale}`,
     isPromoted: false
   },
   {
     id: 27,
-    name: 'אסאדו טלה',
+    name: 'צוואר טלה',
     category: 'lamb',
     shortDescription: 'אסאדו טלה טרי',
     fullDescription: 'אסאדו טלה טרי, מתאים לבישול ארוך.',
-    price: 110.00,
+    price: 110,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${lambneck}`,
     isPromoted: false
   },
   {
     id: 28,
-    name: 'שיפודי כבש',
+    name: 'כתף טלה קפוא',
     category: 'lamb',
     shortDescription: 'שיפודי כבש מוכנים לצלייה',
     fullDescription: 'שיפודי כבש מוכנים לצלייה, עשויים מבשר כבש מובחר.',
-    price: 190.00,
+    price: 140,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${kateftalekafu}`,
     isPromoted: false
   },
   {
     id: 29,
-    name: 'כתף טלה טרי',
+    name: 'שומן כבש',
     category: 'lamb',
     shortDescription: 'כתף טלה טרי',
     fullDescription: 'כתף טלה טרי, מתאים לצלייה או בישול.',
-    price: 145.00,
+    price: 210,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${shumankeves}`,
     isPromoted: false
   },
   {
     id: 30,
-    name: 'ראש טלה מפורק',
+    name: 'אסאדו טלה',
     category: 'lamb',
     shortDescription: 'ראש טלה מפורק',
     fullDescription: 'ראש טלה מפורק, מתאים לבישול.',
-    price: 115.00,
+    price: 110,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${asadotale}`,
     isPromoted: false
   },
   {
     id: 31,
-    name: 'זרוע טלה',
+    name: 'שיפודי כבש',
     category: 'lamb',
     shortDescription: 'זרוע טלה טרייה',
     fullDescription: 'זרוע טלה טרייה, מתאימה לצלייה או בישול.',
-    price: 160.00,
+    price: 190,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${shipudekeves}`,
     isPromoted: false
   },
   {
     id: 32,
-    name: 'חצי ראש כבש',
+    name: 'כתף טלה טרי',
     category: 'lamb',
     shortDescription: 'חצי ראש כבש',
     fullDescription: 'חצי ראש כבש, מתאים לבישול.',
-    price: 75.00,
+    price: 145,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${kateftaletari}`,
     isPromoted: false
   },
   {
     id: 33,
-    name: 'אליה',
+    name: 'ראש טלה מפורק',
     category: 'lamb',
     shortDescription: 'אליה כבש',
     fullDescription: 'אליה כבש, שומן כבש מובחר.',
-    price: 260.00,
+    price: 115,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${roshtalemeforak}`,
     isPromoted: false
   },
   {
     id: 34,
-    name: 'כבש לבישול',
+    name: 'זרוע טלה',
     category: 'lamb',
     shortDescription: 'כבש לבישול',
     fullDescription: 'כבש לבישול, מתאים למגוון תבשילים.',
-    price: 90.00,
+    price: 160,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${zroatale}`,
     isPromoted: false
   },
-  // Veal Products (added from images)
   {
     id: 35,
-    name: 'שוקי עגל',
-    category: 'deli',
+    name: 'חצי ראש כבש',
+    category: 'lamb',
     shortDescription: 'שוקי עגל טריים',
     fullDescription: 'שוקי עגל טריים, מתאימים לצלייה או בישול.',
-    price: 420.00,
+    price: 75,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${halfroshkeves}`,
     isPromoted: false
   },
   {
     id: 36,
-    name: 'בשר ראש טרי',
-    category: 'deli',
+    name: 'אלייה',
+    category: 'lamb',
     shortDescription: 'בשר ראש עגל טרי',
     fullDescription: 'בשר ראש עגל טרי, מתאים לבישול.',
-    price: 95.00,
+    price: 260,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${alia}`,
     isPromoted: false
   },
   {
     id: 37,
-    name: 'אשכי עגל',
-    category: 'deli',
+    name: 'כבש לבישול',
+    category: 'lamb',
     shortDescription: 'אשכי עגל טריים',
     fullDescription: 'אשכי עגל טריים, מתאימים לבישול.',
-    price: 95.00,
+    price: 90,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${keveslebishul}`,
     isPromoted: false
   },
   {
     id: 38,
-    name: 'לשון עגל טרי',
-    category: 'deli',
+    name: 'שקדי עגל',
+    category: 'calf',
     shortDescription: 'לשון עגל טרי',
     fullDescription: 'לשון עגל טרי, מתאים לבישול.',
-    price: 85.00,
+    price: 420,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${shkedeegel}`,
     isPromoted: false
   },
   {
     id: 39,
     name: 'ריאות עגל',
-    category: 'deli',
+    category: 'calf',
     shortDescription: 'ריאות עגל טריות',
     fullDescription: 'ריאות עגל טריות, מתאימות לבישול.',
-    price: 60.00,
+    price: 60,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${reotegel}`,
     isPromoted: false
   },
   {
     id: 40,
     name: 'כבד עגל',
-    category: 'deli',
+    category: 'calf',
     shortDescription: 'כבד עגל טרי',
     fullDescription: 'כבד עגל טרי, מתאים לצלייה או בישול.',
-    price: 60.00,
+    price: 60,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${kavedegel}`,
     isPromoted: false
   },
   {
     id: 41,
     name: 'זנב עגל',
-    category: 'deli',
+    category: 'calf',
     shortDescription: 'זנב עגל טרי',
     fullDescription: 'זנב עגל טרי, מתאים לבישול.',
-    price: 125.00,
+    price: 125,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${zanavegel}`,
     isPromoted: false
   },
   {
     id: 42,
     name: 'מעיים',
-    category: 'deli',
+    category: 'calf',
     shortDescription: 'מעיים עגל טריים',
     fullDescription: 'מעיים עגל טריים, מתאימים לבישול.',
-    price: 95.00,
+    price: 95,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
+    imageSrc: `${meaimegel}`,
     isPromoted: false
   },
   {
     id: 43,
     name: 'מוח עגל בד״צ',
-    category: 'deli',
+    category: 'calf',
     shortDescription: 'מוח עגל בד״צ',
     fullDescription: 'מוח עגל בד״צ, מתאים לבישול.',
     price: 360.00,
@@ -532,7 +563,7 @@ const products: Product[] = [
   {
     id: 44,
     name: 'לב עגל',
-    category: 'deli',
+    category: 'calf',
     shortDescription: 'לב עגל טרי',
     fullDescription: 'לב עגל טרי, מתאים לבישול.',
     price: 60.00,
@@ -541,7 +572,6 @@ const products: Product[] = [
     imageSrc: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg',
     isPromoted: false
   },
-  // Beef & Mixed Products (added from images)
   {
     id: 45,
     name: 'בקר טחון טרי',
@@ -653,7 +683,7 @@ const products: Product[] = [
   {
     id: 54,
     name: 'אנטריקוט עגל',
-    category: 'deli',
+    category: 'calf',
     shortDescription: 'אנטריקוט עגל טרי',
     fullDescription: 'אנטריקוט עגל טרי, מתאים לצלייה.',
     price: 240.00,
@@ -701,7 +731,7 @@ const products: Product[] = [
   {
     id: 58,
     name: 'פילה עגל',
-    category: 'deli',
+    category: 'calf',
     shortDescription: 'פילה עגל טרי',
     fullDescription: 'פילה עגל טרי, מתאים לצלייה.',
     price: 300.00,
@@ -713,7 +743,7 @@ const products: Product[] = [
   {
     id: 59,
     name: 'אוסובוקו עגל',
-    category: 'deli',
+    category: 'calf',
     shortDescription: 'אוסובוקו עגל טרי',
     fullDescription: 'אוסובוקו עגל טרי, מתאים לבישול ארוך.',
     price: 85.00,
@@ -749,7 +779,7 @@ const products: Product[] = [
   {
     id: 62,
     name: 'אוסובוקו עגל',
-    category: 'deli',
+    category: 'calf',
     shortDescription: 'אוסובוקו עגל טרי',
     fullDescription: 'אוסובוקו עגל טרי, מתאים לבישול ארוך.',
     price: 85.00,

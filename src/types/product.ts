@@ -1,7 +1,7 @@
 export interface Product {
   id: number;
   name: string;
-  category: 'beef' | 'lamb' | 'chicken' | 'prepared' | 'deli' | 'fish' | 'turkey';
+  category: 'beef' | 'lamb' | 'chicken' | 'prepared' | 'calf' | 'fish' | 'turkey';
   shortDescription: string;
   fullDescription: string;
   price: number;
