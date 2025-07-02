@@ -71,9 +71,9 @@ const PromotionsPage: React.FC = () => {
                 className="form-input flex-grow"
                 required
               />
-              <button type="submit" className="btn-primary whitespace-nowrap">
+              {/* <button type="submit" className="btn-primary whitespace-nowrap">
                 הרשמה למבצעים
-              </button>
+              </button> */}
             </div>
           </form>
         </div>

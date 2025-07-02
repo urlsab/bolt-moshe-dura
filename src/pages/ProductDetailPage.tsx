@@ -191,6 +191,7 @@ const ProductDetailPage: React.FC = () => {
           </div>
         )}
       </div>
+      <p className="text-center text-dark/60 mt-6"> התמונות להמחשה בלבד</p>
     </div>
   );
 };

@@ -84,11 +84,11 @@ const HomePage: React.FC = () => {
             <div className="relative">
               <img 
                 src="https://images.pexels.com/photos/6941026/pexels-photo-6941026.jpeg" 
-                alt="משה דורא באיטליז" 
+                alt="משה דורה באיטליז" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
               <div className="absolute bottom-6 right-6 bg-white p-4 rounded-lg shadow-lg">
-                <h3 className="text-primary font-bold text-lg">משה דורא</h3>
+                <h3 className="text-primary font-bold text-lg">משה דורה</h3>
                 <p className="text-sm text-dark/70">בעלים, איטליז למהדרין</p>
               </div>
             </div>
