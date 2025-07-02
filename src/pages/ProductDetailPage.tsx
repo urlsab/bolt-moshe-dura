@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Seo from '../components/Seo';
-import KashrutBadge from '../components/KashrutBadge';
+// import KashrutBadge from '../components/KashrutBadge';
 import products from '../data/products';
 import recipes from '../data/recipes';
 import { Check, ChevronLeft } from 'lucide-react';
@@ -29,13 +29,13 @@ const ProductDetailPage: React.FC = () => {
     .filter(p => p.category === product.category && p.id !== product.id)
     .slice(0, 4);
   
-  const kashrutType = product.kashrutLevel.includes('בד״ץ') ? 'badatz' : 'yoreDea';
+  // const kashrutType = product.kashrutLevel.includes('בד״ץ') ? 'badatz' : 'yoreDea';
   
   return (
     <div className="pt-24 pb-16 animate-fadeIn">
       <Seo
         title={`${product.name} - ${t('common.siteTitle')}`}
-        description={product.shortDescription}
+        // description={product.shortDescription}
       />
       
       <div className="container-custom">
@@ -74,7 +74,7 @@ const ProductDetailPage: React.FC = () => {
               </div>
               
               <h1 className="text-3xl font-bold text-primary mb-2">{product.name}</h1>
-              <p className="text-xl mb-6">{product.shortDescription}</p>
+              {/* <p className="text-xl mb-6">{product.shortDescription}</p> */}
               
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div>
@@ -90,15 +90,15 @@ const ProductDetailPage: React.FC = () => {
               <div className="mb-6">
                 <p className="text-dark/60 text-sm">{t('products.productDetails.kashrutLevel')}</p>
                 <div className="flex items-center mt-1">
-                  <KashrutBadge type={kashrutType} size="sm" />
+                  {/* <KashrutBadge type={kashrutType} size="sm" /> */}
                   <span className="mr-2 font-bold">{product.kashrutLevel}</span>
                 </div>
               </div>
               
-              <div className="border-t border-b border-gray-200 py-4 mb-6">
+              {/* <div className="border-t border-b border-gray-200 py-4 mb-6">
                 <p className="font-bold mb-2">{t('products.productDetails.preparation')}</p>
                 <p>{product.preparationTips || 'מידע לא זמין'}</p>
-              </div>
+              </div> */}
               
               {product.ingredients && (
                 <div className="mb-6">
@@ -115,9 +115,9 @@ const ProductDetailPage: React.FC = () => {
               )}
               
               <div className="flex flex-wrap gap-3 mt-8">
-                <button className="btn-primary flex-1">
+                {/* <button className="btn-primary flex-1">
                   הזמן עכשיו
-                </button>
+                </button> */}
                 <button className="btn-outline flex-1">
                   צור קשר
                 </button>
@@ -126,10 +126,10 @@ const ProductDetailPage: React.FC = () => {
           </div>
           
           {/* Full Description */}
-          <div className="p-8 bg-light">
+          {/* <div className="p-8 bg-light">
             <h2 className="text-2xl font-bold mb-4">אודות המוצר</h2>
             <p className="text-lg">{product.fullDescription}</p>
-          </div>
+          </div> */}
         </div>
         
         {/* Related Recipes */}
@@ -211,7 +211,7 @@ const ProductCard: React.FC<{ product: typeof products[0] }> = ({ product }) => 
         <div className="mt-2 flex items-center justify-between">
           <span className="text-lg font-bold">₪{product.price.toFixed(2)}</span>
           <span className="text-xs bg-secondary/20 px-2 py-1 rounded-full">
-            {product.kashrutLevel.includes('בד״ץ') ? 'בד״ץ' : 'יורה דעה'}
+            {product.kashrutLevel.includes('בד״ץ') ? 'בד״ץ' : 'כשר למהדרין'}
           </span>
         </div>
       </div>

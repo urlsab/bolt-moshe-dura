@@ -4,30 +4,28 @@ import Seo from '../components/Seo';
 import SectionTitle from '../components/SectionTitle';
 import ProductCard from '../components/ProductCard';
 import products from '../data/products';
-import { Search, Filter } from 'lucide-react';
+import {  Filter } from 'lucide-react';
 
 const ProductsPage: React.FC = () => {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedKashrut, setSelectedKashrut] = useState('all');
+  // const [selectedKashrut, setSelectedKashrut] = useState('all');
   
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
       // Apply search filter
-      const matchesSearch = product.name.includes(searchTerm) || product.shortDescription.includes(searchTerm);
+      const matchesSearch = product.name.includes(searchTerm) ;
       
       // Apply category filter
       const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
       
       // Apply kashrut filter
-      const matchesKashrut = selectedKashrut === 'all' || 
-                             (selectedKashrut === 'badatz' && product.kashrutLevel.includes('בד״ץ')) ||
-                             (selectedKashrut === 'yoreDea' && product.kashrutLevel.includes('יורה דעה'));
-      
+      const matchesKashrut = true; // Assuming all products are kosher for now
+                             
       return matchesSearch && matchesCategory && matchesKashrut;
     });
-  }, [searchTerm, selectedCategory, selectedKashrut]);
+  }, [searchTerm, selectedCategory]);
 
   return (
     <div className="pt-24 pb-16 animate-fadeIn">
@@ -45,15 +43,18 @@ const ProductsPage: React.FC = () => {
         
         {/* Filters */}
         <div className="bg-white p-4 rounded-lg shadow-md mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Search */}
             <div className="relative">
-              <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+              {/* <div className="flex items-center pointer-events-none">
                 <Search size={20} className="text-gray-400" />
-              </div>
+              </div> */}
+              <label className="block font-medium text-dark mb-2">
+                {t('products.filters.byTerm')}
+              </label>
               <input
                 type="text"
-                placeholder="חיפוש מוצרים..."
+                placeholder="הקלידו כאן"
                 className="w-full p-3 pr-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
@@ -74,14 +75,15 @@ const ProductsPage: React.FC = () => {
                 <option value="beef">{t('products.categories.beef')}</option>
                 <option value="lamb">{t('products.categories.lamb')}</option>
                 <option value="chicken">{t('products.categories.chicken')}</option>
-                <option value="prepared">{t('products.categories.prepared')}</option>
-                <option value="deli">{t('products.categories.deli')}</option>
+                <option value="turkey">{t('products.categories.turkey')}</option>
+                <option value="fish">{t('products.categories.fish')}</option>
+                <option value="calf">{t('products.categories.calf')}</option>
               </select>
             </div>
             
             {/* Kashrut Filter */}
             <div>
-              <label className="block font-medium text-dark mb-2">
+              {/* <label className="block font-medium text-dark mb-2">
                 {t('products.filters.byKashrut')}
               </label>
               <select
@@ -92,7 +94,7 @@ const ProductsPage: React.FC = () => {
                 <option value="all">{t('products.filters.all')}</option>
                 <option value="badatz">{t('products.kashrut.badatz')}</option>
                 <option value="yoreDea">{t('products.kashrut.yoreDea')}</option>
-              </select>
+              </select> */}
             </div>
           </div>
         </div>

@@ -58,19 +58,21 @@ const translation = {
     categories: {
       beef: 'בקר',
       lamb: 'כבש',
-      chicken: 'עוף',
-      prepared: 'מוכן לבישול',
-      deli: 'נקניקיות ונקניקים'
+      fish: 'דגים',
+      turkey: 'הודו',
+      calf: 'עגל',
+      chicken: 'עוף'
     },
     filters: {
       all: 'הכל',
       byCategory: 'סינון לפי קטגוריה',
-      byKashrut: 'סינון לפי כשרות'
+      byTerm:'חיפוש חופשי'
+      // byKashrut: 'סינון לפי כשרות'
     },
-    kashrut: {
-      badatz: 'בד״ץ העדה החרדית',
-      yoreDea: 'יורה דעה'
-    },
+    // kashrut: {
+    //   badatz: 'בד״ץ העדה החרדית',
+    //   yoreDea: 'יורה דעה'
+    // },
     productDetails: {
       category: 'קטגוריה',
       kashrutLevel: 'רמת כשרות',

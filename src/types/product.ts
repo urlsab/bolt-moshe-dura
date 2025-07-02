@@ -1,9 +1,9 @@
 export interface Product {
   id: number;
   name: string;
-  category: 'beef' | 'lamb' | 'chicken' | 'prepared' | 'calf' | 'fish' | 'turkey';
-  shortDescription: string;
-  fullDescription: string;
+  category: 'beef' | 'lamb' | 'chicken' | 'calf' | 'fish' | 'turkey';
+  // shortDescription: string;
+  // fullDescription: string;
   price: number;
   weight: string;
   kashrutLevel: string;
