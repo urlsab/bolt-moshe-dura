@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import homepage from '../assets/homepage.webp?url';
+import homepage from '../assets/homepage.webp';
 
 interface HeroProps {
   title?: string;
