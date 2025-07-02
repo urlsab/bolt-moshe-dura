@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import homepage from '../assets/homepage.webp';
+// import homepage from '../assets/homepage.webp';
 
 interface HeroProps {
   title?: string;
@@ -14,7 +14,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({
   title,
   subtitle,
-  imageSrc = `${homepage}`,
+  imageSrc = '../assets/homepage.webp',
   buttonText,
   buttonLink = '/products'
 }) => {
