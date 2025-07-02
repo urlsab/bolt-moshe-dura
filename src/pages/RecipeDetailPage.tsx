@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Seo from '../components/Seo';
 import products from '../data/products';
 import recipes from '../data/recipes';
-import { ArrowRight, Clock, Users, ChevronLeft } from 'lucide-react';
+import { Clock, Users, ChevronLeft } from 'lucide-react';
 
 const RecipeDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
