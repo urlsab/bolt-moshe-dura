@@ -5,7 +5,7 @@ import Seo from '../components/Seo';
 import KashrutBadge from '../components/KashrutBadge';
 import products from '../data/products';
 import recipes from '../data/recipes';
-import { ArrowRight, Check, ChevronLeft } from 'lucide-react';
+import { Check, ChevronLeft } from 'lucide-react';
 
 const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();

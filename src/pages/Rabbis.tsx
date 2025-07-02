@@ -35,7 +35,7 @@ const Rabbis = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         style={{display:'flex', flexDirection:'column', textAlign:'center', justifyContent:'center'}}
       >
-        <p>המלצת הרב יוסף כהן שליט"א</p>        <video 
+        <p>המלצת הרב יגאל כהן שליט"א</p>        <video 
           width={videoSize} 
           height={videoSize} 
           controls
