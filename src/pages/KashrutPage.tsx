@@ -3,9 +3,18 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import SectionTitle from '../components/SectionTitle';
-import KashrutBadge from '../components/KashrutBadge';
-import { Check, ArrowRight, Shield } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import articles from '../data/articles';
+import badats from '../Assets/badatshaedajerusalem.jpg'
+import beityosef from '../Assets/beityosef.png';
+import machpud from '../Assets/haravmachpud.png';
+import landa from '../Assets/haravlanda.png';
+import rubin from '../Assets/haravrubin.jpg';
+import anash from '../Assets/anash.png';
+import navetsion from '../Assets/navetsionbadats.png';
+import bnetsion from '../Assets/bnetsion.png';
+import { motion } from 'framer-motion';
+
 
 const KashrutPage: React.FC = () => {
   const { t } = useTranslation();
@@ -25,184 +34,43 @@ const KashrutPage: React.FC = () => {
           subtitle={t('kashrut.subtitle')}
           center
         />
-        
-        {/* Kashrut Levels */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {/* Badatz */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="bg-primary p-6 text-white">
-              <div className="flex items-center mb-4">
-                <KashrutBadge type="badatz" size="md" />
-                <h2 className="text-2xl font-bold mr-4">{t('kashrut.badatz.title')}</h2>
-              </div>
-              <p>{t('kashrut.badatz.content')}</p>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-4">דרישות מחמירות</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <Check size={20} className="text-primary mt-1 ml-2 shrink-0" />
-                  <span>שחיטה על ידי שוחטים יראי שמיים מובהקים</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={20} className="text-primary mt-1 ml-2 shrink-0" />
-                  <span>בדיקות מחמירות של כלי הדם והריאות</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={20} className="text-primary mt-1 ml-2 shrink-0" />
-                  <span>ניקור מחמיר במיוחד של כל החלקים האסורים</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={20} className="text-primary mt-1 ml-2 shrink-0" />
-                  <span>השגחה מלאה 24/7 בכל שלבי הייצור</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={20} className="text-primary mt-1 ml-2 shrink-0" />
-                  <span>הקפדה על כלים נפרדים וטהרה בתהליך</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          {/* Yore Dea */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="bg-tertiary p-6 text-white">
-              <div className="flex items-center mb-4">
-                <KashrutBadge type="yoreDea" size="md" />
-                <h2 className="text-2xl font-bold mr-4">{t('kashrut.yoreDea.title')}</h2>
-              </div>
-              <p>{t('kashrut.yoreDea.content')}</p>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-4">יסודות הכשרות</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <Check size={20} className="text-tertiary mt-1 ml-2 shrink-0" />
-                  <span>הקפדה על כל סעיפי השולחן ערוך הנוגעים לשחיטה</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={20} className="text-tertiary mt-1 ml-2 shrink-0" />
-                  <span>בדיקות מקיפות לפי כל הסימנים המובאים ביורה דעה</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={20} className="text-tertiary mt-1 ml-2 shrink-0" />
-                  <span>ניקור מלא של כל החלקים האסורים</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={20} className="text-tertiary mt-1 ml-2 shrink-0" />
-                  <span>הקפדה מיוחדת על הלכות מליחה והכשרת הבשר</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={20} className="text-tertiary mt-1 ml-2 shrink-0" />
-                  <span>פיקוח רבני על כל התהליך</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        {/* Kashrut Process */}
-        <div className="mb-16">
-          <SectionTitle 
-            title={t('kashrut.process.title')}
-            center
-          />
-          
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <div className="relative">
-              {/* Process Steps */}
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-                {/* Step 1 */}
-                <div className="text-center relative z-10">
-                  <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                    1
-                  </div>
-                  <h3 className="font-bold mb-2">שחיטה</h3>
-                  <p className="text-sm">{t('kashrut.process.steps.step1')}</p>
-                </div>
-                
-                {/* Step 2 */}
-                <div className="text-center relative z-10">
-                  <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                    2
-                  </div>
-                  <h3 className="font-bold mb-2">בדיקה</h3>
-                  <p className="text-sm">{t('kashrut.process.steps.step2')}</p>
-                </div>
-                
-                {/* Step 3 */}
-                <div className="text-center relative z-10">
-                  <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                    3
-                  </div>
-                  <h3 className="font-bold mb-2">ניקור</h3>
-                  <p className="text-sm">{t('kashrut.process.steps.step3')}</p>
-                </div>
-                
-                {/* Step 4 */}
-                <div className="text-center relative z-10">
-                  <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                    4
-                  </div>
-                  <h3 className="font-bold mb-2">הכשרה</h3>
-                  <p className="text-sm">{t('kashrut.process.steps.step4')}</p>
-                </div>
-                
-                {/* Step 5 */}
-                <div className="text-center relative z-10">
-                  <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                    5
-                  </div>
-                  <h3 className="font-bold mb-2">השגחה</h3>
-                  <p className="text-sm">{t('kashrut.process.steps.step5')}</p>
-                </div>
-              </div>
-              
-              {/* Connecting Line - visible only on md+ screens */}
-              <div className="hidden md:block absolute top-6 left-0 right-0 h-0.5 bg-primary/20 z-0"></div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Supervision */}
-        <div className="mb-16">
-          <SectionTitle 
-            title={t('kashrut.supervision.title')}
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="md:col-span-2">
-              <p className="text-lg mb-6">{t('kashrut.supervision.content')}</p>
-              
-              <div className="bg-primary/5 p-6 rounded-lg">
-                <div className="flex items-start mb-4">
-                  <Shield size={24} className="text-primary mt-1 ml-4 shrink-0" />
-                  <div>
-                    <h3 className="font-bold text-lg">התחייבות שלנו לכשרות</h3>
-                    <p>אנו מתחייבים לספק רק בשר בכשרות מהודרת, תחת פיקוח צמוד ובהתאם לכל כללי ההלכה.</p>
-                  </div>
-                </div>
-                
-                <div className="flex justify-center space-x-8 space-x-reverse mt-6">
-                  <KashrutBadge type="badatz" />
-                  <KashrutBadge type="yoreDea" />
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <img 
-                src="https://images.pexels.com/photos/6210812/pexels-photo-6210812.jpeg" 
-                alt="השגחת כשרות" 
-                className="w-full h-auto rounded-lg shadow-md"
-              />
-            </div>
-          </div>
+
+        <div className="flex flex-wrap justify-center items-center gap-6 mt-20 mb-5 text-center">
+          {[
+            { src: badats, alt: 'בד״ץ העדה החרדית' },
+            { src: beityosef, alt: 'בית יוסף' },
+            { src: machpud, alt: 'הרב מחפוד' },
+            { src: navetsion, alt: 'בד״ץ נווה ציון' },
+            { src: bnetsion, alt: 'בד״ץ בני ציון' },
+            { src: landa, alt: 'הרב לנדא' },
+            { src: rubin, alt: 'הרב רובין' },
+            { src: anash, alt: 'אנש' },
+          ].map((img, idx) => (
+            <motion.img
+              key={img.alt}
+              src={img.src}
+              alt={img.alt}
+              initial={{ opacity: 0, y: -40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: idx * 0.25 }}
+              className="bg-white rounded-lg object-contain"
+              style={{
+                width: 'clamp(110px, 22vw, 220px)',
+                height: 'clamp(110px, 22vw, 220px)',
+                maxWidth: idx === 4 ? 260 : idx === 5 ? 300 : idx === 6 ? 235 : idx === 7 ? 335 : 200,
+                maxHeight: idx === 4 ? 260 : idx === 5 ? 300 : idx === 6 ? 235 : idx === 7 ? 335 : 200,
+                minWidth: 110,
+                minHeight: 110,
+                backgroundColor: 'white',
+                borderRadius: '8px',
+              }}
+            />
+          ))}
         </div>
         
         {/* Related Articles */}
         {kashrutArticles.length > 0 && (
-          <div>
+          <div style={{ marginTop: '80px' }}>
             <SectionTitle 
               title="מאמרים בנושא כשרות"
               center

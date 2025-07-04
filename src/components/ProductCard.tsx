@@ -29,7 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <h3 className="font-bold text-lg text-primary">{product.name}</h3>
           <span className="kashrut-badge">{product.kashrutLevel}</span>
         </div>
-        <p className="text-dark/70 text-sm mt-2">{product.shortDescription}</p>
+        {/* <p className="text-dark/70 text-sm mt-2">{product.shortDescription}</p> */}
         <div className="mt-4 flex items-center justify-between">
           <span className="text-lg font-bold">₪{product.price.toFixed(2)}</span>
           <span className="text-xs text-dark/60">{product.weight}</span>
