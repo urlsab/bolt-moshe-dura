@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-import Logo from './Logo';
+import moshelogo from '../Assets/moshelogo.png';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -15,7 +15,8 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
-              <Logo className="h-12 w-auto text-secondary" />
+              {/* <Logo className="h-12 w-auto text-secondary" /> */}
+              <img src={moshelogo} alt="משה דורה לוגו" style={{height:"86px",width:"86px",borderRadius:"50%",boxShadow:"0 2px 8px rgba(0,0,0,0.08)",background:"white",objectFit:"cover"}} />
               <div className="mr-3">
                 <h3 className="text-xl font-frank font-bold text-white">
                   {t('common.siteTitle')}
@@ -26,11 +27,11 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-light/80 mb-4">
-              {t('home.about.content').substring(0, 150)}...
+              {t('home.about.content').substring(0, 230)}
             </p>
-            <Link to="/contact" className="text-secondary hover:underline">
+            {/* <Link to="/contact" className="text-secondary hover:underline">
               {t('common.buttons.contactUs')}
-            </Link>
+            </Link> */}
           </div>
 
           {/* Quick Links */}
@@ -70,9 +71,16 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+
+              </li>
+              <Link to="/testimonials" className="text-light/80 hover:text-secondary transition-colors">
+                  {t('common.nav.testimonials')}
+                </Link>
+              <li>
                 <Link to="/contact" className="text-light/80 hover:text-secondary transition-colors">
                   {t('common.nav.contact')}
                 </Link>
+                
               </li>
             </ul>
           </div>

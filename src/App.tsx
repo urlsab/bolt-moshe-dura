@@ -12,10 +12,13 @@ import RecipeDetailPage from './pages/RecipeDetailPage';
 import ArticleDetailPage from './pages/ArticleDetailPage';
 import Rabbis from './pages/Rabbis';
 import NotFoundPage from './pages/NotFoundPage';
+import TestimonialsPage from './pages/TestimonialsPage';
+import { ScrollToTop } from '../ScrollToTop';
 
 function App() {
   return (
     <Layout>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/rabbis" element={<Rabbis />} />
@@ -27,6 +30,7 @@ function App() {
         <Route path="/recipes/:id" element={<RecipeDetailPage />} />
         <Route path="/promotions" element={<PromotionsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Layout>

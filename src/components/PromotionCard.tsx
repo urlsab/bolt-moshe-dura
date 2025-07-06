@@ -37,7 +37,7 @@ const PromotionCard: React.FC<PromotionCardProps> = ({ promotion }) => {
               <span className="text-dark/50 line-through">₪{promotion.regularPrice.toFixed(2)}</span>
               <span className="text-xl font-bold text-primary">₪{promotion.salePrice.toFixed(2)}</span>
             </div>
-            <button className="btn-secondary">הוסף לסל</button>
+            {/* <button className="btn-secondary">הוסף לסל</button> */}
           </div>
         </div>
       </div>

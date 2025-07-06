@@ -1,12 +1,84 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Seo from '../components/Seo';
 import SectionTitle from '../components/SectionTitle';
 import ContactForm from '../components/ContactForm';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, ChevronDown } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+// FAQ Component
+const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="border-b border-gray-200 last:border-0 py-4" dir="rtl">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex flex-row-reverse items-center w-full text-right gap-1 justify-end"
+        style={{padding: 0}}
+      >
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <ChevronDown className="text-primary shrink-0" />
+        </motion.div>
+        <h3 className="font-bold text-lg mr-1 mb-0 text-right w-fit">{question}</h3>
+      </button>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden"
+          >
+            <p className="pt-3 pb-1 text-right" dir="rtl">{answer}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
 const ContactPage: React.FC = () => {
   const { t } = useTranslation();
+
+  const faqItems = [
+    {
+      question: "כיצד ניתן להגיע אליכם?",
+      answer: "כתובתינו - רחוב צרעה 3 ת''א. בוויז ניתן לרשום כתובת זו או איטליז למהדרין"
+    },
+    {
+      question: "האם יש לכם מבצעים?",
+      answer: "בהחלט! מידי שבוע אנו מעדכנים מבצעים באתר. ניתן להירשם לניוזלטר שלנו באתר לקבלת עדכונים על מבצעים ישירות למייל."
+    },
+    {
+      question: "מה רמת הכשרות של מוצרי הבשר והדגים שלכם?",
+      answer: "כל מוצרי הבשר והדגים שלנו כשרים למהדרין בלבד -ביניהם: בד''ץ בית יוסף, בד''ץ העדה החרדית, הרב רובין, הרב לנדא, תפארת אנ''ש של חב''ד, הרב מחפוד ועוד."
+    },
+    {
+      question: "אילו רבנים ממליצים עליכם?",
+      answer: " הרב אברהם יוסף, ראש בית המדרש אהלי אברהם - הרב משה חזקיהו, ראש מוסדות יביע אומר וארגון ענפים - הרב יגאל כהן, ראש מוסדות וקרבנו לעבודתך - הרב רפאל זר ועוד. ניתן לראות באתר סרטונים של רבנים אלו ועוד הממליצים עלינו."
+    },
+    {
+      question: "האם אתם עושים משלוחים?",
+      answer: "בוודאי! אנו עושים משלוחים לכל גוש דן. למשלוח - חייגו 03-6312008. "
+    },
+    {
+      question: "האם יש אפשרות להכנת מנות מיוחדות?",
+      answer: "כן, אנחנו מתמחים בהכנת מנות מיוחדות לפי דרישה. ניתן להזמין נתחים מיוחדים, בשר קצוץ בהתאמה אישית, או מנות מוכנות לאירועים."
+    },
+    {
+      question: "מה שעות הפתיחה שלכם?",
+      answer: "למעט ימי שבת וראשון שאנו סגורים, אנו פתוחים משעות הבוקר עד שעות הערב.  את הפירוט המלא של השעות ניתן למצוא כאן באתר."
+    },
+    {
+      question: "האם אתם פתוחים בערבי חג?",
+      answer: "בערבי חג אנחנו פתוחים בשעות מיוחדות. מומלץ להתקשר מראש לבירור השעות המדויקות ולהזמין את המוצרים מבעוד מועד."
+    }
+  ];
   
   return (
     <div className="pt-24 pb-16 animate-fadeIn">
@@ -77,11 +149,11 @@ const ContactPage: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Map */}
         <div className="rounded-lg overflow-hidden shadow-md h-96 mb-12">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.9273848764925!2d35.212227!3d31.778539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7d634c1fc4b%3A0xfd04760a8f1288c5!2sHerzl%20St%20123%2C%20Jerusalem%2C%20Israel!5e0!3m2!1sen!2sus!4v1654287936721!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.8139450919143!2d34.8118581257419!3d32.0472271209259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b1986764251%3A0x13e3285c8a8bf6ef!2z15DXmNec15nXliDXnNee15TXk9eo15nXnw!5e0!3m2!1siw!2sil!4v1751791838338!5m2!1siw!2sil"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -94,28 +166,16 @@ const ContactPage: React.FC = () => {
         
         {/* FAQ */}
         <div className="bg-white rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold mb-6 text-center">שאלות נפוצות</h2>
+          <h2 className="text-2xl font-bold mb-8 text-center">שאלות נפוצות</h2>
           
-          <div className="space-y-6">
-            <div>
-              <h3 className="font-bold text-lg mb-2">האם יש משלוחים?</h3>
-              <p>כן, אנו מציעים שירות משלוחים באזור ירושלים והסביבה. משלוח חינם בהזמנה מעל 300 ₪.</p>
-            </div>
-            
-            <div>
-              <h3 className="font-bold text-lg mb-2">מה רמת הכשרות שלכם?</h3>
-              <p>כל המוצרים שלנו כשרים למהדרין בהשגחת בד״ץ העדה החרדית ויורה דעה. ניתן לראות את תעודות הכשרות בחנות.</p>
-            </div>
-            
-            <div>
-              <h3 className="font-bold text-lg mb-2">האם ניתן להזמין מראש?</h3>
-              <p>בהחלט! מומלץ להזמין מראש, במיוחד לקראת שבתות וחגים. ניתן להזמין טלפונית או דרך טופס יצירת הקשר.</p>
-            </div>
-            
-            <div>
-              <h3 className="font-bold text-lg mb-2">האם ניתן לשלם בכרטיס אשראי?</h3>
-              <p>כן, אנו מקבלים את כל סוגי כרטיסי האשראי, מזומן, והעברות בנקאיות.</p>
-            </div>
+          <div className="space-y-2">
+            {faqItems.map((item, index) => (
+              <FAQItem
+                key={index}
+                question={item.question}
+                answer={item.answer}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -5,11 +5,11 @@ import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
 import ProductCard from '../components/ProductCard';
 import RecipeCard from '../components/RecipeCard';
-import KashrutBadge from '../components/KashrutBadge';
 import products from '../data/products';
 import recipes from '../data/recipes';
 import promotions from '../data/promotions';
 import { Check, Award, Leaf, ShieldCheck } from 'lucide-react';
+import moshe from '../Assets/mosheandharavigal.jpg'
 
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
@@ -83,13 +83,13 @@ const HomePage: React.FC = () => {
             
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/6941026/pexels-photo-6941026.jpeg" 
+                src={moshe} 
                 alt="משה דורה באיטליז" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
               <div className="absolute bottom-6 right-6 bg-white p-4 rounded-lg shadow-lg">
                 <h3 className="text-primary font-bold text-lg">משה דורה</h3>
-                <p className="text-sm text-dark/70">בעלים, איטליז למהדרין</p>
+                <p className="text-sm text-dark/70">מימין לשמאל: משה דורה, הרב יגאל כהן</p>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ const HomePage: React.FC = () => {
                 <ShieldCheck size={48} className="text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3">השגחה מחמירה</h3>
-              <p>כל מוצרינו נמצאים תחת השגחה מחמירה של בד״ץ העדה החרדית, ללא פשרות.</p>
+              <p>כל מוצרינו נמצאים תחת השגחה מחמירה של כשרויות מהדרין בלבד, ללא פשרות.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center transition-transform hover:scale-105">
@@ -128,11 +128,6 @@ const HomePage: React.FC = () => {
               <h3 className="text-xl font-bold mb-3">טריות מובטחת</h3>
               <p>הבשר נמכר טרי, נשחט לפי דרישה ומגיע אל האיטליז תוך זמן קצר.</p>
             </div>
-          </div>
-          
-          <div className="flex justify-center space-x-8 space-x-reverse">
-            <KashrutBadge type="badatz" size="lg" />
-            <KashrutBadge type="yoreDea" size="lg" />
           </div>
           
           <div className="text-center mt-12">
@@ -210,25 +205,30 @@ const HomePage: React.FC = () => {
               <div className="mb-4 text-secondary">
                 ★★★★★
               </div>
-              <p className="italic mb-4">"אני קונה אצל משה כבר 10 שנים. הבשר תמיד טרי, האיכות מעולה והכשרות מהודרת. ממליץ בחום!"</p>
-              <div className="font-bold">- יוסי כהן, ירושלים</div>
+              <p className="italic mb-4">"הבשר שם הוא בשר מהודר ואיכותי! כדאי לכם לעשות את כל הקניות של הבשר שלכם רק אצלו! אני בעצמי קונה רק אצלו! אני סומך על יראת השמים שלו"</p>
+              <div className="font-bold">הרב יגאל כהן</div>
             </div>
             
             <div className="bg-light p-6 rounded-lg">
               <div className="mb-4 text-secondary">
                 ★★★★★
               </div>
-              <p className="italic mb-4">"הקבב הביתי של האיטליז פשוט מושלם. השירות תמיד אדיב ומקצועי, וניכר שמשה מקפיד על איכות ללא פשרות."</p>
-              <div className="font-bold">- אברהם לוי, בני ברק</div>
+              <p className="italic mb-4">"חווית הקניה אצל משה כיפית, מקבלים שירות מכל הלב. הכל נקי טרי ואיכותי!"</p>
+              <div className="font-bold">סופי, אור יהודה</div>
             </div>
             
             <div className="bg-light p-6 rounded-lg">
               <div className="mb-4 text-secondary">
                 ★★★★★
               </div>
-              <p className="italic mb-4">"כשרות מהודרת, טריות מושלמת ושירות אישי. לא מתפשרים על פחות מהטוב ביותר לשולחן השבת שלנו."</p>
-              <div className="font-bold">- משפחת פרידמן, ירושלים</div>
+              <p className="italic mb-4">"בראש ובראשונה האיכות שלכם מעל כולם! עברתי בהרבה איטליזים ולא מצאתי בשר איכותי כמו שיש אצלכם. מעבר לזה, השירות שלכם סוף הדרך. נותנים את מלוא היחס והכבוד לכל לקוח באשר הוא. כבר כמה שנים שאני קונה אצלכם ומרוצה מאוד!"</p>
+              <div className="font-bold">אלמליח כהן, בני ברק</div>
             </div>
+          </div>
+          <div className="text-center mt-8">
+            <Link to="/testimonials" className="btn-outline">
+              לכל ההמלצות
+            </Link>
           </div>
         </div>
       </section>
