@@ -9,7 +9,7 @@ interface SeoProps {
 }
 
 const Seo: React.FC<SeoProps> = ({ 
-  title = 'איטליז למהדרין - משה דורה',
+  title = 'איטליז למהדרין | האיטליז של בני התורה',
   description = 'בשר כשר למהדרין בהשגחת הבד״ץ. מגוון רחב של מוצרי בשר כשרים למהדרין מן המהדרין.',
   keywords = 'איטליז כשר, בשר כשר למהדרין, בד״ץ',
   ogImage = '/og-image.jpg'
