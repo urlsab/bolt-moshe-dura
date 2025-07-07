@@ -4,6 +4,7 @@ import haravRafael from '../Assets/harav zer.mp4';
 import haravDavid from '../Assets/harav david.mp4';
 import haravRachamim from '../Assets/harav rahamim.mp4';
 import haravSharabi from '../Assets/harav sharabi.mp4';
+import haravigal2 from '../Assets/harav igal 2.mp4';
 import { useEffect, useState } from 'react';
 
 const Rabbis = () => {
@@ -118,6 +119,23 @@ const Rabbis = () => {
           style={{ borderRadius: '12px', overflow: 'hidden' }}
         >
           <source src={haravSharabi} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </motion.div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 1 }}
+        style={{display:'flex', flexDirection:'column', textAlign:'center', justifyContent:'center'}}
+      >
+        <p>המלצת הרב יגאל כהן שליט"א</p>        <video 
+          width={videoSize*1.5} 
+          height={videoSize*1.5} 
+          controls
+          style={{ borderRadius: '12px', overflow: 'hidden' }}
+        >
+          <source src={haravigal2} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </motion.div>

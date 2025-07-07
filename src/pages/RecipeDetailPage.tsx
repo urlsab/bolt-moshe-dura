@@ -180,7 +180,7 @@ const RecipeDetailPage: React.FC = () => {
                 </li>
                 <li className="flex items-start">
                   <div className="h-2 w-2 rounded-full bg-primary mt-2 ml-2"></div>
-                  <p>שימוש בבשר טרי וסניקי משפר משמעותית את הטעם</p>
+                  <p>שימוש בבשר טרי ונקי משפר משמעותית את הטעם</p>
                 </li>
                 <li className="flex items-start">
                   <div className="h-2 w-2 rounded-full bg-primary mt-2 ml-2"></div>

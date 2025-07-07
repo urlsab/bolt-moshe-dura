@@ -10,6 +10,7 @@ const translation = {
       kashrut: 'כשרות',
       recipes: 'מתכונים',
       promotions: 'מבצעים',
+      videos: 'וידאו',
       testimonials: 'המלצות',
       contact: 'צור קשר'
     },

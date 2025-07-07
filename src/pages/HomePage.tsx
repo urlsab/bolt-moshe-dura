@@ -72,7 +72,7 @@ const HomePage: React.FC = () => {
                   <div className="mt-1 ml-3 p-1 rounded-full bg-primary/20">
                     <Check size={16} className="text-primary" />
                   </div>
-                  <p>שירות אישי ומקצועי על ידי צוות מנוסה ואדיב</p>
+                  <p>שירות, אמינות וכשרות ללא תחרות</p>
                 </div>
               </div>
               
@@ -88,7 +88,7 @@ const HomePage: React.FC = () => {
                 className="rounded-lg shadow-lg w-full h-auto"
               />
               <div className="absolute bottom-6 right-6 bg-white p-4 rounded-lg shadow-lg">
-                <h3 className="text-primary font-bold text-lg">משה דורה</h3>
+                <h3 className="text-primary font-bold text-lg">משה דורה, בעלים</h3>
                 <p className="text-sm text-dark/70">מימין לשמאל: משה דורה, הרב יגאל כהן</p>
               </div>
             </div>
@@ -213,16 +213,16 @@ const HomePage: React.FC = () => {
               <div className="mb-4 text-secondary">
                 ★★★★★
               </div>
-              <p className="italic mb-4">"חווית הקניה אצל משה כיפית, מקבלים שירות מכל הלב. הכל נקי טרי ואיכותי!"</p>
-              <div className="font-bold">סופי, אור יהודה</div>
+              <p className="italic mb-4">"הזדמנות מצוינת להביע הערכה על השירות האדיב והיעיל. בכל הזמנה אני מקבלת את הכל מסודר ונקי. אסטטי ומזמין. מעולם לא היתה תקלה בהזמנה או אכזבה ממוצר שקניתי. השניצלים פרוסים דק מאוד שאין בשום מקום אחר. העוף נקי ומחולק. תמיד כשיש אורחים הם מתפעלים מהבשר האיכותי ולנו כיף לארח עם האיכות שלכם. תודה!"</p>
+              <div className="font-bold">רחל כהן, בני ברק</div>
             </div>
             
             <div className="bg-light p-6 rounded-lg">
               <div className="mb-4 text-secondary">
                 ★★★★★
               </div>
-              <p className="italic mb-4">"בראש ובראשונה האיכות שלכם מעל כולם! עברתי בהרבה איטליזים ולא מצאתי בשר איכותי כמו שיש אצלכם. מעבר לזה, השירות שלכם סוף הדרך. נותנים את מלוא היחס והכבוד לכל לקוח באשר הוא. כבר כמה שנים שאני קונה אצלכם ומרוצה מאוד!"</p>
-              <div className="font-bold">אלמליח כהן, בני ברק</div>
+              <p className="italic mb-4">"אני ממליצה בחום ואהבה על אטליז משה. בשר כשר חלק. אם איכות טובה וטרייה. תמיד ההזמנה מגיעה מסודרת מחולקת יפה לפי מה שאני מבקשת. השרות ומישלוח מגיע אלי לגיבעתיים בזמן בשקיות ששומרות על הקור. מאוד מרוצה. שבורא עולם יזכה את כולנו ליקנות בשר חלק כשר ואיכותי. אצל אטליז משה. תודה רבה. גם שמשה מזכה אותנו לשיעורי תורה. אשריך משה."</p>
+              <div className="font-bold">חלי, גבעתיים</div>
             </div>
           </div>
           <div className="text-center mt-8">

@@ -71,16 +71,19 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-
+                <Link to="/videos" className="text-light/80 hover:text-secondary transition-colors">
+                  {t('common.nav.videos')}
+                </Link>
               </li>
-              <Link to="/testimonials" className="text-light/80 hover:text-secondary transition-colors">
+              <li>
+                <Link to="/testimonials" className="text-light/80 hover:text-secondary transition-colors">
                   {t('common.nav.testimonials')}
                 </Link>
+              </li>
               <li>
                 <Link to="/contact" className="text-light/80 hover:text-secondary transition-colors">
                   {t('common.nav.contact')}
                 </Link>
-                
               </li>
             </ul>
           </div>
