@@ -34,7 +34,7 @@ const translation = {
     hero: {
       title: 'איטליז למהדרין',
       subtitle: 'האיטליז של בני התורה',
-      welcomeMessage: 'מעל 20 שנות ותק'
+      welcomeMessage: ' כשרות למהדרין בלבד | משלוחים לכל גוש דן | מעל 20 שנות ותק '
     },
     featured: {
       title: 'מוצרים מובחרים',

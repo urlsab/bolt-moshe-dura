@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import hilula from '../Assets/hilula.mp4';
 
 // Example video imports (replace with your own)
 // import exampleVideo1 from '../Assets/example1.mp4';
@@ -7,9 +8,9 @@ import { useEffect, useState } from 'react';
 
 const videos = [
   {
-    title: 'כותרת וידאו 1',
+    title: 'מפנקים בהילולא!',
     // src: exampleVideo1,
-    src: '', // Add your video source here
+    src: `${hilula}`, // Add your video source here
   },
   {
     title: 'כותרת וידאו 2',
@@ -26,7 +27,7 @@ const VideosPage = () => {
     const handleResize = () => {
       if (window.innerWidth <= 640) {
         setVideoSize(200);
-      } else if (window.innerWidth <= 1024) {
+      } else if (window.innerWidth <= 1400) {
         setVideoSize(250);
       } else {
         setVideoSize(300);
@@ -38,7 +39,7 @@ const VideosPage = () => {
   }, []);
 
   return (
-    <div style={{ minHeight: '80vh', paddingTop: 40, marginTop:'60px' }}>
+    <div style={{ minHeight: '80vh', paddingTop: 40, marginTop:'50px', marginBottom: '30px' }}>
       <div
         style={{
           display: 'flex',

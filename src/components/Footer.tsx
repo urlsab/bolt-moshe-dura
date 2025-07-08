@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-4">
               {/* <Logo className="h-12 w-auto text-secondary" /> */}
-              <img src={moshelogo} alt="משה דורה לוגו" style={{height:"86px",width:"86px",borderRadius:"50%",boxShadow:"0 2px 8px rgba(0,0,0,0.08)",background:"white",objectFit:"cover"}} />
+              <img src={moshelogo} alt="משה דורה לוגו" style={{height:"90px",width:"125px",borderRadius:"50%",boxShadow:"0 2px 8px rgba(0,0,0,0.08)",background:"white",objectFit:"cover"}} />
               <div className="mr-3">
                 <h3 className="text-xl font-frank font-bold text-white">
                   {t('common.siteTitle')}
