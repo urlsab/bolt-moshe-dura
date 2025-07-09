@@ -14,9 +14,8 @@ const RecipesPage: React.FC = () => {
   const filteredRecipes = useMemo(() => {
     return recipes.filter((recipe) => {
       // Apply search filter
-      const matchesSearch = recipe.title.includes(searchTerm) || 
-                            recipe.shortDescription.includes(searchTerm);
-      
+      const matchesSearch = recipe.title.includes(searchTerm) || recipe.shortDescription.includes(searchTerm);
+                            
       // Apply category filter
       const matchesCategory = selectedCategory === 'all' || recipe.category === selectedCategory;
       

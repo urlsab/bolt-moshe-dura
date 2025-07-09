@@ -12,4 +12,5 @@ export interface Recipe {
   kashrutNotes?: string;
   imageSrc: string;
   relatedProducts?: number[];
+  videoSrc?: string; // Optional video for recipe
 }

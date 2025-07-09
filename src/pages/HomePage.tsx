@@ -72,7 +72,7 @@ const HomePage: React.FC = () => {
                   <div className="mt-1 ml-3 p-1 rounded-full bg-primary/20">
                     <Check size={16} className="text-primary" />
                   </div>
-                  <p>שירות, אמינות וכשרות ללא תחרות</p>
+                  <p>שירות משלוחים לכל גוש דן !</p>
                 </div>
               </div>
               

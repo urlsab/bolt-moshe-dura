@@ -10,7 +10,7 @@ const RecipeDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { t } = useTranslation();
-  
+
   const recipe = recipes.find((p) => p.id === Number(id));
   
   if (!recipe) {
@@ -58,6 +58,8 @@ const RecipeDetailPage: React.FC = () => {
             </div>
           </div>
         </div>
+        
+        
         
         {/* Recipe Details */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -126,6 +128,29 @@ const RecipeDetailPage: React.FC = () => {
                 </ol>
               </div>
             </div>
+
+            {/* Optional Recipe Video */}
+            {recipe.videoSrc && (
+              <div className="mb-8 flex flex-col items-center">
+                <h2 className="text-xl font-bold mb-4 text-primary">סרטון הדרכה</h2>
+                <div className="flex justify-center w-full">
+                  <div className="rounded-xl shadow-lg bg-[#222] overflow-hidden" style={{ maxWidth: 'fit-content' }}>
+                    <video
+                      src={recipe.videoSrc}
+                      controls
+                      className="rounded-xl"
+                      style={{ 
+                        maxHeight: '60vh',
+                        maxWidth: '100%',
+                        width: 'auto',
+                        height: 'auto'
+                      }}
+                      preload="metadata"
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
             
             {/* Kashrut Notes */}
             {recipe.kashrutNotes && (

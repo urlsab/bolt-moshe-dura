@@ -64,7 +64,7 @@ const Hero: React.FC<HeroProps> = ({
         <div className="absolute inset-0 bg-black opacity-60"></div>
       </div>
       {/* Content: Video + Text side by side */}
-      <div className="container-custom relative h-full flex flex-col md:flex-row items-center justify-between z-10 h-full">
+      <div className="container-custom relative flex flex-col md:flex-row items-center justify-between z-10 h-full">
 
       {/* Text Section */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-2xl animate-slideRight p-4 md:p-8">
@@ -83,6 +83,7 @@ const Hero: React.FC<HeroProps> = ({
           >
             {heroButtonText}
           </Link>
+          
         </div>
 
         {/* Video Section */}
@@ -90,7 +91,6 @@ const Hero: React.FC<HeroProps> = ({
           <video
             ref={videoRef}
             src={tadmitatliz}
-            autoPlay
             loop
             playsInline
             controls

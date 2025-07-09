@@ -6,11 +6,11 @@ import haravRachamim from '../Assets/harav rahamim.mp4';
 import haravSharabi from '../Assets/harav sharabi.mp4';
 import haravigal2 from '../Assets/harav igal 2.mp4';
 import { useEffect, useState } from 'react';
-import haravavrahamyosef from '../Assets/haravavrahamyosef.jpg';
 import haravmoshehizkiyahu from '../Assets/haravmoshehizkiyahu.jpg';
 import haravezratrav from '../Assets/haravezratrav.png';
 import haravboazbetsaleli from '../Assets/haravboazbetsaleli.jpg';
 import haravyosefarbiv from '../Assets/haravyosefarbiv.jpg';
+import haravmosheparzis from '../Assets/haravmosheparzis.png';
 
 const Rabbis = () => {
   const [videoSize, setVideoSize] = useState(300);
@@ -167,11 +167,13 @@ const Rabbis = () => {
         display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '32px', margin: '40px 0'
       }}>
         { [
-          { src: haravavrahamyosef, name: 'הרב אברהם יוסף שליט"א' },
           { src: haravmoshehizkiyahu, name: 'הרב משה חזקיהו שליט"א' },
           { src: haravezratrav, name: 'הרב עזרא טראב שליט"א' },
            { src: haravyosefarbiv, name: 'הרב יוסף ארביב שליט"א' },
-          { src: haravboazbetsaleli, name: 'הרב בועז בצלאלי שליט"א' }
+          { src: haravboazbetsaleli, name: 'הרב בועז בצלאלי שליט"א' },
+          { src: haravmosheparzis, name: 'הרב משה פרזיס שליט"א' }
+          // ,
+          // { src: haravboazbetsaleli, name: 'הרב רפאל זביחי שליט"א' }
          
         ].map((rabbi, idx) => (
           <motion.div
@@ -193,19 +195,31 @@ const Rabbis = () => {
               textAlign:'center'
             }}
           >
-            <img
-              src={rabbi.src}
-              alt={rabbi.name}
-              style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '12px',
-                objectFit: 'cover',
-                marginBottom: '12px',
-                background: '#f3f3f3',
-                minHeight: '180px',
-              }}
-            />
+            <div style={{
+        width: '100%',
+        aspectRatio: '3/4', // Portrait ratio
+        background: '#f3f3f3',
+        borderRadius: '12px',
+        overflow: 'hidden',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginBottom: '12px',
+        minHeight: '180px',
+        maxHeight: '320px',
+      }}>
+              <img
+                src={rabbi.src}
+                alt={rabbi.name}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  borderRadius: '12px',
+                  display: 'block',
+                }}
+              />
+              </div>
             <div style={{fontWeight: 500, fontSize: 18, color: '#222'}}>{rabbi.name}</div>
           </motion.div>
         ))}

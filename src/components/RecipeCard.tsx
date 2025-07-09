@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import { Clock } from 'lucide-react';
 import { Recipe } from '../types/recipe';
 
@@ -9,7 +9,7 @@ interface RecipeCardProps {
 }
 
 const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   
   return (
     <Link to={`/recipes/${recipe.id}`} className="card hover:scale-[1.02] transition-transform">

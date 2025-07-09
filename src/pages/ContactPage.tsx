@@ -136,7 +136,7 @@ const ContactPage: React.FC = () => {
                     <h3 className="font-bold mb-1">{t('contact.info.hours.title')}</h3>
                     <p>{t('contact.info.hours.weekdays')}</p>
                     <p>{t('contact.info.hours.friday')}</p>
-                    <p>{t('contact.info.hours.saturday')}</p>
+                    {/* <p>{t('contact.info.hours.saturday')}</p> */}
                   </div>
                 </div>
               </div>

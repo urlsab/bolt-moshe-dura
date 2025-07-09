@@ -108,7 +108,14 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Clock size={18} className="text-secondary ml-2" />
-                <span className="text-light/80">{t('common.footer.hours')}</span>
+                <span className="text-light/80">
+                  {/* <span className="font-bold">שעות פתיחה:</span> */}
+                  <ul className="list-none p-0 m-0">
+                    {(t('common.footer.hours', { returnObjects: true }) as string[]).map((line, idx) => (
+                      <li key={idx}>{line}</li>
+                    ))}
+                  </ul>
+                </span>
               </li>
             </ul>
           </div>

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import hilula from '../Assets/hilula.mp4';
+import naki from '../Assets/naki.mp4'; // Example video import (replace with your own)
 
 // Example video imports (replace with your own)
 // import exampleVideo1 from '../Assets/example1.mp4';
@@ -13,9 +14,9 @@ const videos = [
     src: `${hilula}`, // Add your video source here
   },
   {
-    title: 'כותרת וידאו 2',
+    title: 'דואגים להזמנות שלכם!',
     // src: exampleVideo2,
-    src: '', // Add your video source here
+    src: `${naki}`, // Add your video source here
   },
   // הוסף כאן עוד וידאוים
 ];

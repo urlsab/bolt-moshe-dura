@@ -2,6 +2,10 @@ import { Recipe } from '../types/recipe';
 import asadobasir from '../Assets/asadobasir.jpg';
 import tslaotkevesisbetibul from '../Assets/tslaotkevesisbetibul.png';
 import tslistake from '../Assets/tslistake.png';
+import sukariotfile from '../Assets/sukariotfile.jpeg';
+import perukof from '../Assets/perukof.jpg'; // Assuming this is the correct path for the video
+import file from '../Assets/file.mp4';
+import peruk from '../Assets/peruk.mp4'; // Assuming this is the correct path for the video
 
 const recipes: Recipe[] = [
   {
@@ -92,6 +96,42 @@ const recipes: Recipe[] = [
     kashrutNotes: '',
     imageSrc: `${tslistake}`,
     relatedProducts: []
+  },
+  {
+    id: 4,
+    title: 'סוכריות פילה',
+    shortDescription: 'המדריך המלא להכנת סוכריות פילה מעולות',
+    fullDescription: 'סרטון הדרכה להכנת סוכריות פילה',
+    category: 'כבש, עוף, בקר',
+    prepTime: '-',
+    cookTime: '-',
+    servings: 0,
+    ingredients: ['פילה בקר, שומן כבש, שניצל'],
+    instructions: [
+      'עקבו אחר ההוראות בסרטון',
+    ],
+    kashrutNotes: '',
+    imageSrc: `${sukariotfile}`,
+    relatedProducts: [],
+    videoSrc: `${file}`
+  },
+  {
+    id: 5,
+    title: 'פירוק עוף לשניצל ופרגית',
+    shortDescription: 'המדריך המלא לפירוק עוף לשניצל ופרגית',
+    fullDescription: 'סרטון הדרכה לפירוק עוף לשניצל ופרגית',
+    category: 'עוף',
+    prepTime: '-',
+    cookTime: '-',
+    servings: 0,
+    ingredients: ['עוף שלם'],
+    instructions: [
+      'עקבו אחר ההוראות בסרטון',
+    ],
+    kashrutNotes: '',
+    imageSrc: `${perukof}`,
+    relatedProducts: [],
+    videoSrc: `${peruk}`
   }
 ];
 
