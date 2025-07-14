@@ -163,7 +163,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <a
-        href="https://api.whatsapp.com/send?phone=+97250425700"
+        href="https://api.whatsapp.com/send?phone=+972504257000"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="צ'אט בוואטסאפ"
@@ -180,7 +180,13 @@ const Footer: React.FC = () => {
         onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.08)')}
         onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')}
       >
-        <FaWhatsapp style={{height:'50px', width:'50px', color:'white', backgroundColor:'teal green', borderRadius:'50% 50% 50% 40%' }} />
+        <FaWhatsapp style={{
+          height: 'clamp(32px, 7vw, 44px)',
+          width: 'clamp(32px, 7vw, 44px)',
+          color: 'white',
+          backgroundColor: 'green',
+          borderRadius: '50% 50% 50% 40%'
+        }} />
       </a>
       <a
         href="https://waze.com/ul?q=צרעה+3+תל+אביב&navigate=yes"
@@ -200,7 +206,13 @@ const Footer: React.FC = () => {
         onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.08)')}
         onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')}
       >
-        <FaWaze style={{height:'50px', width:'50px', color:'black', backgroundColor:'RGB(5, 200, 247)', borderRadius:'40% 40% 40% 40%' }} />
+        <FaWaze style={{
+          height: 'clamp(32px, 7vw, 44px)',
+          width: 'clamp(32px, 7vw, 44px)',
+          color: 'black',
+          backgroundColor: 'RGB(5, 200, 247)',
+          borderRadius: '40% 40% 40% 40%'
+        }} />
       </a>
     </footer>
   );

@@ -57,7 +57,7 @@ const PromotionsPage: React.FC = () => {
         </div>
         
         {/* Weekly Subscription */}
-        <div className="bg-white p-8 rounded-lg shadow-md">
+        {/* <div className="bg-white p-8 rounded-lg shadow-md">
           <div className="text-center mb-6">
             <h2 className="text-2xl font-bold mb-2">רוצים לקבל עדכונים על מבצעים חדשים?</h2>
             <p className="text-dark/70">הירשמו לרשימת התפוצה שלנו וקבלו מבצעים והטבות ישירות למייל</p>
@@ -76,7 +76,7 @@ const PromotionsPage: React.FC = () => {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );
