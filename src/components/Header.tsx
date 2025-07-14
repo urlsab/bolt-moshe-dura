@@ -42,19 +42,17 @@ const Header: React.FC = () => {
     { name: t('common.nav.kashrut'), path: '/kashrut' },
     { name: t('common.nav.recipes'), path: '/recipes' },
     { name: t('common.nav.promotions'), path: '/promotions' },
-    { name: t('common.nav.videos'), path: '/videos' },
-    { name: t('common.nav.testimonials'), path: '/testimonials' },
     { name: t('common.nav.contact'), path: '/contact' },
   ];
 
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-2.5'
       }`}
     >
       <div className="container-custom flex justify-between items-center">
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center" style={{ alignItems: 'flex-start',  }}>
           <Logo className={`h-12 w-auto ${isScrolled ? 'text-primary' : 'text-primary'}`} />
           <div className="mr-3">
             <h1 className={`text-xl font-frank font-bold ${isScrolled ? 'text-primary' : 'text-primary'}`}>

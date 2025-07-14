@@ -7,6 +7,8 @@ import perukof from '../Assets/perukof.jpg'; // Assuming this is the correct pat
 import file from '../Assets/file.mp4';
 import peruk from '../Assets/peruk.mp4'; // Assuming this is the correct path for the video
 import bakarmap from '../Assets/bakarmap.png'; // Assuming this is the correct path for the image
+import mikra from '../Assets/mikra.png'; // Assuming this is the correct path for the image
+
 
 const recipes: Recipe[] = [
   {
@@ -150,7 +152,8 @@ const recipes: Recipe[] = [
     kashrutNotes: '',
     imageSrc: `${bakarmap}`,
     relatedProducts: [],
-    bigImg: `${bakarmap}`
+    bigImg: `${bakarmap}`,
+    bigImg2: `${mikra}` // Assuming this is the correct path for the second large image
   }
 ];
 

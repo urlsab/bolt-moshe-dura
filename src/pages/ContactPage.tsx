@@ -128,7 +128,7 @@ const ContactPage: React.FC = () => {
                       </a>
                       <span className="mx-1">|</span>
                       <a
-                        href="https://api.whatsapp.com/send?phone=0504257000"
+                        href="https://api.whatsapp.com/send?phone=+972504257000"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary underline hover:text-secondary text-base text-left"

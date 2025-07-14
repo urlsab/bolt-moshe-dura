@@ -41,39 +41,6 @@ const promotions: Promotion[] = [
     discount: 19,
     validUntil: formatDate(nextFriday),
     imageSrc: 'https://images.pexels.com/photos/8250190/pexels-photo-8250190.jpeg'
-  },
-  {
-    id: 4,
-    title: 'פילה בקר במחיר מיוחד',
-    description: 'נתח הפילה העדין והרך ביותר בבקר, איכות פרימיום במבצע מיוחד לרגל חידוש האיטליז',
-    productId: 3,
-    regularPrice: 190,
-    salePrice: 160,
-    discount: 16,
-    validUntil: formatDate(nextFriday),
-    imageSrc: 'https://images.pexels.com/photos/8477213/pexels-photo-8477213.jpeg'
-  },
-  {
-    id: 5,
-    title: 'צלי בקר מוכן לתנור',
-    description: 'צלי בקר מתובל, מוכן לאפייה בתנור. מבצע מיוחד לשבת',
-    productId: 18,
-    regularPrice: 110,
-    salePrice: 90,
-    discount: 18,
-    validUntil: formatDate(nextFriday),
-    imageSrc: 'https://images.pexels.com/photos/323682/pexels-photo-323682.jpeg'
-  },
-  {
-    id: 6,
-    title: 'צלעות כבש במבצע',
-    description: 'צלעות כבש טריות במחיר מיוחד. מתאימות לגריל או צלייה בתנור',
-    productId: 7,
-    regularPrice: 150,
-    salePrice: 125,
-    discount: 17,
-    validUntil: formatDate(nextFriday),
-    imageSrc: 'https://images.pexels.com/photos/8477101/pexels-photo-8477101.jpeg'
   }
 ];
 

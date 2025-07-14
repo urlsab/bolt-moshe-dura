@@ -14,4 +14,5 @@ export interface Recipe {
   relatedProducts?: number[];
   videoSrc?: string; // Optional video for recipe
   bigImg?: string; // Optional large image to display after instructions
+  bigImg2?: string; // Optional second large image
 }

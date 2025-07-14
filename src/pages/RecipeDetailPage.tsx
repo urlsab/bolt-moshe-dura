@@ -152,16 +152,29 @@ const RecipeDetailPage: React.FC = () => {
               </div>
             )}
             
-            {/* Optional Big Image (like a map or diagram) */}
+            {/* Optional Big Images (like a map or diagram) */}
             {recipe.bigImg && (
               <div className="mb-8 flex flex-col items-center">
                 <h2 className="text-xl font-bold mb-4 text-primary">תמונה להמחשה</h2>
-                <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-[#222] rounded-xl shadow-lg flex items-center justify-center aspect-[auto] relative overflow-hidden">
+                <div className="w-full max-w-4xl bg-[#222] rounded-xl shadow-lg flex items-center justify-center aspect-[auto] relative overflow-hidden">
                   <img
                     src={recipe.bigImg}
                     alt={recipe.title + ' big image'}
-                    className="w-full h-full max-h-96 rounded-xl object-contain"
-                    style={{ aspectRatio: 'auto', background: '#222' }}
+                    className="w-full h-full max-h-[70vh] rounded-xl object-contain"
+                    style={{ aspectRatio: 'auto', background: '#222', objectFit: 'contain' }}
+                  />
+                </div>
+              </div>
+            )}
+            {recipe.bigImg2 && (
+              <div className="mb-8 flex flex-col items-center">
+                <h2 className="text-xl font-bold mb-4 text-primary">תמונה נוספת</h2>
+                <div className="w-full max-w-4xl bg-[#222] rounded-xl shadow-lg flex items-center justify-center aspect-[auto] relative overflow-hidden">
+                  <img
+                    src={recipe.bigImg2}
+                    alt={recipe.title + ' big image 2'}
+                    className="w-full h-full max-h-[70vh] rounded-xl object-contain"
+                    style={{ aspectRatio: 'auto', background: '#222', objectFit: 'contain' }}
                   />
                 </div>
               </div>

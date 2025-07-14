@@ -7,8 +7,20 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ className = "h-10 w-auto" }) => {
   return (
-    <div className={`text-primary ${className}`}>
-      <img src={moshelogo} alt="משה דורה לוגו" style={{height:"90px",width:"125px",borderRadius:"50%",boxShadow:"0 2px 8px rgba(0,0,0,0.08)",background:"white",objectFit:"cover"}} />
+    <div className={`text-primary ${className} flex items-center justify-center`}>
+      <img 
+        src={moshelogo} 
+        alt="משה דורה לוגו" 
+        className="rounded-full bg-white shadow-md object-cover"
+        style={{
+          width: 'clamp(40px, 8vw, 72px)',
+          height: 'clamp(40px, 8vw, 72px)',
+          maxWidth: '100%',
+          maxHeight: '100%',
+          minWidth: 32,
+          minHeight: 32
+        }}
+      />
     </div>
   );
 };
