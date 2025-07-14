@@ -110,7 +110,14 @@ const ContactPage: React.FC = () => {
                   <MapPin size={24} className="text-primary mt-1 ml-4 shrink-0" />
                   <div>
                     <h3 className="font-bold mb-1">כתובת</h3>
-                    <p>{t('contact.info.address')}</p>
+                    <a
+                      href="https://waze.com/ul?q=צרעה+3+תל+אביב&navigate=yes"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary underline hover:text-secondary text-base text-left"
+                    >
+                      {t('contact.info.address')}
+                    </a>
                   </div>
                 </div>
                 

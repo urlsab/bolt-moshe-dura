@@ -96,7 +96,14 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <MapPin size={18} className="text-secondary ml-2" />
-                <span className="text-light/80">{t('common.footer.address')}</span>
+                <a
+                  href="https://waze.com/ul?q=צרעה+3+תל+אביב&navigate=yes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-light/80 hover:text-secondary transition-colors underline"
+                >
+                  {t('common.footer.address')}
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="text-secondary ml-2" />
