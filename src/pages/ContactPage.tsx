@@ -118,7 +118,25 @@ const ContactPage: React.FC = () => {
                   <Phone size={24} className="text-primary mt-1 ml-4 shrink-0" />
                   <div>
                     <h3 className="font-bold mb-1">טלפון</h3>
-                    <p dir="ltr" className="text-left">{t('contact.info.phone')}</p>
+                    <div className="flex flex-row gap-2 items-center flex-wrap">
+                      <a
+                        href="tel:+97236312008"
+                        className="text-primary underline hover:text-secondary text-base text-left"
+                        style={{ direction: 'ltr' }}
+                      >
+                        03-6312008
+                      </a>
+                      <span className="mx-1">|</span>
+                      <a
+                        href="https://api.whatsapp.com/send?phone=0504257000"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary underline hover:text-secondary text-base text-left"
+                        style={{ direction: 'ltr' }}
+                      >
+                        050-4257000
+                      </a>
+                    </div>
                   </div>
                 </div>
                 
@@ -126,7 +144,12 @@ const ContactPage: React.FC = () => {
                   <Mail size={24} className="text-primary mt-1 ml-4 shrink-0" />
                   <div>
                     <h3 className="font-bold mb-1">דוא״ל</h3>
-                    <p dir="ltr" className="text-left">{t('contact.info.email')}</p>
+                    <a
+                      href="mailto:M4257000@gmail.com"
+                      className="text-primary underline hover:text-secondary text-base text-left"
+                    >
+                      M4257000@gmail.com
+                    </a>
                   </div>
                 </div>
                 

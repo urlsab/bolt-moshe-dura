@@ -1,5 +1,5 @@
 import React from 'react';
-import { Drumstick } from 'lucide-react';
+import moshelogo from '../Assets/moshelogo.png'
 
 interface LogoProps {
   className?: string;
@@ -8,7 +8,7 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ className = "h-10 w-auto" }) => {
   return (
     <div className={`text-primary ${className}`}>
-      <Drumstick size={32} strokeWidth={2} />
+      <img src={moshelogo} alt="משה דורה לוגו" style={{height:"90px",width:"125px",borderRadius:"50%",boxShadow:"0 2px 8px rgba(0,0,0,0.08)",background:"white",objectFit:"cover"}} />
     </div>
   );
 };

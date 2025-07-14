@@ -100,11 +100,32 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="text-secondary ml-2" />
-                <span className="text-light/80">{t('common.footer.phone')}</span>
+                <a
+                  href="tel:+97236312008"
+                  className="text-light/80 hover:text-secondary transition-colors underline mr-2"
+                  style={{ direction: 'ltr' }}
+                >
+                  03-6312008
+                </a>
+                <span className="mx-1">|</span>
+                <a
+                  href="https://api.whatsapp.com/send?phone=0504257000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-light/80 hover:text-secondary transition-colors underline"
+                  style={{ direction: 'ltr' }}
+                >
+                  050-4257000
+                </a>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="text-secondary ml-2" />
-                <span className="text-light/80">M4257000@gmail.com</span>
+                <a
+                  href="mailto:M4257000@gmail.com"
+                  className="text-light/80 hover:text-secondary transition-colors underline"
+                >
+                  M4257000@gmail.com
+                </a>
               </li>
               <li className="flex items-center">
                 <Clock size={18} className="text-secondary ml-2" />
