@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import moshelogo from '../Assets/moshelogo.png';
+import { FaWhatsapp } from "react-icons/fa";
+import { FaWaze } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -160,6 +162,46 @@ const Footer: React.FC = () => {
           <p>© {currentYear} {t('common.siteTitle')} - {t('common.footer.rights')}</p>
         </div>
       </div>
+      <a
+        href="https://api.whatsapp.com/send?phone=+97250425700"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="צ'אט בוואטסאפ"
+        style={{
+          position: 'fixed',
+          bottom: 65,
+          left: 10,
+          zIndex: 1000,
+          transition: 'transform 0.2s',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+        onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.08)')}
+        onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')}
+      >
+        <FaWhatsapp style={{height:'50px', width:'50px', color:'white', backgroundColor:'teal green', borderRadius:'50% 50% 50% 40%' }} />
+      </a>
+      <a
+        href="https://waze.com/ul?q=צרעה+3+תל+אביב&navigate=yes"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="ניווט בוויז"
+        style={{
+          position: 'fixed',
+          bottom: 10,
+          left: 10,
+          zIndex: 1000,
+          transition: 'transform 0.2s',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+        onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.08)')}
+        onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')}
+      >
+        <FaWaze style={{height:'50px', width:'50px', color:'black', backgroundColor:'RGB(5, 200, 247)', borderRadius:'40% 40% 40% 40%' }} />
+      </a>
     </footer>
   );
 };
