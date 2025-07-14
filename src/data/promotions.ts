@@ -11,36 +11,14 @@ const formatDate = (date: Date): string => {
 const promotions: Promotion[] = [
   {
     id: 1,
-    title: 'אנטריקוט במבצע מיוחד',
-    description: 'נתח אנטריקוט טרי ועסיסי מפרות בקר מובחרות בהנחה מיוחדת לכבוד חג הפסח',
+    title: 'בקרוב יתפרסמו כאן מבצעים',
+    description: 'מבצע שיתפרסם כאן בקרוב',
     productId: 1,
-    regularPrice: 140,
-    salePrice: 119,
-    discount: 15,
+    regularPrice: 0,
+    salePrice: 0,
+    discount: 10,
     validUntil: formatDate(nextFriday),
     imageSrc: 'https://images.pexels.com/photos/618775/pexels-photo-618775.jpeg'
-  },
-  {
-    id: 2,
-    title: 'מבצע על פרגיות טריות',
-    description: 'פרגיות טריות ועסיסיות במחיר מיוחד. מושלמות לארוחת ערב משפחתית',
-    productId: 13,
-    regularPrice: 65,
-    salePrice: 50,
-    discount: 23,
-    validUntil: formatDate(nextFriday),
-    imageSrc: 'https://images.pexels.com/photos/616354/pexels-photo-616354.jpeg'
-  },
-  {
-    id: 3,
-    title: 'קבב ביתי בהנחה',
-    description: 'קבב ביתי בתיבול מסורתי, מוכן לצלייה. מושלם לאירוח ושמחות',
-    productId: 15,
-    regularPrice: 80,
-    salePrice: 65,
-    discount: 19,
-    validUntil: formatDate(nextFriday),
-    imageSrc: 'https://images.pexels.com/photos/8250190/pexels-photo-8250190.jpeg'
   }
 ];
 

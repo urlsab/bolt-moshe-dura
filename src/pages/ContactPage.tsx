@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Seo from '../components/Seo';
 import SectionTitle from '../components/SectionTitle';
-import ContactForm from '../components/ContactForm';
+// import ContactForm from '../components/ContactForm';
 import { Phone, Mail, MapPin, Clock, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -94,18 +94,18 @@ const ContactPage: React.FC = () => {
           center
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mb-12">
           {/* Contact Form */}
-          <div>
+          {/* <div>
             <ContactForm />
-          </div>
+          </div> */}
           
           {/* Contact Info */}
           <div>
-            <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+            <div className="bg-white shadow-md p-6 mb-6">
               <h2 className="text-2xl font-bold mb-6 text-primary">פרטי התקשרות</h2>
               
-              <div className="space-y-6">
+              <div className="space-y-3">
                 <div className="flex items-start">
                   <MapPin size={24} className="text-primary mt-1 ml-4 shrink-0" />
                   <div>

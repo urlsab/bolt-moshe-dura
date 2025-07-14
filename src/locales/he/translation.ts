@@ -36,7 +36,7 @@ const translation = {
   home: {
     hero: {
       title: 'איטליז למהדרין',
-      subtitle: 'האיטליז של בני התורה',
+      subtitle: 'האיטליז של בני התורה | בהמלצת גדולי הרבנים',
       welcomeMessage: ' כשרות למהדרין בלבד | משלוחים לכל גוש דן | מעל 20 שנות ותק '
     },
     featured: {
