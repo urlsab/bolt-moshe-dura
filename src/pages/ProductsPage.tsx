@@ -78,6 +78,7 @@ const ProductsPage: React.FC = () => {
                 <option value="turkey">{t('products.categories.turkey')}</option>
                 <option value="fish">{t('products.categories.fish')}</option>
                 <option value="calf">{t('products.categories.calf')}</option>
+                <option value="grilled">{t('products.categories.grilled')}</option>
               </select>
             </div>
             

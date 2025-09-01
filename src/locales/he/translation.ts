@@ -65,7 +65,8 @@ const translation = {
       fish: 'דגים',
       turkey: 'הודו',
       calf: 'עגל',
-      chicken: 'עוף'
+      chicken: 'עוף',
+      grilled: 'על האש'
     },
     filters: {
       all: 'הכל',
@@ -132,9 +133,9 @@ const translation = {
     }
   },
   promotions: {
-    title: 'מבצעי השבוע',
-    subtitle: 'המבצעים בתוקף מיום ראשון עד יום שישי',
-    validUntil: 'בתוקף עד',
+    title: 'מבצעים',
+    subtitle: 'מגוון מבצעים משתלמים המתעדכנים תמיד',
+    validUntil: 'רק ב',
     disclaimer: 'עד גמר המלאי. ט.ל.ח'
   },
   contact: {

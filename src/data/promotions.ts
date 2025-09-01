@@ -1,25 +1,42 @@
 import { Promotion } from '../types/promotion';
+import ofyonim from '../Assets/ofyonim.jpg';
+import mivtsaPic from '../Assets/mivtsaPicture.jpg';
+import frozenYerek from '../Assets/frozenYerek.jpg';
+import fishes from '../Assets/fishes.jpg'
 
 const currentDate = new Date();
 const nextFriday = new Date(currentDate);
 nextFriday.setDate(currentDate.getDate() + (5 + 7 - currentDate.getDay()) % 7);
 
-const formatDate = (date: Date): string => {
-  return date.toLocaleDateString('he-IL', { day: 'numeric', month: 'numeric', year: 'numeric' });
-};
+// const formatDate = (date: Date): string => {
+//   return date.toLocaleDateString('he-IL', { day: 'numeric', month: 'numeric', year: 'numeric' });
+// };
 
 const promotions: Promotion[] = [
-  {
-    id: 1,
-    title: 'בקרוב יתפרסמו כאן מבצעים',
-    description: 'מבצע שיתפרסם כאן בקרוב',
-    productId: 1,
-    regularPrice: 0,
-    salePrice: 0,
-    discount: 10,
-    validUntil: formatDate(nextFriday),
-    imageSrc: 'https://images.pexels.com/photos/618775/pexels-photo-618775.jpeg'
-  }
+    {
+      id: 1,
+      title: 'מבצעי ירקות קפואים',
+      description: 'לביבות כרובית, לביבות ברוקולי, עיגולי פירה, כרובית מצופה, שניצל תירס, כוכבי תירס\nהכל 2 ב־55',
+      salePrice: 55,
+      imageSrc: `${frozenYerek}`
+    },
+    {
+      id: 2,
+      title: 'מבצעי דגים',
+      description: 'פילה אמנון (מושט) 4 קילו ב־100, מנות סלמון 79 לקילו, פילה סול 3 קילו ב־120, קציצות דג / אצבעות דג / שניצל דג חבילה 2 ב־60',
+      imageSrc: `${fishes}`
+    },
+    {
+      id: 3,
+      title: 'מבצעי עוף',
+      description: "קרטון עופות מחולק לשניצל פרגית וכו' (בערך 14 קילו בקרטון) 35 לקילו",
+      salePrice: 35,
+      imageSrc: `${ofyonim}`
+    },
+        {
+      id: 4,
+      imageSrc: `${mivtsaPic}`
+    }
 ];
 
 export default promotions;

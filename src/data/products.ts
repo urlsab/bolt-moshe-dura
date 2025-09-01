@@ -111,6 +111,39 @@ import kenafayimhatsui from '../Assets/kenafayimhatsui.jpg';
 import tachuntarimachapud from '../Assets/tachuntarimachapud.jpg';
 import ofleloetsem from '../Assets/ofleloetsem.jpg';
 import meoraviyerushalmi from '../Assets/meoraviyerushalmi.webp';
+import nakniksOff from '../Assets/nakniksOff.webp';
+import offsNaknik from '../Assets/offsNaknik.jpg';
+import hodunaknik from '../Assets/hodunaknik.webp';
+import mergez from '../Assets/mergez.jpg';
+import mergezBeiti from '../Assets/mergezBeiti.jpeg';
+import beitmergezkilo from '../Assets/beitmergezkilo.webp';
+import tsorisos from '../Assets/tsorisos.jpg';
+import hamburger from '../Assets/hamburger.webp';
+import hamburgernewyork from '../Assets/hamburgernewyork.jpg';
+import hamburgerbeiti from '../Assets/hamburgerbeiti.jpg';
+import hamburgerxl from '../Assets/hamburgerxl.webp';
+import kababbb from '../Assets/kababbb.jpg';
+import kababbbtale from '../Assets/kababbbtale.jpg';
+import kababbbromani from '../Assets/kababbbromani.jpeg';
+import ktsitsotbeitiot from '../Assets/ktsitsotbeitiot.jpg';
+import kababkeves from '../Assets/kababkeves.jpeg';
+import kababhabait from '../Assets/kababhabait.jpeg';
+import steakpargit from '../Assets/steakpargit.jpg';
+import shipudepargit from '../Assets/shipudepargit.jpg';
+import shipudekaved from '../Assets/shipudekaved.jpg';
+import shipudelavavot from '../Assets/shipudelavavot.png';
+import knafaimmetubal from '../Assets/knafaimmetubal.jpeg';
+import fileminyon from '../Assets/fileminyon.jpg';
+import tomahok from '../Assets/tomahok.jpg';
+import antrikotleloetsem from '../Assets/antrikotleloetsem.jpg';
+import seakangos from '../Assets/seakangos.jpg';
+import shipudeantrikot from '../Assets/shipudeantrikot.jpg';
+import tslaotkevesss from '../Assets/tslaotkevesss.jpg';
+import shipudeshishlikimlia from '../Assets/shipudeshishlikimlia.jpg';
+import shumanliah from '../Assets/shumanliah.jpg';
+import shipudeshkedimm from '../Assets/shipudeshkedimm.jpg';
+import sukariotfilee from '../Assets/sukariotfilee.jpg';
+import sukariotararis from '../Assets/sukariotararis.webp';
 
 const products: Product[] = [
   {
@@ -455,7 +488,7 @@ const products: Product[] = [
     category: 'lamb',
     // shortDescription: 'כתף טלה טרי',
     // fullDescription: 'כתף טלה טרי, מתאים לצלייה או בישול.',
-    price: 210,
+    price: 230,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
     imageSrc: `${shumankeves}`,
@@ -839,7 +872,7 @@ const products: Product[] = [
     category: 'beef',
     // shortDescription: 'בקר טחון עם כבש',
     // fullDescription: 'בקר טחון עם כבש, מתאים לקציצות ותבשילים.',
-    price: 260,
+    price: 300,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
     imageSrc: `${stakeprimium}`,
@@ -969,11 +1002,11 @@ const products: Product[] = [
   },
   {
     id: 72,
-    name: 'רוטפלייש משופד',
+    name: 'רוטפלש משופד',
     category: 'beef',
     // shortDescription: 'כנף הודו טרי',
     // fullDescription: 'כנף הודו טרי, מתאים לצלייה או בישול.',
-    price: 210,
+    price: 220,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
     imageSrc: `${rotflyshmeshupad}`,
@@ -1117,7 +1150,7 @@ const products: Product[] = [
     category: 'turkey',
     // shortDescription: 'אשכי הודו טריים',
     // fullDescription: 'אשכי הודו טריים, מתאימים לצלייה או בישול.',
-    price: 200,
+    price: 210,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
     imageSrc: `${ashahehodu}`,
@@ -1470,7 +1503,535 @@ const products: Product[] = [
     kashrutLevel:'כשר למהדרין',
     imageSrc: `${meoraviyerushalmi}`,
     isPromoted: false
-  }
+  },
+{
+  id: 124,
+  name: 'נקניקיות עוף 400 גרם',
+  category: 'grilled',
+  shortDescription: 'נקניקיות עוף 400 גרם',
+  fullDescription: 'נקניקיות עוף טריות ואיכותיות במשקל 400 גרם.',
+  price: 13.00,
+  weight: '400 גרם',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${nakniksOff}`,
+  isPromoted: false
+},
+{
+  id: 125,
+  name: 'נקניקיות עוף 1 ק"ג',
+  category: 'grilled',
+  shortDescription: 'נקניקיות עוף 1 ק"ג',
+  fullDescription: 'נקניקיות עוף טריות ואיכותיות במשקל 1 קילו.',
+  price: 38.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${offsNaknik}`,
+  isPromoted: false
+},
+{
+  id: 126,
+  name: 'נקניקיות הודו 1.5 קילו',
+  category: 'grilled',
+  shortDescription: 'נקניקיות הודו 1.5 קילו',
+  fullDescription: 'נקניקיות הודו טריות ואיכותיות במשקל 1.5 קילו.',
+  price: 48.00,
+  weight: '1.5 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${hodunaknik}`,
+  isPromoted: false
+},
+{
+  id: 127,
+  name: 'מרגז',
+  category: 'grilled',
+  shortDescription: 'מרגז',
+  fullDescription: 'מרגז איכותי, מתאים לצלייה ובישול.',
+  price: 28.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${mergez}`,
+  isPromoted: false
+},
+{
+  id: 128,
+  name: 'מרגז ביתי 600 גרם',
+  category: 'grilled',
+  shortDescription: 'מרגז ביתי 600 גרם',
+  fullDescription: 'מרגז ביתי איכותי במשקל 600 גרם.',
+  price: 55.00,
+  weight: '600 גרם',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${mergezBeiti}`,
+  isPromoted: false
+},
+{
+  id: 129,
+  name: 'מרגז ביתי 1 ק"ג',
+  category: 'grilled',
+  shortDescription: 'מרגז ביתי 1 ק"ג',
+  fullDescription: 'מרגז ביתי איכותי במשקל 1 קילו.',
+  price: 75.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${beitmergezkilo}`,
+  isPromoted: false
+},
+{
+  id: 130,
+  name: "צ'וריסוס ביתי 1 ק''ג",
+  category: 'grilled',
+  shortDescription: 'צוריסוס ביתי 1ק"ג',
+  fullDescription: 'צוריסוס ביתי איכותי במשקל 1 קילו.',
+  price: 75.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${tsorisos}`,
+  isPromoted: false
+},
+{
+  id: 131,
+  name: 'המבורגר',
+  category: 'grilled',
+  shortDescription: 'המבורגר',
+  fullDescription: 'המבורגר טרי ואיכותי, מתאים לצלייה.',
+  price: 24.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${hamburger}`,
+  isPromoted: false
+},
+{
+  id: 132,
+  name: 'המבורגר ניו יורק',
+  category: 'grilled',
+  shortDescription: 'המבורגר ניו יורק',
+  fullDescription: 'המבורגר ניו יורק איכותי ומיוחד.',
+  price: 48.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${hamburgernewyork}`,
+  isPromoted: false
+},
+{
+  id: 133,
+  name: 'המבורגר ביתי',
+  category: 'grilled',
+  shortDescription: 'המבורגר ביתי',
+  fullDescription: 'המבורגר ביתי איכותי ומיוחד.',
+  price: 68.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc:`${hamburgerbeiti}`,
+  isPromoted: false
+},
+{
+  id: 134,
+  name: 'המבורגר XL',
+  category: 'grilled',
+  shortDescription: 'המבורגר XL',
+  fullDescription: 'המבורגר XL - גדול ואיכותי במיוחד.',
+  price: 48.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${hamburgerxl}`,
+  isPromoted: false
+},
+{
+  id: 135,
+  name: 'קבב',
+  category: 'grilled',
+  shortDescription: 'קבב',
+  fullDescription: 'קבב טרי ואיכותי, מתאים לצלייה.',
+  price: 24.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${kababbb}`,
+  isPromoted: false
+},
+{
+  id: 136,
+  name: 'קבב טלה',
+  category: 'grilled',
+  shortDescription: 'קבב טלה',
+  fullDescription: 'קבב טלה איכותי ורך במיוחד.',
+  price: 48.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${kababbbtale}`,
+  isPromoted: false
+},
+{
+  id: 137,
+  name: 'קבב רומני',
+  category: 'grilled',
+  shortDescription: 'קבב רומני',
+  fullDescription: 'קבב רומני איכותי בסגנון מיוחד.',
+  price: 48.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${kababbbromani}`,
+  isPromoted: false
+},
+{
+  id: 138,
+  name: 'קציצות ביתיות',
+  category: 'grilled',
+  shortDescription: 'קציצות ביתיות',
+  fullDescription: 'קציצות ביתיות איכותיות ורכות.',
+  price: 68.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${ktsitsotbeitiot}`,
+  isPromoted: false
+},
+{
+  id: 139,
+  name: 'קבב כבש',
+  category: 'grilled',
+  shortDescription: 'קבב כבש',
+  fullDescription: 'קבב כבש איכותי ורך במיוחד.',
+  price: 68.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${kababkeves}`,
+  isPromoted: false
+},
+{
+  id: 140,
+  name: 'קבב הבית',
+  category: 'grilled',
+  shortDescription: 'קבב הבית',
+  fullDescription: 'קבב הבית - המיוחד והאיכותי ביותר.',
+  price: 89.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${kababhabait}`,
+  isPromoted: true
+},
+{
+  id: 141,
+  name: 'סטייק פרגית',
+  category: 'grilled',
+  shortDescription: 'סטייק פרגית',
+  fullDescription: 'סטייק פרגית איכותי ורך במיוחד.',
+  price: 88.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${steakpargit}`,
+  isPromoted: false
+},
+{
+  id: 142,
+  name: 'פרגית משופד',
+  category: 'grilled',
+  shortDescription: 'פרגית משופד',
+  fullDescription: 'פרגית משופד מוכן לצלייה, איכות מעולה.',
+  price: 105.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${shipudepargit}`,
+  isPromoted: false
+},
+{
+  id: 143,
+  name: 'שיפודי כבד',
+  category: 'grilled',
+  shortDescription: 'שיפודי כבד',
+  fullDescription: 'שיפודי כבד טריים ואיכותיים.',
+  price: 55.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${shipudekaved}`,
+  isPromoted: false
+},
+{
+  id: 144,
+  name: 'שיפודי לבבות',
+  category: 'grilled',
+  shortDescription: 'שיפודי לבבות',
+  fullDescription: 'שיפודי לבבות טריים ואיכותיים - 10 שח לשיפוד.',
+  price: 10.00,
+  weight: 'יחידה',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${shipudelavavot}`,
+  isPromoted: false
+},
+{
+  id: 145,
+  name: 'כנפיים',
+  category: 'grilled',
+  shortDescription: 'כנפיים',
+  fullDescription: 'כנפיים טריות ואיכותיות לצלייה.',
+  price: 24.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${kenafaim}`,
+  isPromoted: false
+},
+{
+  id: 146,
+  name: 'כנפיים חצוי',
+  category: 'grilled',
+  shortDescription: 'כנפיים חצוי',
+  fullDescription: 'כנפיים חצויות טריות ואיכותיות.',
+  price: 28.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${kenafayimhatsui}`,
+  isPromoted: false
+},
+{
+  id: 147,
+  name: 'כנפיים מתובל',
+  category: 'grilled',
+  shortDescription: 'כנפיים מתובל',
+  fullDescription: 'כנפיים מתובלות בתבלינים מיוחדים.',
+  price: 35.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${knafaimmetubal}`,
+  isPromoted: false
+},
+{
+  id: 148,
+  name: 'רוטפלש',
+  category: 'grilled',
+  shortDescription: 'רוטפלש משופד',
+  fullDescription: 'רוטפלש משופד איכותי מוכן לצלייה.',
+  price: 210.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${rotflyshmeshupad}`,
+  isPromoted: true
+},
+{
+  id: 149,
+  name: 'פיקניה סינטה',
+  category: 'grilled',
+  shortDescription: 'סינטה',
+  fullDescription: 'סינטה איכותית מהמותג הטוב ביותר.',
+  price: 180.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${sintapikenia}`,
+  isPromoted: false
+},
+{
+  id: 151,
+  name: 'פילה מניון',
+  category: 'grilled',
+  shortDescription: 'פילה מניון',
+  fullDescription: 'פילה מניון איכות פרמיום במיוחד.',
+  price: 300.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${fileminyon}`,
+  isPromoted: false
+},
+{
+  id: 152,
+  name: 'אנטריקוט עם עצם',
+  category: 'grilled',
+  shortDescription: 'אנטריקוט עם עצם',
+  fullDescription: 'אנטריקוט עם עצם איכות מעולה.',
+  price: 180.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${antrikotimetsem}`,
+  isPromoted: false
+},
+{
+  id: 153,
+  name: 'טומהוק',
+  category: 'grilled',
+  shortDescription: 'טומהוק',
+  fullDescription: 'טומהוק איכותי במיוחד לחוויה מושלמת.',
+  price: 190.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${tomahok}`,
+  isPromoted: false
+},
+{
+  id: 154,
+  name: 'אנטריקוט ללא עצם',
+  category: 'grilled',
+  shortDescription: 'אנטריקוט ללא עצם',
+  fullDescription: 'אנטריקוט ללא עצם איכות מעולה.',
+  price: 200.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${antrikotleloetsem}`,
+  isPromoted: false
+},
+{
+  id: 155,
+  name: 'סטייק אנגוס',
+  category: 'grilled',
+  shortDescription: 'סטייק אנגוס',
+  fullDescription: 'סטייק אנגוס איכות פרמיום מיוחדת.',
+  price: 240.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${seakangos}`,
+  isPromoted: false
+},
+{
+  id: 156,
+  name: 'סטייק פרימיום',
+  category: 'grilled',
+  shortDescription: 'סטייק פרמיום',
+  fullDescription: 'סטייק פרמיום - האיכות הגבוהה ביותר.',
+  price: 280.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${stakeprimium}`,
+  isPromoted: false
+},
+{
+  id: 157,
+  name: 'שיפודי אנטריקוט',
+  category: 'grilled',
+  shortDescription: 'שיפודי אנטריקוט',
+  fullDescription: 'שיפודי אנטריקוט מוכנים לצלייה.',
+  price: 220.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${shipudeantrikot}`,
+  isPromoted: false
+},
+{
+  id: 158,
+  name: 'שיפודי כבש',
+  category: 'grilled',
+  shortDescription: 'שיפודי כבש',
+  fullDescription: 'שיפודי כבש איכותיים ורכים.',
+  price: 190.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${shipudekeves}`,
+  isPromoted: false
+},
+{
+  id: 159,
+  name: 'צלעות טלה',
+  category: 'grilled',
+  shortDescription: 'צלעות טלה',
+  fullDescription: 'צלעות טלה איכותיות ורכות במיוחד.',
+  price: 260.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${tslaottale}`,
+  isPromoted: false
+},
+{
+  id: 160,
+  name: 'צלעות כבש',
+  category: 'grilled',
+  shortDescription: 'צלעות כבש',
+  fullDescription: 'צלעות כבש איכותיות ורכות.',
+  price: 240.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${tslaotkevesss}`,
+  isPromoted: false
+},
+{
+  id: 161,
+  name: 'אשכי הודו',
+  category: 'grilled',
+  shortDescription: 'אשכי הודו',
+  fullDescription: 'אשכי הודו איכות פרמיום מיוחדת.',
+  price: 210.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${ashahehodu}`,
+  isPromoted: false
+},
+{
+  id: 162,
+  name: 'שיפודי שישליק עם ליה',
+  category: 'grilled',
+  shortDescription: 'שיפודי שישליק עם ליה',
+  fullDescription: 'שיפודי שישליק עם ליה איכותיים.',
+  price: 130.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${shipudeshishlikimlia}`,
+  isPromoted: false
+},
+{
+  id: 163,
+  name: 'שומן כבש',
+  category: 'grilled',
+  shortDescription: 'שומן כבש',
+  fullDescription: 'שומן כבש איכותי לטיבולים ובישול.',
+  price: 230.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${shumankeves}`,
+  isPromoted: false
+},
+{
+  id: 164,
+  name: 'שומן ליה',
+  category: 'grilled',
+  shortDescription: 'שומן ליה',
+  fullDescription: 'שומן ליה איכותי לטיבולים מיוחדים.',
+  price: 280.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${shumanliah}`,
+  isPromoted: false
+},
+{
+  id: 165,
+  name: 'שיפודי שקדים',
+  category: 'grilled',
+  shortDescription: 'שיפודי שקדים',
+  fullDescription: 'שיפודי שקדים מיוחדים ואיכותיים ביותר.',
+  price: 420.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${shipudeshkedimm}`,
+  isPromoted: true
+},
+{
+  id: 166,
+  name: 'כבד עגל',
+  category: 'grilled',
+  shortDescription: 'כבד עגל',
+  fullDescription: 'כבד עגל טרי ואיכותי.',
+  price: 60.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${kavedegel}`,
+  isPromoted: false
+},
+{
+  id: 167,
+  name: 'סוכריות פילה',
+  category: 'grilled',
+  shortDescription: 'סוכריות פילה',
+  fullDescription: 'סוכריות פילה איכות פרמיום במיוחד.',
+  price: 280.00,
+  weight: '1 ק"ג',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${sukariotfilee}`,
+  isPromoted: true
+},
+{
+  id: 168,
+  name: 'סוכריות עראיס',
+  category: 'grilled',
+  shortDescription: 'סוכריות אראיס',
+  fullDescription: 'סוכריות אראיס מיוחדות - 25 שח לשיפוד.',
+  price: 25.00,
+  weight: 'יחידה',
+  kashrutLevel: 'כשר למהדרין',
+  imageSrc: `${sukariotararis}`,
+  isPromoted: false
+}
 ];
 
 export default products;

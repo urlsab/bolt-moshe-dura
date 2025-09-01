@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import homepage from '../Assets/homepage.webp';
-import tadmitatliz from '../Assets/tadmitatliz.mp4';
+// import tadmitatliz from '../Assets/tadmitatliz.mp4';
 
 interface HeroProps {
   title?: string;
@@ -87,7 +87,7 @@ const Hero: React.FC<HeroProps> = ({
         </div>
 
         {/* Video Section */}
-        <div className="w-full md:w-1/2 flex justify-center items-center h-1/2 md:h-full p-4 md:p-8">
+        {/* <div className="w-full md:w-1/2 flex justify-center items-center h-1/2 md:h-full p-4 md:p-8">
           <video
             ref={videoRef}
             src={tadmitatliz}
@@ -99,7 +99,7 @@ const Hero: React.FC<HeroProps> = ({
           >
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> */}
         
       </div>
     </div>

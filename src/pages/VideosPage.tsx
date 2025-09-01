@@ -1,23 +1,22 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import hilula from '../Assets/hilula.mp4';
-import naki from '../Assets/naki.mp4'; // Example video import (replace with your own)
-
-// Example video imports (replace with your own)
-// import exampleVideo1 from '../Assets/example1.mp4';
-// import exampleVideo2 from '../Assets/example2.mp4';
+import tadmitatliz from '../Assets/tadmitatliz.mp4';
+import naki from '../Assets/naki.mp4'; 
 
 const videos = [
   {
+    title: 'אודות האטליז',
+    src: `${tadmitatliz}`
+  },
+  {
     title: 'מפנקים בהילולא!',
-    // src: exampleVideo1,
-    src: `${hilula}`, // Add your video source here
+    src: `${hilula}`
   },
   {
     title: 'דואגים להזמנות שלכם!',
-    // src: exampleVideo2,
-    src: `${naki}`, // Add your video source here
-  },
+    src: `${naki}`
+  }
   // הוסף כאן עוד וידאוים
 ];
 

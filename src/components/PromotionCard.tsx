@@ -1,6 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Calendar } from 'lucide-react';
+// import { useTranslation } from 'react-i18next';
 import { Promotion } from '../types/promotion';
 
 interface PromotionCardProps {
@@ -8,38 +7,32 @@ interface PromotionCardProps {
 }
 
 const PromotionCard: React.FC<PromotionCardProps> = ({ promotion }) => {
-  const { t } = useTranslation();
-  
+  //const { t } = useTranslation();
+  const { imageSrc, title, description } = promotion;
   return (
-    <div className="card overflow-hidden border-2 border-primary/20">
-      <div className="relative">
-        <img 
-          src={promotion.imageSrc} 
-          alt={promotion.title} 
-          className="w-full h-48 object-cover"
+    <div
+      className="relative w-full h-72 rounded-xl overflow-hidden flex items-center justify-center"
+      style={{ minHeight: 330, maxWidth: 700, margin: '0 auto' }}
+    >
+      {imageSrc && (
+        <img
+          src={imageSrc}
+          alt={title || description || 'promotion'}
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          style={{ filter: 'brightness(40%)' }}
         />
-        <div className="absolute bottom-0 right-0 left-0 bg-primary/80 text-white p-2 text-center font-bold">
-          חיסכון של {promotion.discount}%!
-        </div>
-      </div>
-      <div className="p-4">
-        <h3 className="font-bold text-xl text-primary mb-2">{promotion.title}</h3>
-        <p className="text-dark/70">{promotion.description}</p>
-        
-        <div className="mt-4 bg-light p-3 rounded-md">
-          <div className="flex items-center text-sm text-dark/70 mb-2">
-            <Calendar size={16} className="ml-1" />
-            <span>{t('promotions.validUntil')}: {promotion.validUntil}</span>
+      )}
+      <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-6">
+        {title && (
+          <div className="text-2xl font-bold mb-2 text-white drop-shadow-lg text-center">
+            {title}
           </div>
-          
-          <div className="flex items-center justify-between">
-            <div className="flex flex-col">
-              <span className="text-dark/50 line-through">₪{promotion.regularPrice.toFixed(2)}</span>
-              <span className="text-xl font-bold text-primary">₪{promotion.salePrice.toFixed(2)}</span>
-            </div>
-            {/* <button className="btn-secondary">הוסף לסל</button> */}
+        )}
+        {description && (
+          <div className="text-lg text-white text-center drop-shadow-md">
+            {description}
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

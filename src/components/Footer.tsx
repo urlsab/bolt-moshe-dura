@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import moshelogo from '../Assets/moshelogo.png';
 import { FaWhatsapp } from "react-icons/fa";
-import { FaWaze } from "react-icons/fa";
+// import { FaWaze } from "react-icons/fa";
+import wazelogo from '../Assets/wazelogo.jpg';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -41,7 +42,7 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4 text-white border-r-4 border-secondary pr-3">
               ניווט מהיר
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 grid grid-cols-2">
               <li>
                 <Link to="/" className="text-light/80 hover:text-secondary transition-colors">
                   {t('common.nav.home')}
@@ -159,7 +160,7 @@ const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="border-t border-gray-700 pt-6 text-center text-light/60 text-sm">
-          <p>© {currentYear} {t('common.siteTitle')} - {t('common.footer.rights')}</p>
+          <p> {currentYear} | {t('common.siteTitle')} | {t('common.footer.rights')} ©</p>
         </div>
       </div>
       <a
@@ -185,7 +186,8 @@ const Footer: React.FC = () => {
           width: 'clamp(32px, 7vw, 44px)',
           color: 'white',
           backgroundColor: 'green',
-          borderRadius: '50% 50% 50% 40%'
+          borderRadius: '50% 50% 50% 40%',
+          border:'3px solid green'
         }} />
       </a>
       <a
@@ -206,12 +208,20 @@ const Footer: React.FC = () => {
         onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.08)')}
         onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')}
       >
-        <FaWaze style={{
+
+        {/* backgroundColor: 'white',
+          borderColor:'RGB(5, 200, 247)',
+          borderRadius: '40% 40% 40% 40%',
+          border:'6px solid RGB(5, 200, 247)' */}
+        <img 
+          src={wazelogo} alt="Waze Icon" style={{
           height: 'clamp(32px, 7vw, 44px)',
           width: 'clamp(32px, 7vw, 44px)',
           color: 'black',
-          backgroundColor: 'RGB(5, 200, 247)',
-          borderRadius: '40% 40% 40% 40%'
+          backgroundColor: 'white',
+          borderColor:'RGB(5, 200, 247)',
+          borderRadius: '50%',
+          border:'2px solid RGB(5, 200, 247)'
         }} />
       </a>
     </footer>
