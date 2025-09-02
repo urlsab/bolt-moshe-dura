@@ -880,11 +880,11 @@ const products: Product[] = [
   },
   {
     id: 62,
-    name: 'רוטפילש',
+    name: 'רוטפלש לא משופד',
     category: 'calf',
     // shortDescription: 'אוסובוקו עגל טרי',
     // fullDescription: 'אוסובוקו עגל טרי, מתאים לבישול ארוך.',
-    price: 200,
+    price: 210,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
     imageSrc: `${rotfilsh}`,
@@ -1706,7 +1706,7 @@ const products: Product[] = [
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
   imageSrc: `${kababhabait}`,
-  isPromoted: true
+  isPromoted: false
 },
 {
   id: 141,
@@ -1791,18 +1791,6 @@ const products: Product[] = [
   kashrutLevel: 'כשר למהדרין',
   imageSrc: `${knafaimmetubal}`,
   isPromoted: false
-},
-{
-  id: 148,
-  name: 'רוטפלש',
-  category: 'grilled',
-  shortDescription: 'רוטפלש משופד',
-  fullDescription: 'רוטפלש משופד איכותי מוכן לצלייה.',
-  price: 210.00,
-  weight: '1 ק"ג',
-  kashrutLevel: 'כשר למהדרין',
-  imageSrc: `${rotflyshmeshupad}`,
-  isPromoted: true
 },
 {
   id: 149,
@@ -1994,7 +1982,7 @@ const products: Product[] = [
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
   imageSrc: `${shipudeshkedimm}`,
-  isPromoted: true
+  isPromoted: false
 },
 {
   id: 166,
@@ -2018,7 +2006,7 @@ const products: Product[] = [
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
   imageSrc: `${sukariotfilee}`,
-  isPromoted: true
+  isPromoted: false
 },
 {
   id: 168,

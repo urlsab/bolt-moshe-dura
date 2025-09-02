@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
-import ProductCard from '../components/ProductCard';
+// import ProductCard from '../components/ProductCard';
 import RecipeCard from '../components/RecipeCard';
-import products from '../data/products';
+// import products from '../data/products';
 import recipes from '../data/recipes';
 import promotions from '../data/promotions';
 import { Check, Award, Leaf, ShieldCheck } from 'lucide-react';
@@ -14,7 +14,7 @@ import moshe from '../Assets/mosheandharavigal.jpg'
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
 
-  const featuredProducts = products.filter(product => product.isPromoted).slice(0, 3);
+  // const featuredProducts = products.filter(product => product.isPromoted).slice(0, 3);
   const featuredRecipes = recipes.slice(0, 3);
   
   return (
@@ -23,7 +23,7 @@ const HomePage: React.FC = () => {
       <Hero />
       
       {/* Featured Products */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container-custom">
           <SectionTitle 
             title={t('home.featured.title')}
@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
       
       {/* About Section */}
       <section className="py-16 bg-light">
@@ -167,24 +167,33 @@ const HomePage: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md text-center">
             <h2 className="text-3xl font-bold text-primary mb-4">{t('home.promotions.title')}</h2>
             <p className="text-lg mb-8">{t('home.promotions.subtitle')}</p>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {promotions.slice(0, 3).map((promo) => (
-                <div key={promo.id} className="bg-light p-4 rounded-md">
-                  <h3 className="font-bold text-primary">{promo.title}</h3>
-                  <div className="flex justify-between items-center mt-2">
-                    <div>
-                      <span className="text-dark/50 line-through text-sm">₪{promo.regularPrice}</span>
-                      <span className="text-primary font-bold block text-lg">₪{promo.salePrice}</span>
+                <div
+                  key={promo.id}
+                  className="relative rounded-xl overflow-hidden flex items-center justify-center min-h-[260px] h-full"
+                  style={{ minHeight: 260 }}
+                >
+                  {promo.imageSrc && (
+                    <img
+                      src={promo.imageSrc}
+                      alt={promo.title}
+                      className="absolute inset-0 w-full h-full object-cover object-center"
+                      style={{ filter: 'brightness(40%)' }}
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-black" style={{ opacity: 0.35 }} />
+                  <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-6">
+                    <h3 className="font-bold text-2xl mb-2 text-white drop-shadow-lg text-center">{promo.title}</h3>
+                    <div className="text-lg text-white text-center drop-shadow-md whitespace-pre-line">
+                      {promo.description}
                     </div>
-                    <span className="bg-primary text-white px-2 py-1 rounded-full text-xs">
-                      {promo.discount}% הנחה
-                    </span>
                   </div>
                 </div>
               ))}
             </div>
-            
+
             <Link to="/promotions" className="btn-secondary mt-8 inline-block">
               לכל המבצעים
             </Link>
