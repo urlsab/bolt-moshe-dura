@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-// , ShoppingBag
+// ShoppingBag
 import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
 
