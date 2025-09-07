@@ -5,14 +5,14 @@ import Seo from '../components/Seo';
 import SectionTitle from '../components/SectionTitle';
 import { ArrowRight } from 'lucide-react';
 import articles from '../data/articles';
-import badats from '../Assets/badatshaedajerusalem.jpg'
-import beityosef from '../Assets/beityosef.png';
-import machpud from '../Assets/haravmachpud.png';
-import landa from '../Assets/haravlanda.png';
-import rubin from '../Assets/haravrubin.jpg';
-import anash from '../Assets/anash.png';
-import navetsion from '../Assets/navetsionbadats.png';
-import bnetsion from '../Assets/bnetsion.png';
+// import badats from '../Assets/badatshaedajerusalem.jpg'
+// import beityosef from '../Assets/beityosef.png';
+// import machpud from '../Assets/haravmachpud.png';
+// import landa from '../Assets/haravlanda.png';
+// import rubin from '../Assets/haravrubin.jpg';
+// import anash from '../Assets/anash.png';
+// import navetsion from '../Assets/navetsionbadats.png';
+// import bnetsion from '../Assets/bnetsion.png';
 import { motion } from 'framer-motion';
 
 
@@ -37,18 +37,18 @@ const KashrutPage: React.FC = () => {
 
         <div className="flex flex-wrap justify-center items-center gap-6 mt-20 mb-5 text-center">
           {[
-            { src: badats, alt: 'בד״ץ העדה החרדית' },
-            { src: beityosef, alt: 'בית יוסף' },
-            { src: machpud, alt: 'הרב מחפוד' },
-            { src: navetsion, alt: 'בד״ץ נווה ציון' },
-            { src: bnetsion, alt: 'בד״ץ בני ציון' },
-            { src: landa, alt: 'הרב לנדא' },
-            { src: rubin, alt: 'הרב רובין' },
-            { src: anash, alt: 'אנש' },
+            {  alt: 'בד״ץ העדה החרדית' },
+            {  alt: 'בית יוסף' },
+            {  alt: 'הרב מחפוד' },
+            {  alt: 'בד״ץ נווה ציון' },
+            {  alt: 'בד״ץ בני ציון' },
+            {  alt: 'הרב לנדא' },
+            {  alt: 'הרב רובין' },
+            {  alt: 'אנש' },
           ].map((img, idx) => (
             <motion.img
               key={img.alt}
-              src={img.src}
+              // src={img.src}
               alt={img.alt}
               initial={{ opacity: 0, y: -40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -82,7 +82,7 @@ const KashrutPage: React.FC = () => {
                   <div className="md:flex">
                     <div className="md:w-1/3">
                       <img 
-                        src={article.imageSrc} 
+                        // src={article.imageSrc} 
                         alt={article.title} 
                         className="w-full h-full object-cover"
                       />

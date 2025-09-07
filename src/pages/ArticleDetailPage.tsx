@@ -43,7 +43,7 @@ const ArticleDetailPage: React.FC = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
               {/* Header Image */}
               <img 
-                src={article.imageSrc} 
+                // src={article.imageSrc} 
                 alt={article.title} 
                 className="w-full h-64 object-cover"
               />

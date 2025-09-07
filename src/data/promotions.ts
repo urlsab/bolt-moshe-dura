@@ -1,9 +1,9 @@
 import { Promotion } from '../types/promotion';
 // import ofyonim from '../Assets/ofyonim.jpg';
-import mivtsaPic from '../Assets/mivtsaPicture.jpg';
-import frozenYerek from '../Assets/frozenYerek.jpg';
-import fishes from '../Assets/fishes.jpg';
-import bakarmivtsaa from '../Assets/bakarmivtsaa.jpg';
+// import mivtsaPic from '../Assets/mivtsaPicture.jpg';
+// import frozenYerek from '../Assets/frozenYerek.jpg';
+// import fishes from '../Assets/fishes.jpg';
+// import bakarmivtsaa from '../Assets/bakarmivtsaa.jpg';
 
 const currentDate = new Date();
 const nextFriday = new Date(currentDate);
@@ -17,40 +17,40 @@ const promotions: Promotion[] = [
     {
       id: 1,
       title: 'מבצעי ירקות קפואים',
-  description: 'לביבות כרובית, לביבות ברוקולי, עיגולי פירה, כרובית מצופה, שניצל תירס, כוכבי תירס\nהכל 2 ב־55 ₪',
+      description: 'לביבות כרובית, לביבות ברוקולי, עיגולי פירה, כרובית מצופה, שניצל תירס, כוכבי תירס\nהכל 2 ב־55 ₪',
       salePrice: 55,
-      imageSrc: `${frozenYerek}`
+      // imageSrc: `${frozenYerek}`
     },
     {
       id: 2,
       title: 'מבצעי דגים',
   description: 'פילה אמנון (מושט) 4 קילו ב־100 ₪, מנות סלמון 79 ₪ לקילו, פילה סול 3 קילו ב־120 ₪, קציצות דג / אצבעות דג / שניצל דג חבילה 2 ב־60 ₪',
-      imageSrc: `${fishes}`
+      // imageSrc: `${fishes}`
     },
     {
       id: 3,
       title: 'מבצעי עוף',
   description: "קרטון עופות מחולק לשניצל פרגית וכו' (בערך 14 קילו בקרטון) 35 ₪ לקילו",
       salePrice: 35,
-      imageSrc: `${mivtsaPic}`
+      // imageSrc: `${mivtsaPic}`
     },
     {
       id: 4,
       title: 'מבצעי עוף נוספים',
       description: `עוף טחון\n 3 ק"ג ב-150 ₪\nכנפיים עוף\n 3 ק"ג ב-60 ₪\nכרעיים עוף\n3  ק"ג ב-130 ₪\nחזה עוף\n3  ק"ג ב-150 ₪\nנקניקיות\n2 חב' ב-22 ₪ שווארמה ביתית מוכנה פרגית/הודו/בקר 2 חב' ב-130 `,
-      imageSrc: `${mivtsaPic}`
+      // imageSrc: `${mivtsaPic}`
     },
     {
       id: 5,
       title: 'מבצעי עוף נוספים',
       description: `\nשווארמה ביתית מוכנה פרגית/הודו/בקר\n2 חב' ב-130 ₪\nכבד צלי\n2  חב' ב-60 ₪\nקבב כבש, המבורגר, מרגז, קציצות עוף – הכל ביתי\n 2 חב' ב-130 ₪\nשניצלים בצל, כדורי פירה, קובות סולת, צ'יפס קריבוי והוקי\n2  חב' ב-65 ₪`,
-      imageSrc: `${mivtsaPic}`
+      // imageSrc: `${mivtsaPic}`
     },
     {
       id: 6,
       title: 'מבצעי בקר ',
       description: `בשר טחון\n 3 ק"ג ב-160 ₪\nאנטריקוט קפוא (לא מעובד)\nב-115 ₪ לק"ג\nאצבעות אנטריקוט\nב-79.9 ₪ לק"ג\nגולש עגל\n 2 ק"ג ב-130 ₪\nאנטריקוט טרי עם עצם\nב-170 ₪ לק"ג\nאסאדו עם עצם\n 2 ק"ג ב-130 ₪`,
-      imageSrc: `${bakarmivtsaa}`
+      // imageSrc: `${bakarmivtsaa}`
     }
 ];
 

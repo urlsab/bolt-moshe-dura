@@ -6,11 +6,11 @@ import haravRachamim from '../Assets/harav rahamim.mp4';
 import haravSharabi from '../Assets/harav sharabi.mp4';
 import haravigal2 from '../Assets/harav igal 2.mp4';
 import { useEffect, useState } from 'react';
-import haravmoshehizkiyahu from '../Assets/haravmoshehizkiyahu.jpg';
-import haravezratrav from '../Assets/haravezratrav.png';
-import haravboazbetsaleli from '../Assets/haravboazbetsaleli.jpg';
-import haravyosefarbiv from '../Assets/haravyosefarbiv.jpg';
-import haravmosheparzis from '../Assets/haravmosheparzis.png';
+// import haravmoshehizkiyahu from '../Assets/haravmoshehizkiyahu.jpg';
+// import haravezratrav from '../Assets/haravezratrav.png';
+// import haravboazbetsaleli from '../Assets/haravboazbetsaleli.jpg';
+// import haravyosefarbiv from '../Assets/haravyosefarbiv.jpg';
+// import haravmosheparzis from '../Assets/haravmosheparzis.png';
 
 const Rabbis = () => {
   const [videoSize, setVideoSize] = useState(300);
@@ -167,11 +167,11 @@ const Rabbis = () => {
         display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '32px', margin: '40px 0'
       }}>
         { [
-          { src: haravmoshehizkiyahu, name: 'הרב משה חזקיהו שליט"א' },
-          { src: haravezratrav, name: 'הרב עזרא טראב שליט"א' },
-           { src: haravyosefarbiv, name: 'הרב יוסף ארביב שליט"א' },
-          { src: haravboazbetsaleli, name: 'הרב בועז בצלאלי שליט"א' },
-          { src: haravmosheparzis, name: 'הרב משה פרזיס שליט"א' }
+          {  name: 'הרב משה חזקיהו שליט"א' },
+          {  name: 'הרב עזרא טראב שליט"א' },
+           {  name: 'הרב יוסף ארביב שליט"א' },
+          {  name: 'הרב בועז בצלאלי שליט"א' },
+          {  name: 'הרב משה פרזיס שליט"א' }
           // ,
           // { src: haravboazbetsaleli, name: 'הרב רפאל זביחי שליט"א' }
          
@@ -209,7 +209,7 @@ const Rabbis = () => {
         maxHeight: '320px',
       }}>
               <img
-                src={rabbi.src}
+                // src={rabbi.src}
                 alt={rabbi.name}
                 style={{
                   width: '100%',

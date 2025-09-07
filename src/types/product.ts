@@ -7,7 +7,7 @@ export interface Product {
   price: number;
   weight: string;
   kashrutLevel: string;
-  imageSrc: string;
+  imageSrc?: string;
   isPromoted: boolean;
   ingredients?: string[];
   preparationTips?: string;

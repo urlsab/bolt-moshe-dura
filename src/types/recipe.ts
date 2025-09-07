@@ -10,7 +10,7 @@ export interface Recipe {
   ingredients: string[];
   instructions: string[];
   kashrutNotes?: string;
-  imageSrc: string;
+  imageSrc?: string;
   relatedProducts?: number[];
   videoSrc?: string; // Optional video for recipe
   bigImg?: string; // Optional large image to display after instructions
