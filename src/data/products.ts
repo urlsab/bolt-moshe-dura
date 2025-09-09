@@ -1,149 +1,148 @@
 import { Product } from '../types/product';
-// import amnonimor from '../Assets/amnonimor.jpg';
-// import amnonleloor from '../Assets/amnonleloor.jpg';
-// import nilusparus from '../Assets/nilusparus.jpg';
-// import filesalmon from '../Assets/filesalmon.jpg';
-// import salamonmanot from '../Assets/salamonmanot.jpg';
-// import salamonleloor from '../Assets/salamonmanotleloor.jpg';
-// import marlozalelomaim from '../Assets/marlozelelomaim.jpg';
-// import stakesalamon from '../Assets/stakesalamon.jpg';
-// import filesol from '../Assets/filesol.jpg';
-// import tunalevana from '../Assets/tunalevana.jpg';
-// import tunahuma from '../Assets/tunahuma.jpg';
-// import filabarbunia from '../Assets/filebarbunia.jpg';
-// import fileamnonbetsipui from '../Assets/filaamnonbetsipui.jpg';
-// import filebabylokus from '../Assets/filebabylokus.webp';
-// import fishandchips from '../Assets/fish-and-chips.jpg';
-// import ktsitsotdaglebishul from '../Assets/ktsitsotdagimlebishul.jpg';
-// import maklonedagsegev from '../Assets/maklonedagsegev.jpg';
-// import lebrak from '../Assets/lebrak.png';
-// import filehalibut from '../Assets/filehalibut.jpg';
-// import ktsitotdagmetuganot from '../Assets/ktsitotdagmetuganot.jpg';
-// import merlozahike from '../Assets/merlozahike.jpg';
-// import bakla from '../Assets/bakla.jpg';
-// import tunaaduma from '../Assets/tunaaduma.jpg';
-// import fileamnonmetugan from '../Assets/fileamnonmetugan.jpg';
-// import revakeves from '../Assets/revakeves.jpeg';
-// import tslaottale from '../Assets/tslaotale.jpg';
-// import lambneck from '../Assets/lambneck.jpg';
-// import kateftalekafu from '../Assets/kateftalekafu.jpg';
-// import shumankeves from '../Assets/shumankeves.jpeg';
-// import asadotale from '../Assets/asadotale.jpg';
-// import shipudekeves from '../Assets/shipudekeves.jpg';
-// import kateftaletari from '../Assets/kateftaletari.jpg';
-// import roshtalemeforak from '../Assets/roshtalemeforak.webp';
-// import zroatale from '../Assets/zroatale.jpg';
-// import halfroshkeves from '../Assets/halfroshkeves.jpg';
-// import alia from '../Assets/alia.webp';
-// import keveslebishul from '../Assets/keveslebishul.webp';
-// import shkedeegel from '../Assets/shkedeegel.jpg';
-// import reotegel from '../Assets/reotegel.jpg';
-// import kavedegel from '../Assets/kavedegel.jpg';
-// import zanavegel from '../Assets/zanavegel.jpg';
-// import meaimegel from '../Assets/meaimegel.jpg';
-// import moahegel from '../Assets/moahegel.jpg';
-// import levegel from '../Assets/levegel.jpg';
-// import gelballs from '../Assets/gelballs.jpg';
-// import lashonegel from '../Assets/lashonegel.jpg';
-// import basarroshtari from '../Assets/basarroshtari.jpg';
-// import tslikatef from '../Assets/tslikatef.jpg';
-// import katefmerkazi from '../Assets/katefmerkazi.jpg';
-// import filemedume from '../Assets/filemedume.jpg';
-// import shrirhazroaa from '../Assets/shrirhazroaa.jpg';
-// import bakartahuntari from '../Assets/bakartahuntari.jpg';
-// import tsavarbaker from '../Assets/tsavarbaker.jpg';
-// import tslaotbakar from '../Assets/tslaotbakar.jpg';
-// import asado from '../Assets/asado.webp';
-// import antrikotimetsem from '../Assets/antrikotimetsem.jpg';
-// import angos from '../Assets/angos.jpg';
-// import antrikot from '../Assets/antrikot.jpg';
-// import antrikotegla from '../Assets/antrikotegla.jpg';
-// import sintapikenia from '../Assets/sintapikenia.webp';
-// import stakeprimium from '../Assets/stakeprimium.jpg';
-// import rotfilsh from '../Assets/rotfilsh.jpg';
-// import filebakar from '../Assets/filebakar.jpg';
-// import osoboko from '../Assets/osoboko.webp';
-// import bakartahunomkeves from '../Assets/bakartahunomkeves.jpg';
-// import tslaottsavarimetsem from '../Assets/tslaottsavarimetsem.jpg';
-// import asadoblietsem from '../Assets/asadoblietsem.jpg';
-// import atsamotmoah from '../Assets/atsamotmoah.jpg';
-// import osobokoegel from '../Assets/osobokoegel.jpg';
-// import ontriv from '../Assets/ontriv.jpg'
-// import pargitaroch from '../Assets/pargitaroch.webp';
-// import rotflyshmeshupad from '../Assets/rotflyshmeshupad.jpg';
-// import hodushalem from '../Assets/hodushalem.jpg';
-// import hodumeforak from '../Assets/hodumeforak.jpg';
-// import shuarma from '../Assets/shuarma.jpg';
-// import shuarmanekeva from '../Assets/shuarmanekeva.jpg';
-// import shokhodumeforak from '../Assets/shokhodumeforak.jpg';
-// import hazehodushalem from '../Assets/hazehodushalem.jpg';
-// import shokiyimhodu from '../Assets/shokiyimhodu.jpg';
-// import kanfehodu from '../Assets/kanfehodu.jpg';
-// import shnitselhodu from '../Assets/shnitselhodu.jpg';
-// import garonhodu from '../Assets/garonhodu.jpg';
-// import natehihodu from '../Assets/natehihodu.jpg';
-// import ashahehodu from '../Assets/ashahehodu.jpg';
-// import hoduadomtachon from '../Assets/hoduadomtachon.png';
-// import hodutachon from '../Assets/hodutachon.jpg';
-// import shishlikhodu from '../Assets/shishlikhodu.jpg';
-// import ofshalem from '../Assets/ofshalem.jpg';
-// import ofmeforak from '../Assets/ofmeforak.jpg';
-// import shnitsel from '../Assets/shnitsel.jpg';
-// import kraaayim from '../Assets/kraaayim.jpg';
-// import shokaim from '../Assets/shokaim.jpg';
-// import yerechaim from '../Assets/yerechaim.jpg';
-// import kenafaim from '../Assets/kenafaim.jpg';
-// import pargiot from '../Assets/pargiot.jpg';
-// import hazeof from '../Assets/hazeof.jpg';
-// import kaved from '../Assets/kaved.jpg';
-// import levavot from '../Assets/levavot.jpg';
-// import techol from '../Assets/techol.jpg';
-// import kurkevan from '../Assets/kurkevan.jpg';
-// import garonof from '../Assets/garonof.jpg';
-// import pargitoretsem from '../Assets/pargitoretsem.webp';
-// import oftachun from '../Assets/oftachun.jpg';
-// import pargitmeshupad from '../Assets/pargitmeshupad.jpg';
-// import fileaof from '../Assets/fileaof.jpeg';
-// import ofyonim from '../Assets/ofyonim.jpg';
-// import levavotmeshupad from '../Assets/levavotmeshupad.jpeg';
-// import shnitzelprimium from '../Assets/shnitzelprimium.jpg';
-// import kenafayimhatsui from '../Assets/kenafayimhatsui.jpg';
-// import tachuntarimachapud from '../Assets/tachuntarimachapud.jpg';
-// import ofleloetsem from '../Assets/ofleloetsem.jpg';
-// import meoraviyerushalmi from '../Assets/meoraviyerushalmi.webp';
-// import nakniksOff from '../Assets/nakniksOff.webp';
-// import offsNaknik from '../Assets/offsNaknik.jpg';
-// import hodunaknik from '../Assets/hodunaknik.webp';
-// import mergez from '../Assets/mergez.jpg';
-// import mergezBeiti from '../Assets/mergezBeiti.jpeg';
-// import beitmergezkilo from '../Assets/beitmergezkilo.webp';
-// import tsorisos from '../Assets/tsorisos.jpg';
-// import hamburger from '../Assets/hamburger.webp';
-// import hamburgernewyork from '../Assets/hamburgernewyork.jpg';
-// import hamburgerbeiti from '../Assets/hamburgerbeiti.jpg';
-// import hamburgerxl from '../Assets/hamburgerxl.webp';
-// import kababbb from '../Assets/kababbb.jpg';
-// import kababbbtale from '../Assets/kababbbtale.jpg';
-// import kababbbromani from '../Assets/kababbbromani.jpeg';
-// import ktsitsotbeitiot from '../Assets/ktsitsotbeitiot.jpg';
-// import kababkeves from '../Assets/kababkeves.jpeg';
-// import kababhabait from '../Assets/kababhabait.jpeg';
-// import steakpargit from '../Assets/steakpargit.jpg';
-// import shipudepargit from '../Assets/shipudepargit.jpg';
-// import shipudekaved from '../Assets/shipudekaved.jpg';
-// import shipudelavavot from '../Assets/shipudelavavot.png';
-// import knafaimmetubal from '../Assets/knafaimmetubal.jpeg';
-// import fileminyon from '../Assets/fileminyon.jpg';
-// import tomahok from '../Assets/tomahok.jpg';
-// import antrikotleloetsem from '../Assets/antrikotleloetsem.jpg';
-// import seakangos from '../Assets/seakangos.jpg';
-// import shipudeantrikot from '../Assets/shipudeantrikot.jpg';
-// import tslaotkevesss from '../Assets/tslaotkevesss.jpg';
-// import shipudeshishlikimlia from '../Assets/shipudeshishlikimlia.jpg';
-// import shumanliah from '../Assets/shumanliah.jpg';
-// import shipudeshkedimm from '../Assets/shipudeshkedimm.jpg';
-// import sukariotfilee from '../Assets/sukariotfilee.jpg';
-// import sukariotararis from '../Assets/sukariotararis.webp';
+import amnonimor from '../Assets/amnonimor.jpg';
+import amnonleloor from '../Assets/amnonleloor.jpg';
+import nilusparus from '../Assets/nilusparus.jpg';
+import filesalmon from '../Assets/filesalmon.jpg';
+import salamonmanot from '../Assets/salamonmanot.jpg';
+import salamonleloor from '../Assets/salamonmanotleloor.jpg';
+import marlozalelomaim from '../Assets/marlozelelomaim.jpg';
+import stakesalamon from '../Assets/stakesalamon.jpg';
+import filesol from '../Assets/filesol.jpg';
+import tunalevana from '../Assets/tunalevana.jpg';
+import tunahuma from '../Assets/tunahuma.jpg';
+import filabarbunia from '../Assets/filebarbunia.jpg';
+import fileamnonbetsipui from '../Assets/filaamnonbetsipui.jpg';
+import filebabylokus from '../Assets/filebabylokus.webp';
+import fishandchips from '../Assets/fish-and-chips.jpg';
+import ktsitsotdaglebishul from '../Assets/ktsitsotdagimlebishul.jpg';
+import maklonedagsegev from '../Assets/maklonedagsegev.jpg';
+import lebrak from '../Assets/lebrak.png';
+import filehalibut from '../Assets/filehalibut.jpg';
+import ktsitotdagmetuganot from '../Assets/ktsitotdagmetuganot.jpg';
+import merlozahike from '../Assets/merlozahike.jpg';
+import bakla from '../Assets/bakla.jpg';
+import tunaaduma from '../Assets/tunaaduma.jpg';
+import fileamnonmetugan from '../Assets/fileamnonmetugan.jpg';
+import revakeves from '../Assets/revakeves.jpeg';
+import tslaottale from '../Assets/tslaotale.jpg';
+import lambneck from '../Assets/lambneck.jpg';
+import kateftalekafu from '../Assets/kateftalekafu.jpg';
+import shumankeves from '../Assets/shumankeves.jpeg';
+import asadotale from '../Assets/asadotale.jpg';
+import shipudekeves from '../Assets/shipudekeves.jpg';
+import kateftaletari from '../Assets/kateftaletari.jpg';
+import roshtalemeforak from '../Assets/roshtalemeforak.webp';
+import zroatale from '../Assets/zroatale.jpg';
+import halfroshkeves from '../Assets/halfroshkeves.jpg';
+import alia from '../Assets/alia.webp';
+import keveslebishul from '../Assets/keveslebishul.webp';
+import shkedeegel from '../Assets/shkedeegel.jpg';
+import reotegel from '../Assets/reotegel.jpg';
+import kavedegel from '../Assets/kavedegel.jpg';
+import zanavegel from '../Assets/zanavegel.jpg';
+import meaimegel from '../Assets/meaimegel.jpg';
+import moahegel from '../Assets/moahegel.jpg';
+import levegel from '../Assets/levegel.jpg';
+import gelballs from '../Assets/gelballs.jpg';
+import lashonegel from '../Assets/lashonegel.jpg';
+import basarroshtari from '../Assets/basarroshtari.jpg';
+import tslikatef from '../Assets/tslikatef.jpg';
+import katefmerkazi from '../Assets/katefmerkazi.jpg';
+import filemedume from '../Assets/filemedume.jpg';
+import shrirhazroaa from '../Assets/shrirhazroaa.jpg';
+import bakartahuntari from '../Assets/bakartahuntari.jpg';
+import tsavarbaker from '../Assets/tsavarbaker.jpg';
+import tslaotbakar from '../Assets/tslaotbakar.jpg';
+import asado from '../Assets/asado.webp';
+import antrikotimetsem from '../Assets/antrikotimetsem.jpg';
+import angos from '../Assets/angos.jpg';
+import antrikot from '../Assets/antrikot.jpg';
+import antrikotegla from '../Assets/antrikotegla.jpg';
+import sintapikenia from '../Assets/sintapikenia.webp';
+import stakeprimium from '../Assets/stakeprimium.jpg';
+import rotfilsh from '../Assets/rotfilsh.jpg';
+import filebakar from '../Assets/filebakar.jpg';
+import osoboko from '../Assets/osoboko.webp';
+import bakartahunomkeves from '../Assets/bakartahunomkeves.jpg';
+import tslaottsavarimetsem from '../Assets/tslaottsavarimetsem.jpg';
+import asadoblietsem from '../Assets/asadoblietsem.jpg';
+import atsamotmoah from '../Assets/atsamotmoah.jpg';
+import osobokoegel from '../Assets/osobokoegel.jpg';
+import ontriv from '../Assets/ontriv.jpg'
+import pargitaroch from '../Assets/pargitaroch.webp';
+import rotflyshmeshupad from '../Assets/rotflyshmeshupad.jpg';
+import hodushalem from '../Assets/hodushalem.jpg';
+import hodumeforak from '../Assets/hodumeforak.jpg';
+import shuarma from '../Assets/shuarma.jpg';
+import shuarmanekeva from '../Assets/shuarmanekeva.jpg';
+import shokhodumeforak from '../Assets/shokhodumeforak.jpg';
+import hazehodushalem from '../Assets/hazehodushalem.jpg';
+import shokiyimhodu from '../Assets/shokiyimhodu.jpg';
+import kanfehodu from '../Assets/kanfehodu.jpg';
+import shnitselhodu from '../Assets/shnitselhodu.jpg';
+import garonhodu from '../Assets/garonhodu.jpg';
+import natehihodu from '../Assets/natehihodu.jpg';
+import ashahehodu from '../Assets/ashahehodu.jpg';
+import hoduadomtachon from '../Assets/hoduadomtachon.png';
+import hodutachon from '../Assets/hodutachon.jpg';
+import shishlikhodu from '../Assets/shishlikhodu.jpg';
+import ofshalem from '../Assets/ofshalem.jpg';
+import ofmeforak from '../Assets/ofmeforak.jpg';
+import shnitsel from '../Assets/shnitsel.jpg';
+import kraaayim from '../Assets/kraaayim.jpg';
+import shokaim from '../Assets/shokaim.jpg';
+import yerechaim from '../Assets/yerechaim.jpg';
+import kenafaim from '../Assets/kenafaim.jpg';
+import pargiot from '../Assets/pargiot.jpg';
+import hazeof from '../Assets/hazeof.jpg';
+import kaved from '../Assets/kaved.jpg';
+import levavot from '../Assets/levavot.jpg';
+import techol from '../Assets/techol.jpg';
+import kurkevan from '../Assets/kurkevan.jpg';
+import garonof from '../Assets/garonof.jpg';
+import pargitoretsem from '../Assets/pargitoretsem.webp';
+import oftachun from '../Assets/oftachun.jpg';
+import pargitmeshupad from '../Assets/pargitmeshupad.jpg';
+import fileaof from '../Assets/fileaof.jpeg';
+import ofyonim from '../Assets/ofyonim.jpg';
+import levavotmeshupad from '../Assets/levavotmeshupad.jpeg';
+import shnitzelprimium from '../Assets/shnitzelprimium.jpg';
+import kenafayimhatsui from '../Assets/kenafayimhatsui.jpg';
+import tachuntarimachapud from '../Assets/tachuntarimachapud.jpg';
+import ofleloetsem from '../Assets/ofleloetsem.jpg';
+import meoraviyerushalmi from '../Assets/meoraviyerushalmi.webp';
+import nakniksOff from '../Assets/nakniksOff.webp';
+import offsNaknik from '../Assets/offsNaknik.jpg';
+import hodunaknik from '../Assets/hodunaknik.webp';
+import mergez from '../Assets/mergez.jpg';
+import mergezBeiti from '../Assets/mergezBeiti.jpeg';
+import beitmergezkilo from '../Assets/beitmergezkilo.webp';
+import tsorisos from '../Assets/tsorisos.jpg';
+import hamburger from '../Assets/hamburger.webp';
+import hamburgernewyork from '../Assets/hamburgernewyork.jpg';
+import hamburgerbeiti from '../Assets/hamburgerbeiti.jpg';
+import hamburgerxl from '../Assets/hamburgerxl.webp';
+import kababbb from '../Assets/kababbb.jpg';
+import kababbbtale from '../Assets/kababbbtale.jpg';
+import kababbbromani from '../Assets/kababbbromani.jpeg';
+import ktsitsotbeitiot from '../Assets/ktsitsotbeitiot.jpg';
+import kababkeves from '../Assets/kababkeves.jpeg';
+import kababhabait from '../Assets/kababhabait.jpeg';
+import steakpargit from '../Assets/steakpargit.jpg';
+import shipudepargit from '../Assets/shipudepargit.jpg';
+import shipudekaved from '../Assets/shipudekaved.jpg';
+import knafaimmetubal from '../Assets/knafaimmetubal.jpeg';
+import fileminyon from '../Assets/fileminyon.jpg';
+import tomahok from '../Assets/tomahok.jpg';
+import antrikotleloetsem from '../Assets/antrikotleloetsem.jpg';
+import seakangos from '../Assets/seakangos.jpg';
+import shipudeantrikot from '../Assets/shipudeantrikot.jpg';
+import tslaotkevesss from '../Assets/tslaotkevesss.jpg';
+import shipudeshishlikimlia from '../Assets/shipudeshishlikimlia.jpg';
+import shumanliah from '../Assets/shumanliah.jpg';
+import shipudeshkedimm from '../Assets/shipudeshkedimm.jpg';
+import sukariotfile from '../Assets/sukariotfile.jpeg';
+import sukariotararis from '../Assets/sukariotararis.webp';
 
 const products: Product[] = [
   {
@@ -155,7 +154,7 @@ const products: Product[] = [
     price: 44,
     weight: '1 ק"ג',
     kashrutLevel: 'כשר למהדרין',
-    // imageSrc: `${amnonimor}`,
+    imageSrc: `${amnonimor}`,
     isPromoted: false
   },
   {
@@ -167,7 +166,7 @@ const products: Product[] = [
     price: 48,
     weight: '1 ק"ג',
     kashrutLevel: 'כשר למהדרין',
-    // imageSrc: `${amnonleloor}`,
+    imageSrc: `${amnonleloor}`,
     isPromoted: false
   },
   {
@@ -179,7 +178,7 @@ const products: Product[] = [
     price: 75,
     weight: '1 ק"ג',
     kashrutLevel: 'כשר למהדרין',
-    // imageSrc: `${nilusparus}`,
+    imageSrc: `${nilusparus}`,
     isPromoted: false
   },
   {
@@ -191,7 +190,7 @@ const products: Product[] = [
     price: 78,
     weight: '1 ק"ג',
     kashrutLevel: 'כשר למהדרין',
-    // imageSrc: `${filesalmon}`,
+    imageSrc: `${filesalmon}`,
     isPromoted: false
   },
   {
@@ -203,7 +202,7 @@ const products: Product[] = [
     price: 95,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${salamonmanot}`,
+    imageSrc: `${salamonmanot}`,
     isPromoted: false
   },
   {
@@ -215,7 +214,7 @@ const products: Product[] = [
     price: 120,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${salamonleloor}`,
+    imageSrc: `${salamonleloor}`,
     isPromoted: false
   },
   {
@@ -227,7 +226,7 @@ const products: Product[] = [
     price: 45,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${marlozalelomaim}`,
+    imageSrc: `${marlozalelomaim}`,
     isPromoted: false
   },
   {
@@ -239,7 +238,7 @@ const products: Product[] = [
     price: 65,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${stakesalamon}`,
+    imageSrc: `${stakesalamon}`,
     isPromoted: false
   },
   {
@@ -251,7 +250,7 @@ const products: Product[] = [
     price: 45,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${filesol}`,
+    imageSrc: `${filesol}`,
     isPromoted: false
   },
   {
@@ -263,7 +262,7 @@ const products: Product[] = [
     price: 65,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${tunalevana}`,
+    imageSrc: `${tunalevana}`,
     isPromoted: false
   },
   {
@@ -275,7 +274,7 @@ const products: Product[] = [
     price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${tunahuma}`,
+    imageSrc: `${tunahuma}`,
     isPromoted: false
   },
   {
@@ -287,7 +286,7 @@ const products: Product[] = [
     price: 32,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${filabarbunia}`,
+    imageSrc: `${filabarbunia}`,
     isPromoted: false
   },
   {
@@ -299,7 +298,7 @@ const products: Product[] = [
     price: 23,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${fileamnonbetsipui}`,
+    imageSrc: `${fileamnonbetsipui}`,
     isPromoted: false
   },
   {
@@ -311,7 +310,7 @@ const products: Product[] = [
     price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${filebabylokus}`,
+    imageSrc: `${filebabylokus}`,
     isPromoted: false
   },
   {
@@ -323,7 +322,7 @@ const products: Product[] = [
     price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${fishandchips}`,
+    imageSrc: `${fishandchips}`,
     isPromoted: false
   },
   {
@@ -335,7 +334,7 @@ const products: Product[] = [
     price: 32,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${ktsitsotdaglebishul}`,
+    imageSrc: `${ktsitsotdaglebishul}`,
     isPromoted: false
   },
   {
@@ -347,7 +346,7 @@ const products: Product[] = [
     price: 28,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${maklonedagsegev}`,
+    imageSrc: `${maklonedagsegev}`,
     isPromoted: false
   },
   {
@@ -359,7 +358,7 @@ const products: Product[] = [
     price: 58,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${lebrak}`,
+    imageSrc: `${lebrak}`,
     isPromoted: false
   },
   {
@@ -371,7 +370,7 @@ const products: Product[] = [
     price: 89,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${filehalibut}`,
+    imageSrc: `${filehalibut}`,
     isPromoted: false
   },
   {
@@ -383,7 +382,7 @@ const products: Product[] = [
     price: 35,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${ktsitotdagmetuganot}`,
+    imageSrc: `${ktsitotdagmetuganot}`,
     isPromoted: false
   },
   {
@@ -395,7 +394,7 @@ const products: Product[] = [
     price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${merlozahike}`,
+    imageSrc: `${merlozahike}`,
     isPromoted: false
   },
   {
@@ -407,7 +406,7 @@ const products: Product[] = [
     price: 28,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${bakla}`,
+    imageSrc: `${bakla}`,
     isPromoted: false
   },
   {
@@ -419,7 +418,7 @@ const products: Product[] = [
     price: 75,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${tunaaduma}`,
+    imageSrc: `${tunaaduma}`,
     isPromoted: false
   },
   {
@@ -431,7 +430,7 @@ const products: Product[] = [
     price: 30,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${fileamnonmetugan}`,
+    imageSrc: `${fileamnonmetugan}`,
     isPromoted: false
   },
   {
@@ -443,7 +442,7 @@ const products: Product[] = [
     price: 145,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${revakeves}`,
+    imageSrc: `${revakeves}`,
     isPromoted: false
   },
   {
@@ -455,7 +454,7 @@ const products: Product[] = [
     price: 260,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${tslaottale}`,
+    imageSrc: `${tslaottale}`,
     isPromoted: false
   },
   {
@@ -467,7 +466,7 @@ const products: Product[] = [
     price: 110,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${lambneck}`,
+    imageSrc: `${lambneck}`,
     isPromoted: false
   },
   {
@@ -479,7 +478,7 @@ const products: Product[] = [
     price: 140,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${kateftalekafu}`,
+    imageSrc: `${kateftalekafu}`,
     isPromoted: false
   },
   {
@@ -491,7 +490,7 @@ const products: Product[] = [
     price: 230,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shumankeves}`,
+    imageSrc: `${shumankeves}`,
     isPromoted: false
   },
   {
@@ -503,7 +502,7 @@ const products: Product[] = [
     price: 110,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${asadotale}`,
+    imageSrc: `${asadotale}`,
     isPromoted: false
   },
   {
@@ -515,7 +514,7 @@ const products: Product[] = [
     price: 190,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shipudekeves}`,
+    imageSrc: `${shipudekeves}`,
     isPromoted: false
   },
   {
@@ -527,7 +526,7 @@ const products: Product[] = [
     price: 145,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${kateftaletari}`,
+    imageSrc: `${kateftaletari}`,
     isPromoted: false
   },
   {
@@ -539,7 +538,7 @@ const products: Product[] = [
     price: 115,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${roshtalemeforak}`,
+    imageSrc: `${roshtalemeforak}`,
     isPromoted: false
   },
   {
@@ -551,7 +550,7 @@ const products: Product[] = [
     price: 160,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${zroatale}`,
+    imageSrc: `${zroatale}`,
     isPromoted: false
   },
   {
@@ -563,7 +562,7 @@ const products: Product[] = [
     price: 75,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${halfroshkeves}`,
+    imageSrc: `${halfroshkeves}`,
     isPromoted: false
   },
   {
@@ -575,7 +574,7 @@ const products: Product[] = [
     price: 260,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${alia}`,
+    imageSrc: `${alia}`,
     isPromoted: false
   },
   {
@@ -587,7 +586,7 @@ const products: Product[] = [
     price: 90,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${keveslebishul}`,
+    imageSrc: `${keveslebishul}`,
     isPromoted: false
   },
   {
@@ -599,7 +598,7 @@ const products: Product[] = [
     price: 420,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shkedeegel}`,
+    imageSrc: `${shkedeegel}`,
     isPromoted: false
   },
   {
@@ -611,7 +610,7 @@ const products: Product[] = [
     price: 60,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${reotegel}`,
+    imageSrc: `${reotegel}`,
     isPromoted: false
   },
   {
@@ -623,7 +622,7 @@ const products: Product[] = [
     price: 60,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${kavedegel}`,
+    imageSrc: `${kavedegel}`,
     isPromoted: false
   },
   {
@@ -635,7 +634,7 @@ const products: Product[] = [
     price: 125,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${zanavegel}`,
+    imageSrc: `${zanavegel}`,
     isPromoted: false
   },
   {
@@ -647,7 +646,7 @@ const products: Product[] = [
     price: 95,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${meaimegel}`,
+    imageSrc: `${meaimegel}`,
     isPromoted: false
   },
   {
@@ -659,7 +658,7 @@ const products: Product[] = [
     price: 360.00,
     weight: '1 ק"ג',
     kashrutLevel: 'בד"צ',
-    // imageSrc: `${moahegel}`,
+    imageSrc: `${moahegel}`,
     isPromoted: false
   },
   {
@@ -671,7 +670,7 @@ const products: Product[] = [
     price: 60,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${levegel}`,
+    imageSrc: `${levegel}`,
     isPromoted: false
   },
   {
@@ -683,7 +682,7 @@ const products: Product[] = [
     price: 95,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${gelballs}`,
+    imageSrc: `${gelballs}`,
     isPromoted: false
   },
   {
@@ -695,7 +694,7 @@ const products: Product[] = [
     price: 85,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${lashonegel}`,
+    imageSrc: `${lashonegel}`,
     isPromoted: false
   },
   {
@@ -707,7 +706,7 @@ const products: Product[] = [
     price: 95,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${basarroshtari}`,
+    imageSrc: `${basarroshtari}`,
     isPromoted: false
   },
   {
@@ -719,7 +718,7 @@ const products: Product[] = [
     price: 99,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${tslikatef}`,
+    imageSrc: `${tslikatef}`,
     isPromoted: false
   },
   {
@@ -731,7 +730,7 @@ const products: Product[] = [
     price: 89,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${katefmerkazi}`,
+    imageSrc: `${katefmerkazi}`,
     isPromoted: false
   },
   {
@@ -743,7 +742,7 @@ const products: Product[] = [
     price: 89,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${filemedume}`,
+    imageSrc: `${filemedume}`,
     isPromoted: false
   },
   {
@@ -755,7 +754,7 @@ const products: Product[] = [
     price: 89,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shrirhazroaa}`,
+    imageSrc: `${shrirhazroaa}`,
     isPromoted: false
   },
   {
@@ -767,7 +766,7 @@ const products: Product[] = [
     price: 78,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${bakartahuntari}`,
+    imageSrc: `${bakartahuntari}`,
     isPromoted: false
   },
   {
@@ -779,7 +778,7 @@ const products: Product[] = [
     price: 82,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${tsavarbaker}`,
+    imageSrc: `${tsavarbaker}`,
     isPromoted: false
   },
   {
@@ -791,7 +790,7 @@ const products: Product[] = [
     price: 85,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${tslaotbakar}`,
+    imageSrc: `${tslaotbakar}`,
     isPromoted: false
   },
   {
@@ -803,7 +802,7 @@ const products: Product[] = [
     price: 85,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${asado}`,
+    imageSrc: `${asado}`,
     isPromoted: false
   },
   {
@@ -815,7 +814,7 @@ const products: Product[] = [
     price: 180,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${antrikotimetsem}`,
+    imageSrc: `${antrikotimetsem}`,
     isPromoted: false
   },
   {
@@ -827,7 +826,7 @@ const products: Product[] = [
     price: 220,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${angos}`,
+    imageSrc: `${angos}`,
     isPromoted: false
   },
   {
@@ -839,7 +838,7 @@ const products: Product[] = [
     price: 180,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${antrikot}`,
+    imageSrc: `${antrikot}`,
     isPromoted: false
   },
   {
@@ -851,7 +850,7 @@ const products: Product[] = [
     price: 240,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${antrikotegla}`,
+    imageSrc: `${antrikotegla}`,
     isPromoted: false
   },
   {
@@ -863,7 +862,7 @@ const products: Product[] = [
     price: 180,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${sintapikenia}`,
+    imageSrc: `${sintapikenia}`,
     isPromoted: false
   },
   {
@@ -875,7 +874,7 @@ const products: Product[] = [
     price: 300,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${stakeprimium}`,
+    imageSrc: `${stakeprimium}`,
     isPromoted: false
   },
   {
@@ -887,7 +886,7 @@ const products: Product[] = [
     price: 210,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${rotfilsh}`,
+    imageSrc: `${rotfilsh}`,
     isPromoted: false
   },
   {
@@ -899,7 +898,7 @@ const products: Product[] = [
     price: 300,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${filebakar}`,
+    imageSrc: `${filebakar}`,
     isPromoted: false
   },
   {
@@ -911,7 +910,7 @@ const products: Product[] = [
     price: 85,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${osoboko}`,
+    imageSrc: `${osoboko}`,
     isPromoted: false
   },
   // בקר טחון מבצע 65 - לא רשמתי כאן - לשאול את משה אם זה במבצעים וזה בתוקף עדיין
@@ -925,7 +924,7 @@ const products: Product[] = [
     price: 78,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${bakartahunomkeves}`,
+    imageSrc: `${bakartahunomkeves}`,
     isPromoted: false
   },
   {
@@ -937,7 +936,7 @@ const products: Product[] = [
     price: 80,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${tslaottsavarimetsem}`,
+    imageSrc: `${tslaottsavarimetsem}`,
     isPromoted: false
   },
   {
@@ -949,7 +948,7 @@ const products: Product[] = [
     price: 95,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${asadoblietsem}`,
+    imageSrc: `${asadoblietsem}`,
     isPromoted: false
   },
   {
@@ -961,7 +960,7 @@ const products: Product[] = [
     price: 78,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${atsamotmoah}`,
+    imageSrc: `${atsamotmoah}`,
     isPromoted: false
   },
   {
@@ -973,7 +972,7 @@ const products: Product[] = [
     price: 85,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${osobokoegel}`,
+    imageSrc: `${osobokoegel}`,
     isPromoted: false
   },
   {
@@ -985,7 +984,7 @@ const products: Product[] = [
     price: 88,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${ontriv}`,
+    imageSrc: `${ontriv}`,
     isPromoted: false
   },
   {
@@ -997,7 +996,7 @@ const products: Product[] = [
     price: 78,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${pargitaroch}`,
+    imageSrc: `${pargitaroch}`,
     isPromoted: false
   },
   {
@@ -1009,7 +1008,7 @@ const products: Product[] = [
     price: 220,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${rotflyshmeshupad}`,
+    imageSrc: `${rotflyshmeshupad}`,
     isPromoted: false
   },
   {
@@ -1021,7 +1020,7 @@ const products: Product[] = [
     price: 35,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${hodushalem}`,
+    imageSrc: `${hodushalem}`,
     isPromoted: false
   },
   {
@@ -1033,7 +1032,7 @@ const products: Product[] = [
     price: 40,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${hodumeforak}`,
+    imageSrc: `${hodumeforak}`,
     isPromoted: false
   },
   {
@@ -1045,7 +1044,7 @@ const products: Product[] = [
     price: 82,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shuarma}`,
+    imageSrc: `${shuarma}`,
     isPromoted: false
   },
   {
@@ -1057,7 +1056,7 @@ const products: Product[] = [
     price: 88,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shuarmanekeva}`,
+    imageSrc: `${shuarmanekeva}`,
     isPromoted: false
   },
   {
@@ -1069,7 +1068,7 @@ const products: Product[] = [
     price: 68.00,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shokhodumeforak}`,
+    imageSrc: `${shokhodumeforak}`,
     isPromoted: false
   },
   {
@@ -1081,7 +1080,7 @@ const products: Product[] = [
     price: 52,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${hazehodushalem}`,
+    imageSrc: `${hazehodushalem}`,
     isPromoted: false
   },
   {
@@ -1093,7 +1092,7 @@ const products: Product[] = [
     price: 52,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shokiyimhodu}`,
+    imageSrc: `${shokiyimhodu}`,
     isPromoted: false
   },
   {
@@ -1105,7 +1104,7 @@ const products: Product[] = [
     price: 28,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${kanfehodu}`,
+    imageSrc: `${kanfehodu}`,
     isPromoted: false
   },
   {
@@ -1117,7 +1116,7 @@ const products: Product[] = [
     price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shnitselhodu}`,
+    imageSrc: `${shnitselhodu}`,
     isPromoted: false
   },
   {
@@ -1129,7 +1128,7 @@ const products: Product[] = [
     price: 42,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${garonhodu}`,
+    imageSrc: `${garonhodu}`,
     isPromoted: false
   },
   {
@@ -1141,7 +1140,7 @@ const products: Product[] = [
     price: 45,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${natehihodu}`,
+    imageSrc: `${natehihodu}`,
     isPromoted: false
   },
   {
@@ -1153,7 +1152,7 @@ const products: Product[] = [
     price: 210,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${ashahehodu}`,
+    imageSrc: `${ashahehodu}`,
     isPromoted: false
   },
   {
@@ -1165,7 +1164,7 @@ const products: Product[] = [
     price: 68,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${hoduadomtachon}`,
+    imageSrc: `${hoduadomtachon}`,
     isPromoted: false
   },
   {
@@ -1177,7 +1176,7 @@ const products: Product[] = [
     price: 45,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${hodutachon}`,
+    imageSrc: `${hodutachon}`,
     isPromoted: false
   },
   {
@@ -1189,7 +1188,7 @@ const products: Product[] = [
     price: 60,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shishlikhodu}`,
+    imageSrc: `${shishlikhodu}`,
     isPromoted: false
   },
   {
@@ -1201,7 +1200,7 @@ const products: Product[] = [
     price: 30,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${ofshalem}`,
+    imageSrc: `${ofshalem}`,
     isPromoted: false
   },
   {
@@ -1213,7 +1212,7 @@ const products: Product[] = [
     price: 38,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${ofmeforak}`,
+    imageSrc: `${ofmeforak}`,
     isPromoted: false
   },
   {
@@ -1225,7 +1224,7 @@ const products: Product[] = [
     price: 59,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shnitsel}`,
+    imageSrc: `${shnitsel}`,
     isPromoted: false
   },
   {
@@ -1237,7 +1236,7 @@ const products: Product[] = [
     price: 48,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${kraaayim}`,
+    imageSrc: `${kraaayim}`,
     isPromoted: false
   },
   {
@@ -1249,7 +1248,7 @@ const products: Product[] = [
     price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shokaim}`,
+    imageSrc: `${shokaim}`,
     isPromoted: false
   },
   {
@@ -1261,7 +1260,7 @@ const products: Product[] = [
     price: 48,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${yerechaim}`,
+    imageSrc: `${yerechaim}`,
     isPromoted: false
   },
   {
@@ -1273,7 +1272,7 @@ const products: Product[] = [
     price: 24,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${kenafaim}`,
+    imageSrc: `${kenafaim}`,
     isPromoted: false
   },
   {
@@ -1285,7 +1284,7 @@ const products: Product[] = [
     price: 88,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${pargiot}`,
+    imageSrc: `${pargiot}`,
     isPromoted: false
   },
   {
@@ -1297,7 +1296,7 @@ const products: Product[] = [
     price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${hazeof}`,
+    imageSrc: `${hazeof}`,
     isPromoted: false
   },
   {
@@ -1309,7 +1308,7 @@ const products: Product[] = [
     price: 48,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${kaved}`,
+    imageSrc: `${kaved}`,
     isPromoted: false
   },
   {
@@ -1321,7 +1320,7 @@ const products: Product[] = [
     price: 48,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${levavot}`,
+    imageSrc: `${levavot}`,
     isPromoted: false
   },
   {
@@ -1333,7 +1332,7 @@ const products: Product[] = [
     price: 95,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${techol}`,
+    imageSrc: `${techol}`,
     isPromoted: false
   },
   {
@@ -1345,7 +1344,7 @@ const products: Product[] = [
     price: 28,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${kurkevan}`,
+    imageSrc: `${kurkevan}`,
     isPromoted: false
   },
   {
@@ -1357,7 +1356,7 @@ const products: Product[] = [
     price: 28,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${garonof}`,
+    imageSrc: `${garonof}`,
     isPromoted: false
   },
   {
@@ -1369,7 +1368,7 @@ const products: Product[] = [
     price: 75,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${pargitoretsem}`,
+    imageSrc: `${pargitoretsem}`,
     isPromoted: false
   },
   {
@@ -1381,7 +1380,7 @@ const products: Product[] = [
     price: 55,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${oftachun}`,
+    imageSrc: `${oftachun}`,
     isPromoted: false
   },
   {
@@ -1393,7 +1392,7 @@ const products: Product[] = [
     price: 115,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${pargitmeshupad}`,
+    imageSrc: `${pargitmeshupad}`,
     isPromoted: false
   },
   {
@@ -1405,7 +1404,7 @@ const products: Product[] = [
     price: 65,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${fileaof}`,
+    imageSrc: `${fileaof}`,
     isPromoted: false
   },
   {
@@ -1417,7 +1416,7 @@ const products: Product[] = [
     price: 58,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${ofyonim}`,
+    imageSrc: `${ofyonim}`,
     isPromoted: false
   },
   {
@@ -1429,7 +1428,7 @@ const products: Product[] = [
     price: 120,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${levavotmeshupad}`,
+    imageSrc: `${levavotmeshupad}`,
     isPromoted: false
   },
   {
@@ -1441,7 +1440,7 @@ const products: Product[] = [
     price: 68,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${shnitzelprimium}`,
+    imageSrc: `${shnitzelprimium}`,
     isPromoted: false
   },
   // {  ב- id:71 כבר קיים 
@@ -1453,7 +1452,7 @@ const products: Product[] = [
   //   price: 78,
   //   weight: '1 ק"ג',
   //   kashrutLevel:'כשר למהדרין',
-    //imageSrc: `${pargitarohh}`,
+  // imageSrc: `${pargitarohh}`,
   //   isPromoted: false
   // },
   {
@@ -1465,7 +1464,7 @@ const products: Product[] = [
     price: 28,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${kenafayimhatsui}`,
+    imageSrc: `${kenafayimhatsui}`,
     isPromoted: false
   },
   {
@@ -1477,7 +1476,7 @@ const products: Product[] = [
     price: 85,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${tachuntarimachapud}`,
+    imageSrc: `${tachuntarimachapud}`,
     isPromoted: false
   },
   {
@@ -1489,7 +1488,7 @@ const products: Product[] = [
     price: 65,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${ofleloetsem}`,
+    imageSrc: `${ofleloetsem}`,
     isPromoted: false
   },
   {
@@ -1501,7 +1500,7 @@ const products: Product[] = [
     price: 95,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
-    // imageSrc: `${meoraviyerushalmi}`,
+    imageSrc: `${meoraviyerushalmi}`,
     isPromoted: false
   },
 {
@@ -1513,7 +1512,7 @@ const products: Product[] = [
   price: 13.00,
   weight: '400 גרם',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${nakniksOff}`,
+  imageSrc: `${nakniksOff}`,
   isPromoted: false
 },
 {
@@ -1525,7 +1524,7 @@ const products: Product[] = [
   price: 38.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${offsNaknik}`,
+  imageSrc: `${offsNaknik}`,
   isPromoted: false
 },
 {
@@ -1537,7 +1536,7 @@ const products: Product[] = [
   price: 48.00,
   weight: '1.5 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${hodunaknik}`,
+  imageSrc: `${hodunaknik}`,
   isPromoted: false
 },
 {
@@ -1549,7 +1548,7 @@ const products: Product[] = [
   price: 28.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${mergez}`,
+  imageSrc: `${mergez}`,
   isPromoted: false
 },
 {
@@ -1561,7 +1560,7 @@ const products: Product[] = [
   price: 55.00,
   weight: '600 גרם',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${mergezBeiti}`,
+  imageSrc: `${mergezBeiti}`,
   isPromoted: false
 },
 {
@@ -1573,7 +1572,7 @@ const products: Product[] = [
   price: 75.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${beitmergezkilo}`,
+  imageSrc: `${beitmergezkilo}`,
   isPromoted: false
 },
 {
@@ -1585,7 +1584,7 @@ const products: Product[] = [
   price: 75.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${tsorisos}`,
+  imageSrc: `${tsorisos}`,
   isPromoted: false
 },
 {
@@ -1597,7 +1596,7 @@ const products: Product[] = [
   price: 24.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${hamburger}`,
+  imageSrc: `${hamburger}`,
   isPromoted: false
 },
 {
@@ -1609,7 +1608,7 @@ const products: Product[] = [
   price: 48.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${hamburgernewyork}`,
+  imageSrc: `${hamburgernewyork}`,
   isPromoted: false
 },
 {
@@ -1621,7 +1620,7 @@ const products: Product[] = [
   price: 68.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc:`${hamburgerbeiti}`,
+  imageSrc:`${hamburgerbeiti}`,
   isPromoted: false
 },
 {
@@ -1633,7 +1632,7 @@ const products: Product[] = [
   price: 48.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${hamburgerxl}`,
+  imageSrc: `${hamburgerxl}`,
   isPromoted: false
 },
 {
@@ -1645,7 +1644,7 @@ const products: Product[] = [
   price: 24.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${kababbb}`,
+  imageSrc: `${kababbb}`,
   isPromoted: false
 },
 {
@@ -1657,7 +1656,7 @@ const products: Product[] = [
   price: 48.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${kababbbtale}`,
+  imageSrc: `${kababbbtale}`,
   isPromoted: false
 },
 {
@@ -1669,7 +1668,7 @@ const products: Product[] = [
   price: 48.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${kababbbromani}`,
+  imageSrc: `${kababbbromani}`,
   isPromoted: false
 },
 {
@@ -1681,7 +1680,7 @@ const products: Product[] = [
   price: 68.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${ktsitsotbeitiot}`,
+  imageSrc: `${ktsitsotbeitiot}`,
   isPromoted: false
 },
 {
@@ -1693,7 +1692,7 @@ const products: Product[] = [
   price: 68.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${kababkeves}`,
+  imageSrc: `${kababkeves}`,
   isPromoted: false
 },
 {
@@ -1705,7 +1704,7 @@ const products: Product[] = [
   price: 89.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${kababhabait}`,
+  imageSrc: `${kababhabait}`,
   isPromoted: false
 },
 {
@@ -1717,7 +1716,7 @@ const products: Product[] = [
   price: 88.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${steakpargit}`,
+  imageSrc: `${steakpargit}`,
   isPromoted: false
 },
 {
@@ -1729,7 +1728,7 @@ const products: Product[] = [
   price: 105.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${shipudepargit}`,
+  imageSrc: `${shipudepargit}`,
   isPromoted: false
 },
 {
@@ -1741,7 +1740,7 @@ const products: Product[] = [
   price: 55.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${shipudekaved}`,
+  imageSrc: `${shipudekaved}`,
   isPromoted: false
 },
 {
@@ -1753,7 +1752,7 @@ const products: Product[] = [
   price: 10.00,
   weight: 'יחידה',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${shipudelavavot}`,
+  imageSrc: `${levavotmeshupad}`,
   isPromoted: false
 },
 {
@@ -1765,7 +1764,7 @@ const products: Product[] = [
   price: 24.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${kenafaim}`,
+  imageSrc: `${kenafaim}`,
   isPromoted: false
 },
 {
@@ -1777,7 +1776,7 @@ const products: Product[] = [
   price: 28.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${kenafayimhatsui}`,
+  imageSrc: `${kenafayimhatsui}`,
   isPromoted: false
 },
 {
@@ -1789,7 +1788,7 @@ const products: Product[] = [
   price: 35.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${knafaimmetubal}`,
+  imageSrc: `${knafaimmetubal}`,
   isPromoted: false
 },
 {
@@ -1801,7 +1800,7 @@ const products: Product[] = [
   price: 180.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${sintapikenia}`,
+  imageSrc: `${sintapikenia}`,
   isPromoted: false
 },
 {
@@ -1813,7 +1812,7 @@ const products: Product[] = [
   price: 300.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${fileminyon}`,
+  imageSrc: `${fileminyon}`,
   isPromoted: false
 },
 {
@@ -1825,7 +1824,7 @@ const products: Product[] = [
   price: 180.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${antrikotimetsem}`,
+  imageSrc: `${antrikotimetsem}`,
   isPromoted: false
 },
 {
@@ -1837,7 +1836,7 @@ const products: Product[] = [
   price: 190.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${tomahok}`,
+  imageSrc: `${tomahok}`,
   isPromoted: false
 },
 {
@@ -1849,7 +1848,7 @@ const products: Product[] = [
   price: 200.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${antrikotleloetsem}`,
+  imageSrc: `${antrikotleloetsem}`,
   isPromoted: false
 },
 {
@@ -1861,7 +1860,7 @@ const products: Product[] = [
   price: 240.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${seakangos}`,
+  imageSrc: `${seakangos}`,
   isPromoted: false
 },
 {
@@ -1873,7 +1872,7 @@ const products: Product[] = [
   price: 280.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${stakeprimium}`,
+  imageSrc: `${stakeprimium}`,
   isPromoted: false
 },
 {
@@ -1885,7 +1884,7 @@ const products: Product[] = [
   price: 220.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${shipudeantrikot}`,
+  imageSrc: `${shipudeantrikot}`,
   isPromoted: false
 },
 {
@@ -1897,7 +1896,7 @@ const products: Product[] = [
   price: 190.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${shipudekeves}`,
+  imageSrc: `${shipudekeves}`,
   isPromoted: false
 },
 {
@@ -1909,7 +1908,7 @@ const products: Product[] = [
   price: 260.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${tslaottale}`,
+  imageSrc: `${tslaottale}`,
   isPromoted: false
 },
 {
@@ -1921,7 +1920,7 @@ const products: Product[] = [
   price: 240.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${tslaotkevesss}`,
+  imageSrc: `${tslaotkevesss}`,
   isPromoted: false
 },
 {
@@ -1933,7 +1932,7 @@ const products: Product[] = [
   price: 210.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${ashahehodu}`,
+  imageSrc: `${ashahehodu}`,
   isPromoted: false
 },
 {
@@ -1945,7 +1944,7 @@ const products: Product[] = [
   price: 130.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${shipudeshishlikimlia}`,
+  imageSrc: `${shipudeshishlikimlia}`,
   isPromoted: false
 },
 {
@@ -1957,7 +1956,7 @@ const products: Product[] = [
   price: 230.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${shumankeves}`,
+  imageSrc: `${shumankeves}`,
   isPromoted: false
 },
 {
@@ -1969,7 +1968,7 @@ const products: Product[] = [
   price: 280.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${shumanliah}`,
+  imageSrc: `${shumanliah}`,
   isPromoted: false
 },
 {
@@ -1981,7 +1980,7 @@ const products: Product[] = [
   price: 420.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${shipudeshkedimm}`,
+  imageSrc: `${shipudeshkedimm}`,
   isPromoted: false
 },
 {
@@ -1993,7 +1992,7 @@ const products: Product[] = [
   price: 60.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${kavedegel}`,
+  imageSrc: `${kavedegel}`,
   isPromoted: false
 },
 {
@@ -2005,7 +2004,7 @@ const products: Product[] = [
   price: 280.00,
   weight: '1 ק"ג',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${sukariotfilee}`,
+  imageSrc: `${sukariotfile}`,
   isPromoted: false
 },
 {
@@ -2017,7 +2016,7 @@ const products: Product[] = [
   price: 25.00,
   weight: 'יחידה',
   kashrutLevel: 'כשר למהדרין',
-  // imageSrc: `${sukariotararis}`,
+  imageSrc: `${sukariotararis}`,
   isPromoted: false
 }
 ];

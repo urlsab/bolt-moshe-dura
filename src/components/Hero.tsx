@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-// import homepage from '../Assets/homepage.webp';
+import seakangos from '../Assets/seakangos.jpg';
 // import tadmitatliz from '../Assets/tadmitatliz.mp4';
 
 interface HeroProps {
@@ -15,7 +15,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({
   title,
   subtitle,
-  // imageSrc = `${homepage}`,
+  imageSrc = `${seakangos}`,
   buttonText,
   buttonLink = '/products'
 }) => {
@@ -59,7 +59,7 @@ const Hero: React.FC<HeroProps> = ({
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        // style={{ backgroundImage: `url(${imageSrc})` }}
+        style={{ backgroundImage: `url(${imageSrc})` }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
       </div>

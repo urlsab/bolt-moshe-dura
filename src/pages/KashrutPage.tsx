@@ -5,15 +5,7 @@ import Seo from '../components/Seo';
 import SectionTitle from '../components/SectionTitle';
 import { ArrowRight } from 'lucide-react';
 import articles from '../data/articles';
-// import badats from '../Assets/badatshaedajerusalem.jpg'
-// import beityosef from '../Assets/beityosef.png';
-// import machpud from '../Assets/haravmachpud.png';
-// import landa from '../Assets/haravlanda.png';
-// import rubin from '../Assets/haravrubin.jpg';
-// import anash from '../Assets/anash.png';
-// import navetsion from '../Assets/navetsionbadats.png';
-// import bnetsion from '../Assets/bnetsion.png';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 
 const KashrutPage: React.FC = () => {
@@ -46,25 +38,28 @@ const KashrutPage: React.FC = () => {
             {  alt: 'הרב רובין' },
             {  alt: 'אנש' },
           ].map((img, idx) => (
-            <motion.img
+            <div
               key={img.alt}
-              // src={img.src}
-              alt={img.alt}
-              initial={{ opacity: 0, y: -40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: idx * 0.25 }}
-              className="bg-white rounded-lg object-contain"
+              className="flex items-center justify-center bg-white rounded-lg"
               style={{
                 width: 'clamp(110px, 22vw, 220px)',
-                height: 'clamp(110px, 22vw, 220px)',
+                height: 'clamp(60px, 8vw, 80px)',
                 maxWidth: idx === 4 ? 260 : idx === 5 ? 300 : idx === 6 ? 235 : idx === 7 ? 335 : 200,
-                maxHeight: idx === 4 ? 260 : idx === 5 ? 300 : idx === 6 ? 235 : idx === 7 ? 335 : 200,
                 minWidth: 110,
-                minHeight: 110,
+                minHeight: 60,
                 backgroundColor: 'white',
                 borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '1.1rem',
+                color: '#1e40af',
+                letterSpacing: '0.5px',
+                boxShadow: '0 2px 8px 0 rgba(0,0,0,0.07)',
+                textAlign: 'center',
+                flexWrap: 'wrap',
               }}
-            />
+            >
+              {img.alt}
+            </div>
           ))}
         </div>
         
@@ -81,11 +76,26 @@ const KashrutPage: React.FC = () => {
                 <div key={article.id} className="bg-white rounded-lg shadow-md overflow-hidden">
                   <div className="md:flex">
                     <div className="md:w-1/3">
-                      <img 
-                        // src={article.imageSrc} 
-                        alt={article.title} 
-                        className="w-full h-full object-cover"
-                      />
+                      <div 
+                        className="flex items-center justify-center bg-white rounded-lg"
+                        style={{
+                          width: '100%',
+                          height: '80px',
+                          backgroundColor: 'white',
+                          borderRadius: '8px',
+                          fontWeight: 700,
+                          fontSize: '1.1rem',
+                          color: '#1e40af',
+                          letterSpacing: '0.5px',
+                          boxShadow: '0 2px 8px 0 rgba(0,0,0,0.07)',
+                          textAlign: 'center',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                        }}
+                      >
+                        {article.title}
+                      </div>
                     </div>
                     <div className="p-6 md:w-2/3">
                       <h3 className="font-bold text-xl mb-2">{article.title}</h3>

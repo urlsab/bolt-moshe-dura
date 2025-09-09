@@ -1,9 +1,9 @@
 import { Recipe } from '../types/recipe';
-// import asadobasir from '../Assets/asadobasir.jpg';
-// import tslaotkevesisbetibul from '../Assets/tslaotkevesisbetibul.png';
-// import tslistake from '../Assets/tslistake.png';
-// import sukariotfile from '../Assets/sukariotfile.jpeg';
-// import perukof from '../Assets/perukof.jpg'; // Assuming this is the correct path for the video
+import asadobasir from '../Assets/asadobasir.jpg';
+import tslaotkevesisbetibul from '../Assets/tslaotkevesisbetibul.png';
+import tslistake from '../Assets/tslistake.png';
+import sukariotfile from '../Assets/sukariotfile.jpeg';
+import perukof from '../Assets/perukof.jpg'; // Assuming this is the correct path for the video
 import file from '../Assets/file.mp4';
 import peruk from '../Assets/peruk.mp4'; // Assuming this is the correct path for the video
 import bakarmap from '../Assets/bakarmap.png'; // Assuming this is the correct path for the image
@@ -43,7 +43,7 @@ const recipes: Recipe[] = [
       'שוב, ממשיכים לצלות לכל הצדדים.'
     ],
     kashrutNotes: 'יש להקפיד על בשר בהשגחה מהודרת.',
-    // imageSrc: `${asadobasir}`,
+    imageSrc: `${asadobasir}`,
     relatedProducts: []
   },
   {
@@ -73,7 +73,7 @@ const recipes: Recipe[] = [
       'לחמם בתנור על טמפרטורה בינונית 180 מעלות 40 דקות.'
     ],
     kashrutNotes: 'יש להקפיד על כבש בכשרות מהודרת.',
-    // imageSrc: `${tslaotkevesisbetibul}`,
+    imageSrc: `${tslaotkevesisbetibul}`,
     relatedProducts: []
   },
   {
@@ -96,7 +96,7 @@ const recipes: Recipe[] = [
       ' נקה את הגריל לאחר כל שימוש.'
     ],
     kashrutNotes: '',
-    // imageSrc: `${tslistake}`,
+    imageSrc: `${tslistake}`,
     relatedProducts: []
   },
   {
@@ -113,7 +113,7 @@ const recipes: Recipe[] = [
       'עקבו אחר ההוראות בסרטון',
     ],
     kashrutNotes: '',
-    // imageSrc: `${sukariotfile}`,
+    imageSrc: `${sukariotfile}`,
     relatedProducts: [],
     videoSrc: `${file}`
   },
@@ -131,7 +131,7 @@ const recipes: Recipe[] = [
       'עקבו אחר ההוראות בסרטון',
     ],
     kashrutNotes: '',
-    // imageSrc: `${perukof}`,
+    imageSrc: `${perukof}`,
     relatedProducts: [],
     videoSrc: `${peruk}`
   },

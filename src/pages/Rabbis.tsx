@@ -172,9 +172,6 @@ const Rabbis = () => {
            {  name: 'הרב יוסף ארביב שליט"א' },
           {  name: 'הרב בועז בצלאלי שליט"א' },
           {  name: 'הרב משה פרזיס שליט"א' }
-          // ,
-          // { src: haravboazbetsaleli, name: 'הרב רפאל זביחי שליט"א' }
-         
         ].map((rabbi, idx) => (
           <motion.div
             key={idx}
@@ -196,31 +193,25 @@ const Rabbis = () => {
             }}
           >
             <div style={{
-        width: '100%',
-        aspectRatio: '3/4', // Portrait ratio
-        background: '#f3f3f3',
-        borderRadius: '12px',
-        overflow: 'hidden',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: '12px',
-        minHeight: '180px',
-        maxHeight: '320px',
-      }}>
-              <img
-                // src={rabbi.src}
-                alt={rabbi.name}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  borderRadius: '12px',
-                  display: 'block',
-                }}
-              />
-              </div>
-            <div style={{fontWeight: 500, fontSize: 18, color: '#222'}}>{rabbi.name}</div>
+              width: '100%',
+              minHeight: '60px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginBottom: '12px',
+              background: 'linear-gradient(90deg, #e0e7ff 0%, #f3f4f6 100%)',
+              borderRadius: '12px',
+              fontWeight: 700,
+              fontSize: '1.2rem',
+              color: '#1e40af',
+              letterSpacing: '0.5px',
+              boxShadow: '0 2px 8px 0 rgba(0,0,0,0.07)',
+              flexWrap: 'wrap',
+              textAlign: 'center',
+              // width: '100%'
+            }}>
+              {rabbi.name}
+            </div>
           </motion.div>
         ))}
       </div>
