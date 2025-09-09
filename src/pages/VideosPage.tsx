@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import hilula from '../Assets/hilula.mp4';
 import tadmitatliz from '../Assets/tadmitatliz.mp4';
 import naki from '../Assets/naki.mp4'; 
+import tadmitShort from '../Assets/tadmitShort.mp4'
 
 const videos = [
   {
@@ -16,6 +17,10 @@ const videos = [
   {
     title: 'דואגים להזמנות שלכם!',
     src: `${naki}`
+  },
+  {
+    title: 'אצלנו מסודר, נקי ונגיש',
+    src: `${tadmitShort}`
   }
   // הוסף כאן עוד וידאוים
 ];

@@ -1,17 +1,17 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import SectionTitle from '../components/SectionTitle';
-import { ArrowRight } from 'lucide-react';
-import articles from '../data/articles';
+// import { ArrowRight } from 'lucide-react';
+// import articles from '../data/articles';
 // import { motion } from 'framer-motion';
 
 
 const KashrutPage: React.FC = () => {
   const { t } = useTranslation();
   
-  const kashrutArticles = articles.filter(article => article.category === 'כשרות');
+  //const kashrutArticles = articles.filter(article => article.category === 'כשרות');
   
   return (
     <div className="pt-24 pb-16 animate-fadeIn">
@@ -64,7 +64,7 @@ const KashrutPage: React.FC = () => {
         </div>
         
         {/* Related Articles */}
-        {kashrutArticles.length > 0 && (
+        {/* {kashrutArticles.length > 0 && (
           <div style={{ marginTop: '80px' }}>
             <SectionTitle 
               title="מאמרים בנושא כשרות"
@@ -113,7 +113,7 @@ const KashrutPage: React.FC = () => {
               ))}
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
