@@ -158,6 +158,23 @@ const Footer: React.FC = () => {
           <p className="text-light/90">{t('common.footer.kashrutDisclaimer')}</p>
         </div>
 
+        {/* Legal Links */}
+        <div className="flex justify-center gap-6 mb-6 text-sm">
+          <Link 
+            to="/terms-of-service" 
+            className="text-light/70 hover:text-secondary transition-colors underline"
+          >
+            תנאי שימוש
+          </Link>
+          <span className="text-light/50">|</span>
+          <Link 
+            to="/privacy-policy" 
+            className="text-light/70 hover:text-secondary transition-colors underline"
+          >
+            מדיניות פרטיות
+          </Link>
+        </div>
+
         {/* Copyright */}
         <div className="border-t border-gray-700 pt-6 text-center text-light/60 text-sm">
           <p> {currentYear} | {t('common.siteTitle')} | {t('common.footer.rights')} ©</p>

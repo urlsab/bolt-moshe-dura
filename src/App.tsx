@@ -14,6 +14,8 @@ import Rabbis from './pages/Rabbis';
 import NotFoundPage from './pages/NotFoundPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import VideosPage from './pages/VideosPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import { ScrollToTop } from '../ScrollToTop';
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/videos" element={<VideosPage />} />
+        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Layout>
