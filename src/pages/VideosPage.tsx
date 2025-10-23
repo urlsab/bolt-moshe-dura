@@ -3,7 +3,14 @@ import { useEffect, useState } from 'react';
 import hilula from '../Assets/hilula.mp4';
 import tadmitatliz from '../Assets/tadmitatliz.mp4';
 import naki from '../Assets/naki.mp4'; 
-import tadmitShort from '../Assets/tadmitShort.mp4'
+// import tadmitShort from '../Assets/tadmitShort.mp4';
+
+import leloPsharot from '../Assets/leloPsharot.mp4';
+import letsgo from '../Assets/letsgo.mp4';
+import tadmitTsanua from '../Assets/tadmitTsanua.mp4';
+import tadmit3 from '../Assets/tadmit3.mp4';
+import meorav from '../Assets/meoravvv.mp4';
+import tadmitALhaesh from '../Assets/tadmitAlHaesh.mp4';
 
 const videos = [
   {
@@ -18,10 +25,33 @@ const videos = [
     title: 'דואגים להזמנות שלכם!',
     src: `${naki}`
   },
+  
+
   {
-    title: 'אצלנו מסודר, נקי ונגיש',
-    src: `${tadmitShort}`
-  }
+  title: 'אודות האטליז 2',
+    src: `${tadmitTsanua}`
+  },
+  {
+  title: 'מוצרי על האש מובחרים !',
+    src: `${tadmitALhaesh}`
+  },
+  {
+  title: 'עוד אודות האטליז',
+    src: `${tadmit3}`
+  },
+  {
+  title: 'הכנת ערוב ירושלמי',
+    src: `${meorav}`
+  },
+  {
+  title: 'שירות ברמה גבוהה',
+    src: `${letsgo}`
+  },
+  {
+  title: 'איכות ללא פשרות',
+    src: `${leloPsharot}`
+  },
+  
   // הוסף כאן עוד וידאוים
 ];
 

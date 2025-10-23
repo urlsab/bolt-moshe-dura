@@ -48,7 +48,7 @@ const ContactPage: React.FC = () => {
   const faqItems = [
     {
       question: "כיצד ניתן להגיע אליכם?",
-      answer: "כתובתינו - רחוב צרעה 3 ת''א. בוויז ניתן לרשום כתובת זו או איטליז למהדרין"
+      answer: "כתובתינו - רחוב צרעה 3 ת''א. בוויז ניתן לרשום כתובת זו או אטליז למהדרין"
     },
     {
       question: "האם יש לכם מבצעים?",
@@ -190,7 +190,7 @@ const ContactPage: React.FC = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="מפת האיטליז"
+            title="מפת האטליז"
           ></iframe>
         </div>
         

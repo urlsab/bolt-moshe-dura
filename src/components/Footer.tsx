@@ -6,6 +6,7 @@ import moshelogo from '../Assets/moshelogo.png';
 import { FaWhatsapp } from "react-icons/fa";
 // import { FaWaze } from "react-icons/fa";
 import wazelogo from '../Assets/wazelogo.jpg';
+import catappLogo from '../Assets/catapp-logo.png';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -159,7 +160,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Legal Links */}
-        <div className="flex justify-center gap-6 mb-6 text-sm">
+        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 mb-6 text-sm">
           <Link 
             to="/terms-of-service" 
             className="text-light/70 hover:text-secondary transition-colors underline"
@@ -173,6 +174,22 @@ const Footer: React.FC = () => {
           >
             מדיניות פרטיות
           </Link>
+          <span className="text-light/50">|</span>
+          <div className="flex items-center gap-2">
+            <span className="text-light/70">נבנה ע"י</span>
+            <a
+              href="https://api.whatsapp.com/send?phone=+972556611594"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block hover:scale-110 transition-transform"
+            >
+              <img 
+                src={catappLogo} 
+                alt="CatApp Logo" 
+                className="h-8 w-auto"
+              />
+            </a>
+          </div>
         </div>
 
         {/* Copyright */}

@@ -23,7 +23,7 @@ const ArticleDetailPage: React.FC = () => {
   return (
     <div className="pt-24 pb-16 animate-fadeIn">
       <Seo
-        title={`${article.title} - איטליז למהדרין`}
+        title={`${article.title} - אטליז למהדרין`}
         description={article.shortDescription}
       />
       

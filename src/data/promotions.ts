@@ -159,7 +159,7 @@ export default promotions;
 //         <div className="max-w-7xl mx-auto px-4 py-6">
 //           <div className="flex items-center justify-between">
 //             <h1 className="text-3xl font-bold text-gray-900">
-//               איטליז כשר למהדרין - בשר טרי איכותי
+//               אטליז כשר למהדרין - בשר טרי איכותי
 //             </h1>
 //             <div className="flex items-center space-x-4">
 //               <Phone className="w-5 h-5 text-green-600" />
@@ -257,7 +257,7 @@ export default promotions;
 //         {/* תוכן SEO */}
 //         <div className="mt-8 bg-white rounded-lg shadow-sm p-6">
 //           <h2 className="text-2xl font-bold mb-4">
-//             איטליז כשר למהדרין - המדריך המלא
+//             אטליז כשר למהדרין - המדריך המלא
 //           </h2>
 //           <div className="prose prose-lg max-w-none">
 //             <p className="text-gray-700 mb-4">

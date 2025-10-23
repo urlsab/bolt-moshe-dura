@@ -215,8 +215,8 @@ export default recipes;
 //     "אטליז למהדרין כפר שלם",
 //     "אטליז למהדרין צרעה",
 //     "אטליז רמת גן",
-//     "איטליז מחפוד גוש דן",
-//     "איטליז עטרה",
+//     "אטליז מחפוד גוש דן",
+//     "אטליז עטרה",
 //     "בשר בגוש דן",
 //     "בשר בד״ץ",
 //     "בשר בד״ץ בגוש דן",
@@ -275,7 +275,7 @@ export default recipes;
 //   const { generateKeywords } = useSEOTags();
   
 //   const seoData = useMemo(() => {
-//     const title = `${product.name} - ${product.kosher} | איטליז כשר ${product.location}`;
+//     const title = `${product.name} - ${product.kosher} | אטליז כשר ${product.location}`;
 //     const description = `${product.name} איכותי בהכשר ${product.kosher} ב${product.location}. הזמינו אטליז טרי עם משלוח מהיר. מחיר: ₪${product.price} לק"ג`;
 //     const keywords = generateKeywords(product.category, product.location);
     
@@ -287,7 +287,7 @@ export default recipes;
 //       "category": "Food",
 //       "brand": {
 //         "@type": "Brand",
-//         "name": "איטליז כשר"
+//         "name": "אטליז כשר"
 //       },
 //       "offers": {
 //         "@type": "Offer",
@@ -296,7 +296,7 @@ export default recipes;
 //         "availability": "https://schema.org/InStock",
 //         "seller": {
 //           "@type": "Organization",
-//           "name": "איטליז כשר"
+//           "name": "אטליז כשר"
 //         }
 //       },
 //       "aggregateRating": {

@@ -10,7 +10,7 @@ const NotFoundPage: React.FC = () => {
   return (
     <div className="pt-24 pb-16 animate-fadeIn">
       <Seo
-        title="דף לא נמצא - איטליז למהדרין"
+        title="דף לא נמצא - אטליז למהדרין"
         description="הדף המבוקש אינו קיים"
       />
       

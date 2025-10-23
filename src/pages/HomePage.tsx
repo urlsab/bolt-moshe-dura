@@ -84,7 +84,7 @@ const HomePage: React.FC = () => {
             <div className="relative">
               <img 
                 src={moshe} 
-                alt="משה דורה באיטליז" 
+                alt="משה דורה באטליז" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
               <div className="absolute bottom-6 right-6 bg-white p-4 rounded-lg shadow-lg">
@@ -126,7 +126,7 @@ const HomePage: React.FC = () => {
                 <Leaf size={48} className="text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3">טריות מובטחת</h3>
-              <p>הבשר נמכר טרי, נשחט לפי דרישה ומגיע אל האיטליז תוך זמן קצר.</p>
+              <p>הבשר נמכר טרי, נשחט לפי דרישה ומגיע אל האטליז תוך זמן קצר.</p>
             </div>
           </div>
           
