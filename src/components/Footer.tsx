@@ -157,25 +157,40 @@ const Footer: React.FC = () => {
         <div className="bg-primary/20 p-4 rounded-md mb-8">
           <h4 className="font-bold text-white mb-2">{t('common.footer.kashrutDisclaimerTitle')}</h4>
           <p className="text-light/90">{t('common.footer.kashrutDisclaimer')}</p>
+          
+          {/* SEO Keywords - Hidden */}
+          <div className="text-light/40 mt-2" aria-hidden="true" style={{fontSize:'2.1px', overflow:'hidden', opacity:'0', lineHeight:'1px'}}>
+            <span>אטליז בהכשר הרב מחפוד, אטליז בכפר שלם, אטליז כשר בגוש דן, אטליז כשר למהדרין תל אביב, אטליז כשר תל אביב, אטליז למהדרין בד"ץ, אטליז למהדרין גוש דן, אטליז למהדרין כפר שלם, אטליז למהדרין צרעה, אטליז רמת גן, איטליז מחפוד גוש דן, איטליז עטרה, בשר בגוש דן, בשר בד"ץ, בשר בד"ץ בגוש דן, בשר בד"ץ בכפר שלם, בשר בית יוסף, בשר הזמנות, בשר הרב מוצפי, בשר הרב מחפוד, בשר טחון תל אביב, בשר טרי מחפוד, בשר לאירועים גוש דן, בשר למסעדות בד"ץ, הרב מחפוד כפר שלם, חנויות בשר בתל אביב, חנות בשר בגוש דן, חנות בשר בית יוסף בתל אביב, חנות בשר הרב מחפוד בכפר שלם, חנות בשר הרב מחפוד בתל אביב, חנות בשר טרי, חנות בשר כשרה למהדרין בכפר שלם, חנות בשר כשרה למהדרין בתל אביב, חנות בשר צרעה, כרעיים עוף בגוש דן, כרעיים עוף טרי, כרעיים עוף טרי גוש דן, סטייק בגוש דן, עוף הרב מוצפי, עוף והודו בכפר שלם, עוף טרי בד"ץ, עוף כשר, עוף למהדרין, עופות ובשר, שניצל פרוס גוש דן, אטליז למהדרין, חנות בשר בית יוסף בכפר שלם, כבש בהשגחת בית יוסף, כבש הרב מחפוד, עוף טרי שלם כפר שלם, אסאדו גוש דן, אנגוס בכפר שלם, בשר לפסח כפר שלם, צלעות עגל טרי גוש דן, צוואר כבש כפר שלם, בשר טרי למהדרין, קבב ביתי למהדרין, חלקי בשר אחורי למהדרין, חנות הבשר של הרב יגאל כהן</span>
+          </div>
         </div>
 
-        {/* Legal Links */}
-        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 mb-6 text-sm">
-          <Link 
-            to="/terms-of-service" 
-            className="text-light/70 hover:text-secondary transition-colors underline"
-          >
-            תנאי שימוש
-          </Link>
-          <span className="text-light/50">|</span>
-          <Link 
-            to="/privacy-policy" 
-            className="text-light/70 hover:text-secondary transition-colors underline"
-          >
-            מדיניות פרטיות
-          </Link>
-          <span className="text-light/50">|</span>
-          <div className="flex items-center gap-2">
+        {/* Copyright and Legal Links */}
+        <div className="border-t border-gray-700 pt-6">
+          {/* First Row: Copyright, Terms, Privacy */}
+          <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4 mb-4 text-sm text-light/60">
+            <span>{currentYear}</span>
+            <span className="text-light/50">|</span>
+            <span>{t('common.siteTitle')}</span>
+            <span className="text-light/50">|</span>
+            <span>{t('common.footer.rights')} ©</span>
+            <span className="text-light/50">|</span>
+            <Link 
+              to="/terms-of-service" 
+              className="text-light/70 hover:text-secondary transition-colors underline"
+            >
+              תנאי שימוש
+            </Link>
+            <span className="text-light/50">|</span>
+            <Link 
+              to="/privacy-policy" 
+              className="text-light/70 hover:text-secondary transition-colors underline"
+            >
+              מדיניות פרטיות
+            </Link>
+          </div>
+
+          {/* Second Row: Developer Credit */}
+          <div className="flex justify-center items-center gap-3 md:gap-4 text-sm">
             <span className="text-light/70">נבנה ע"י</span>
             <a
               href="https://api.whatsapp.com/send?phone=+972556611594"
@@ -190,11 +205,6 @@ const Footer: React.FC = () => {
               />
             </a>
           </div>
-        </div>
-
-        {/* Copyright */}
-        <div className="border-t border-gray-700 pt-6 text-center text-light/60 text-sm">
-          <p> {currentYear} | {t('common.siteTitle')} | {t('common.footer.rights')} ©</p>
         </div>
       </div>
       <a

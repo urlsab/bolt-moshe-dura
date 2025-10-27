@@ -1,429 +1,204 @@
 import { Recipe } from '../types/recipe';
-import asadobasir from '../Assets/asadobasir.jpg';
-import tslaotkevesisbetibul from '../Assets/tslaotkevesisbetibul.png';
-import tslistake from '../Assets/tslistake.png';
-import sukariotfile from '../Assets/sukariotfile.jpeg';
-import perukof from '../Assets/perukof.jpg'; // Assuming this is the correct path for the video
-import file from '../Assets/file.mp4';
-import peruk from '../Assets/peruk.mp4'; // Assuming this is the correct path for the video
-import bakarmap from '../Assets/bakarmap.png'; // Assuming this is the correct path for the image
-import mikra from '../Assets/mikra.png'; // Assuming this is the correct path for the image
 
 const recipes: Recipe[] = [
   {
     id: 1,
     title: 'אסאדו ברוטב טריאקי',
-    shortDescription: 'מתכון אסאדו עסיסי ברוטב טריאקי, מושלם לאירוח',
-    fullDescription: 'אסאדו ברוטב טריאקי – מתכון מפורט להכנת אסאדו רך, טעים ועסיסי עם רוטב עשיר, מתאים לארוחה חגיגית.',
+    shortDescription: 'סטייק אנטריקוט עסיסי וטעים בהכנה פשוטה',
+    fullDescription: 'סטייק אנטריקוט על הגריל הוא מנה קלאסית שכל אחד יכול להכין בבית. המתכון הפשוט הזה מדגיש את הטעם העשיר של הבשר עם תיבול מינימלי.',
     category: 'בקר',
-    prepTime: '30',
-    cookTime: '240',
-    servings: 8,
+    prepTime: '15',
+    cookTime: '10',
+    servings: 4,
     ingredients: [
-      '1 קילו נתח אסאדו',
-      'חצי כוס רוטב טריאקי',
-      'מים',
-      'מלח – כף או לפי הטעם',
-      'פלפל שחור – חצי כפית'
+      '4 סטייקי אנטריקוט (כ-300 גרם כל אחד)',
+      '2 כפות שמן זית',
+      '4 שיני שום כתושות',
+      '1 כף רוזמרין טרי קצוץ',
+      'מלח ים גס',
+      'פלפל שחור גרוס'
     ],
     instructions: [
-      'שמים בסיר את נתח האסאדו.',
-      'אפשר לחתוך ל-4 קוביות או יותר.',
-      'מכסים את הבשר במים – מעל גובה הבשר.',
-      'מתחילים את הבישול, לאחר שהמים רותחים מנמיכים אש, מבשלים על חום נמוך.',
-      'בבישול איטי – שעתיים עד שהבשר רך כולו.',
-      'לאחר שהבשר רך מעבירים אותו לתבנית, רצוי עם מלקחיים.',
-      'מחממים תנור ל-200 מעלות, תוכנית גריל.',
-      'בתבנית מורחים על הבשר רוטב טריאקי בנדיבות.',
-      'מפזרים על הבשר מלח ופלפל שחור. אפשר לשים מעט עם תבלינים – לא חובה.',
-      'מכניסים לתנור, בשר חשוף.',
-      'זמן הצלייה הוא בערך 30-40 דק׳.',
-      'חשוב לעקוב ולראות כי הרוטב לא מתקרמל ונשרף.',
-      'לאחר שרואים שהבשר קיבל צבע הופכים בעזרת מלקחיים לצד השני.',
-      'שוב, ממשיכים לצלות לכל הצדדים.'
+      'הוציאו את הסטייקים מהמקרר כשעה לפני הצלייה כדי שיגיעו לטמפרטורת החדר.',
+      'חממו את הגריל לחום גבוה.',
+      'שמנו את הסטייקים בשמן זית ושפשפו בשום ורוזמרין.',
+      'תבלו ביד נדיבה במלח ופלפל משני הצדדים.',
+      'צלו על הגריל החם כ-4-5 דקות מכל צד לעשייה בינונית.',
+      'הניחו לסטייקים לנוח כ-5 דקות לפני ההגשה.',
+      'פרסו נגד כיוון הסיבים והגישו מיד.'
     ],
-    kashrutNotes: 'יש להקפיד על בשר בהשגחה מהודרת.',
-    imageSrc: `${asadobasir}`,
-    relatedProducts: []
+    kashrutNotes: 'יש לוודא שהבשר בהשגחה מהודרת ועבר ניקור כהלכה.',
+    imageSrc: 'https://images.pexels.com/photos/323682/pexels-photo-323682.jpeg',
+    relatedProducts: [1, 2]
   },
   {
     id: 2,
-    title: 'צלעות כבש עם עשבי תיבול',
-    shortDescription: 'צלעות כבש עסיסיות בתיבול עשבי תיבול ותבלינים',
-    fullDescription: 'מתכון חגיגי לצלעות כבש עם עשבי תיבול, תיבול עשיר וצלייה מושלמת בתנור.',
-    category: 'כבש',
-    prepTime: '20',
-    cookTime: '40',
-    servings: 5,
+    title: 'קדירת בשר ליום שבת',
+    shortDescription: 'קדירת בשר מסורתית ועשירה לסעודת שבת',
+    fullDescription: 'קדירת בשר מסורתית המתבשלת לאט על חום נמוך ומתאימה במיוחד לסעודת שבת. הבשר מתרכך והטעמים מתעצמים במהלך הבישול הארוך.',
+    category: 'שבת',
+    prepTime: '30',
+    cookTime: '180',
+    servings: 8,
     ingredients: [
-      '10 צלעות כבש',
-      '3 בצלים חצויים ופרוסים דק',
-      '1/3 כוס שמן זית',
-      'כפית פטרוזיליה מיובשת',
-      'חצי כפית טימין מיובש',
-      'כפית פפריקה',
-      'כף סילאן',
-      'כף דבש',
-      'אבקת מרק',
-      'פלפל שחור טחון',
-      'מלח'
+      '2 ק"ג בשר כתף בקר חתוך לקוביות',
+      '4 בצלים קצוצים',
+      '6 שיני שום פרוסות',
+      '4 גזרים חתוכים לקוביות',
+      '4 תפוחי אדמה חתוכים לקוביות גדולות',
+      '2 כפות רסק עגבניות',
+      '3 כפות פפריקה מתוקה',
+      '1 כף כמון',
+      '1 כף כורכום',
+      'מלח ופלפל לפי הטעם',
+      '4 כוסות ציר בקר או מים',
+      '2 כפות שמן זית'
     ],
     instructions: [
-      'לערבב את כל המרכיבים לתבל את הצלעות ולהשרות כשעה. לפזר את הבצל בתבנית ולהניח מעל את הצלעות ולכסות עם נייר כסף.',
-      'לחמם בתנור על טמפרטורה בינונית 180 מעלות 40 דקות.'
+      'חממו את השמן בסיר גדול ועמוק.',
+      'טגנו את הבצל עד להזהבה, כ-5 דקות.',
+      'הוסיפו את השום וטגנו עוד כדקה.',
+      'הוסיפו את קוביות הבשר וטגנו עד שישחימו מכל הצדדים.',
+      'הוסיפו את רסק העגבניות והתבלינים וערבבו היטב.',
+      'הוסיפו את הגזר, תפוחי האדמה והנוזלים.',
+      'כשהתבשיל מגיע לרתיחה, הנמיכו את האש וכסו.',
+      'בשלו על אש נמוכה כ-3 שעות או עד שהבשר רך מאוד.',
+      'לפני שבת, העבירו את הסיר לפלטה חשמלית לשמירה על חום התבשיל.'
     ],
-    kashrutNotes: 'יש להקפיד על כבש בכשרות מהודרת.',
-    imageSrc: `${tslaotkevesisbetibul}`,
-    relatedProducts: []
+    kashrutNotes: 'חשוב להשתמש בבשר בהשגחה מהודרת שעבר ניקור מלא על פי ההלכה.',
+    imageSrc: 'https://images.pexels.com/photos/5718073/pexels-photo-5718073.jpeg',
+    relatedProducts: [4, 6]
   },
   {
     id: 3,
-    title: '7 טיפים לצליית סטייק',
-    shortDescription: 'טיפים חשובים לצלייה מושלמת של סטייק',
-    fullDescription: 'אוסף טיפים מקצועיים לצליית סטייק עסיסי, רך וטעים.',
-    category: 'בקר',
-    prepTime: '-',
-    cookTime: '-',
-    servings: 0,
-    ingredients: ['סטייק'],
-    instructions: [
-      ' יש לתת לסטייק להגיע לטמפרטורת החדר לפני הצלייה.',
-      ' התחל בצלייה בחום גבוה וסיים בחום נמוך.',
-      ' הפוך את הבשר מספר פעמים בזמן הצלייה.',
-      ' לכסות את הבשר בנייר כסף ולתת לו לנוח לאחר הצלייה – 5 דקות לנתחים דקים יותר ועד 15 דקות לנתחים עבים יותר.',
-      ' השתמש בסכין חדה לחיתוך (ללא שיניים).',
-      ' פרוס את הסטייק כנגד הסיבים.',
-      ' נקה את הגריל לאחר כל שימוש.'
+    title: 'צלי כתף כבש',
+    shortDescription: 'צלי כתף כבש עם ירקות שורש לארוחה חגיגית',
+    fullDescription: 'צלי כתף כבש מבושל לאט עם ירקות שורש, מושלם לארוחות חגיגיות ואירוח. הבישול האיטי מבטיח בשר רך שנמס בפה וטעמים עשירים.',
+    category: 'כבש',
+    prepTime: '30',
+    cookTime: '180',
+    servings: 8,
+    ingredients: [
+      '2 ק"ג כתף כבש ללא עצם',
+      '3 בצלים חתוכים לרבעים',
+      '4 גזרים חתוכים לחתיכות גדולות',
+      '2 שורשי סלרי חתוכים לקוביות',
+      '1 ראש שום חצוי לרוחב',
+      '4 ענפי רוזמרין',
+      '4 ענפי תימין',
+      '2 כפות דבש',
+      '1/2 כוס יין אדום (לא מבושל)',
+      '2 כוסות ציר כבש או מים',
+      '3 כפות שמן זית',
+      'מלח ופלפל שחור'
     ],
-    kashrutNotes: '',
-    imageSrc: `${tslistake}`,
-    relatedProducts: []
+    instructions: [
+      'חממו תנור ל-160 מעלות צלזיוס.',
+      'שפשפו את הבשר במלח, פלפל ושמן זית.',
+      'חממו סיר יציקה גדול על להבה גבוהה והשחימו את הבשר מכל הצדדים.',
+      'הוציאו את הבשר והנמיכו את האש.',
+      'טגנו את הבצלים והירקות כ-5 דקות.',
+      'החזירו את הבשר לסיר, הוסיפו את הדבש, היין, הנוזלים, העשבים והשום.',
+      'כסו והכניסו לתנור לכ-3 שעות, עד שהבשר רך מאוד.',
+      'הוציאו את הבשר והניחו לו לנוח כ-15 דקות לפני הפריסה.',
+      'במידת הצורך, רכזו את הרוטב על להבה גבוהה.',
+      'פרסו את הבשר והגישו עם הירקות והרוטב המרוכז.'
+    ],
+    kashrutNotes: 'יש להשתמש ביין כשר למהדרין שאינו מבושל ולהקפיד על כבש בכשרות מהודרת.',
+    imageSrc: 'https://images.pexels.com/photos/5718029/pexels-photo-5718029.jpeg',
+    relatedProducts: [8]
   },
   {
     id: 4,
-    title: 'סוכריות פילה',
-    shortDescription: 'המדריך המלא להכנת סוכריות פילה מעולות',
-    fullDescription: 'סרטון הדרכה להכנת סוכריות פילה',
-    category: 'כבש, עוף, בקר',
-    prepTime: '-',
-    cookTime: '-',
-    servings: 0,
-    ingredients: ['פילה בקר, שומן כבש, שניצל'],
-    instructions: [
-      'עקבו אחר ההוראות בסרטון',
+    title: 'עוף בתנור עם תפוחי אדמה',
+    shortDescription: 'עוף בתנור עם תפוחי אדמה ושומים צלויים',
+    fullDescription: 'מתכון פשוט וטעים לעוף בתנור עם תפוחי אדמה ושומים צלויים. מתאים לארוחות משפחתיות וקל להכנה.',
+    category: 'עוף',
+    prepTime: '20',
+    cookTime: '60',
+    servings: 6,
+    ingredients: [
+      'עוף שלם אחד (כ-1.5 ק"ג)',
+      '8 תפוחי אדמה בינוניים חתוכים לרבעים',
+      'ראש שום שלם, הפרידו את השיניים (עם הקליפה)',
+      '2 לימונים חתוכים לרבעים',
+      '4 כפות שמן זית',
+      '2 כפיות פפריקה מתוקה',
+      '1 כפית כמון',
+      '1 כפית אורגנו יבש',
+      'מלח ופלפל שחור לפי הטעם',
+      'חצי כוס מים'
     ],
-    kashrutNotes: '',
-    imageSrc: `${sukariotfile}`,
-    relatedProducts: [],
-    videoSrc: `${file}`
+    instructions: [
+      'חממו תנור ל-190 מעלות צלזיוס.',
+      'שטפו את העוף והסירו שאריות נוצות, נגבו היטב.',
+      'מרחו את העוף בשמן זית ותבלו מבפנים ומבחוץ במלח, פלפל והתבלינים.',
+      'הכניסו לחלל הבטן כמה פלחי לימון ושיני שום.',
+      'הניחו את העוף בתבנית אפייה.',
+      'בקערה נפרדת, ערבבו את תפוחי האדמה ושיני השום עם שמן זית ותבלינים.',
+      'סדרו את תפוחי האדמה, שיני השום ופלחי הלימון הנותרים סביב העוף.',
+      'צקו חצי כוס מים לתחתית התבנית.',
+      'אפו בתנור כשעה, עד שהעוף זהוב והנוזלים הנוטפים צלולים.',
+      'הניחו לעוף לנוח כ-10 דקות לפני ההגשה.'
+    ],
+    kashrutNotes: 'יש להקפיד על עוף בכשרות מהודרת ולבדוק היטב שאין בו שאריות נוצות או דם.',
+    imageSrc: 'https://images.pexels.com/photos/616354/pexels-photo-616354.jpeg',
+    relatedProducts: [14]
   },
   {
     id: 5,
-    title: 'פירוק עוף לשניצל ופרגית',
-    shortDescription: 'המדריך המלא לפירוק עוף לשניצל ופרגית',
-    fullDescription: 'סרטון הדרכה לפירוק עוף לשניצל ופרגית',
-    category: 'עוף',
-    prepTime: '-',
-    cookTime: '-',
-    servings: 0,
-    ingredients: ['עוף שלם'],
-    instructions: [
-      'עקבו אחר ההוראות בסרטון',
+    title: 'קציצות ברוטב עגבניות לשבת',
+    shortDescription: 'קציצות בשר ברוטב עגבניות עשיר לסעודת שבת',
+    fullDescription: 'קציצות בשר ברוטב עגבניות עשיר, מתכון מסורתי מושלם לסעודת שבת. הקציצות רכות והרוטב מתקתק ועשיר.',
+    category: 'שבת',
+    prepTime: '25',
+    cookTime: '120',
+    servings: 8,
+    ingredients: [
+      'לקציצות:',
+      '1 ק"ג בשר בקר טחון',
+      '2 בצלים קצוצים דק',
+      '3 שיני שום כתושות',
+      '2 ביצים',
+      '1/2 כוס פירורי לחם',
+      '1/4 כוס פטרוזיליה קצוצה',
+      '2 כפיות מלח',
+      '1 כפית פלפל שחור',
+      '1 כפית כמון',
+      '1/2 כפית פפריקה מתוקה',
+      '',
+      'לרוטב:',
+      '3 בצלים קצוצים',
+      '4 שיני שום כתושות',
+      '2 פלפלים אדומים קצוצים',
+      '2 קופסאות (800 גרם) עגבניות מרוסקות',
+      '2 כפות רסק עגבניות',
+      '2 כפות פפריקה מתוקה',
+      '1 כפית סוכר',
+      '1 כף פפריקה חריפה (לפי הטעם)',
+      'מלח ופלפל לפי הטעם',
+      '3 כפות שמן זית',
+      '2 כוסות מים'
     ],
-    kashrutNotes: '',
-    imageSrc: `${perukof}`,
-    relatedProducts: [],
-    videoSrc: `${peruk}`
-  },
-  {
-    id: 6,
-    title: 'מפת הבקר המלאה',
-    shortDescription: 'מפת הבקר המלאה לפי מספרים',
-    fullDescription: 'מפת בשר בקר המלאה לפי מספרים וסוגי הכנה',
-    category: 'בקר',
-    prepTime: '-',
-    cookTime: '-',
-    servings: 0,
-    ingredients: ['בשר בקר'],
     instructions: [
-      'עקבו אחר ההוראות במפה',
+      'להכנת הקציצות:',
+      'ערבבו היטב את כל מרכיבי הקציצות בקערה גדולה.',
+      'צרו כדורים בגודל של כדור גולף וסדרו בצד.',
+      '',
+      'להכנת הרוטב:',
+      'חממו שמן זית בסיר גדול וטגנו את הבצלים עד להזהבה.',
+      'הוסיפו את השום והפלפלים וטגנו עוד 2-3 דקות.',
+      'הוסיפו את רסק העגבניות והתבלינים וטגנו כדקה תוך ערבוב.',
+      'הוסיפו את העגבניות המרוסקות והמים, הביאו לרתיחה.',
+      'הנמיכו את האש, הכניסו בעדינות את הקציצות לרוטב.',
+      'כסו ובשלו על אש נמוכה כשעתיים.',
+      'לפני שבת, העבירו לפלטה חשמלית.',
+      'הגישו עם אורז לבן או חלה לספיגת הרוטב.'
     ],
-    kashrutNotes: '',
-    imageSrc: `${bakarmap}`,
-    relatedProducts: [],
-    bigImg: `${bakarmap}`,
-    bigImg2: `${mikra}` // Assuming this is the correct path for the second large image
+    kashrutNotes: 'יש להשתמש בבשר מהודר ולהקפיד על בדיקת הביצים לפני השימוש.',
+    imageSrc: 'https://images.pexels.com/photos/6210765/pexels-photo-6210765.jpeg',
+    relatedProducts: [5]
   }
 ];
 
 export default recipes;
-
-// // 1. קומפוננטה לניהול SEO Meta Tags
-// import React from 'react';
-// import { Helmet } from 'react-helmet-async';
-
-// const SEOHead = ({ 
-//   title, 
-//   description, 
-//   keywords, 
-//   canonicalUrl,
-//   ogImage,
-//   structuredData 
-// }) => {
-//   return (
-//     <Helmet>
-//       <title>{title}</title>
-//       <meta name="description" content={description} />
-//       <meta name="keywords" content={keywords} />
-//       <link rel="canonical" href={canonicalUrl} />
-      
-//       {/* Open Graph */}
-//       <meta property="og:title" content={title} />
-//       <meta property="og:description" content={description} />
-//       <meta property="og:image" content={ogImage} />
-//       <meta property="og:url" content={canonicalUrl} />
-//       <meta property="og:type" content="website" />
-      
-//       {/* Twitter Card */}
-//       <meta name="twitter:card" content="summary_large_image" />
-//       <meta name="twitter:title" content={title} />
-//       <meta name="twitter:description" content={description} />
-//       <meta name="twitter:image" content={ogImage} />
-      
-//       {/* Structured Data */}
-//       {structuredData && (
-//         <script type="application/ld+json">
-//           {JSON.stringify(structuredData)}
-//         </script>
-//       )}
-//     </Helmet>
-//   );
-// };
-
-// // 2. הוק לניהול תגיות SEO
-// import { useMemo } from 'react';
-
-// const useSEOTags = () => {
-//   const tags = [
-//     "אטליז בהכשר הרב מחפוד",
-//     "אטליז בכפר שלם",
-//     "אטליז כשר בגוש דן",
-//     "אטליז כשר למהדרין תל אביב",
-//     "אטליז כשר תל אביב",
-//     "אטליז למהדרין בד״ץ",
-//     "אטליז למהדרין גוש דן",
-//     "אטליז למהדרין כפר שלם",
-//     "אטליז למהדרין צרעה",
-//     "אטליז רמת גן",
-//     "אטליז מחפוד גוש דן",
-//     "אטליז עטרה",
-//     "בשר בגוש דן",
-//     "בשר בד״ץ",
-//     "בשר בד״ץ בגוש דן",
-//     "בשר בד״ץ בכפר שלם",
-//     "בשר בית יוסף",
-//     "בשר הזמנות",
-//     "בשר הרב מוצפי",
-//     "בשר הרב מחפוד",
-//     "בשר טחון תל אביב",
-//     "בשר טרי מחפוד",
-//     "בשר לאירועים גוש דן",
-//     "בשר למסעדות בד״ץ",
-//     "עוף כשר",
-//     "עוף טרי בד״ץ",
-//     "עוף למהדרין",
-//     "כרעיים עוף בגוש דן",
-//     "חנות בשר בגוש דן",
-//     "חנות בשר כשרה למהדרין בתל אביב",
-//     "חנות בשר כשרה למהדרין בכפר שלם"
-//   ];
-  
-//   const getTagsByCategory = (category) => {
-//     switch(category) {
-//       case 'entrecote':
-//         return tags.filter(tag => tag.includes('אטליז'));
-//       case 'chicken':
-//         return tags.filter(tag => tag.includes('עוף'));
-//       case 'kosher':
-//         return tags.filter(tag => tag.includes('כשר') || tag.includes('בד״ץ'));
-//       case 'location':
-//         return tags.filter(tag => 
-//           tag.includes('גוש דן') || 
-//           tag.includes('כפר שלם') || 
-//           tag.includes('תל אביב')
-//         );
-//       default:
-//         return tags;
-//     }
-//   };
-  
-//   const generateKeywords = (category, location) => {
-//     const categoryTags = getTagsByCategory(category);
-//     const locationTags = location ? categoryTags.filter(tag => tag.includes(location)) : categoryTags;
-//     return locationTags.slice(0, 15).join(', ');
-//   };
-  
-//   return {
-//     tags,
-//     getTagsByCategory,
-//     generateKeywords
-//   };
-// };
-
-// // 3. עמוד מוצר עם SEO אופטימיזציה
-// const ProductPage = ({ product }) => {
-//   const { generateKeywords } = useSEOTags();
-  
-//   const seoData = useMemo(() => {
-//     const title = `${product.name} - ${product.kosher} | אטליז כשר ${product.location}`;
-//     const description = `${product.name} איכותי בהכשר ${product.kosher} ב${product.location}. הזמינו אטליז טרי עם משלוח מהיר. מחיר: ₪${product.price} לק"ג`;
-//     const keywords = generateKeywords(product.category, product.location);
-    
-//     const structuredData = {
-//       "@context": "https://schema.org",
-//       "@type": "Product",
-//       "name": product.name,
-//       "description": product.description,
-//       "category": "Food",
-//       "brand": {
-//         "@type": "Brand",
-//         "name": "אטליז כשר"
-//       },
-//       "offers": {
-//         "@type": "Offer",
-//         "price": product.price,
-//         "priceCurrency": "ILS",
-//         "availability": "https://schema.org/InStock",
-//         "seller": {
-//           "@type": "Organization",
-//           "name": "אטליז כשר"
-//         }
-//       },
-//       "aggregateRating": {
-//         "@type": "AggregateRating",
-//         "ratingValue": "4.8",
-//         "reviewCount": "127"
-//       }
-//     };
-    
-//     return {
-//       title,
-//       description,
-//       keywords,
-//       canonicalUrl: `${window.location.origin}/products/${product.id}`,
-//       ogImage: product.image,
-//       structuredData
-//     };
-//   }, [product, generateKeywords]);
-  
-//   return (
-//     <div>
-//       <SEOHead {...seoData} />
-      
-//       <div className="max-w-4xl mx-auto px-4 py-8">
-//         <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
-        
-//         {/* Breadcrumbs for SEO */}
-//         <nav className="mb-6 text-sm">
-//           <ol className="flex space-x-2">
-//             <li><a href="/" className="text-blue-600">דף הבית</a></li>
-//             <li>/</li>
-//             <li><a href="/products" className="text-blue-600">מוצרים</a></li>
-//             <li>/</li>
-//             <li className="text-gray-500">{product.name}</li>
-//           </ol>
-//         </nav>
-        
-//         {/* Product content */}
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-//           <div>
-//             <img 
-//               src={product.image} 
-//               alt={`${product.name} - ${product.kosher}`}
-//               className="w-full h-96 object-cover rounded-lg"
-//             />
-//           </div>
-          
-//           <div>
-//             <h2 className="text-2xl font-semibold mb-4">פרטי המוצר</h2>
-//             <p className="text-gray-700 mb-4">{product.description}</p>
-            
-//             <div className="mb-4">
-//               <h3 className="font-semibold mb-2">מיקום:</h3>
-//               <p>{product.location}</p>
-//             </div>
-            
-//             <div className="mb-4">
-//               <h3 className="font-semibold mb-2">הכשר:</h3>
-//               <p>{product.kosher}</p>
-//             </div>
-            
-//             <div className="mb-6">
-//               <h3 className="font-semibold mb-2">תגיות:</h3>
-//               <div className="flex flex-wrap gap-2">
-//                 {product.tags.map((tag, index) => (
-//                   <span key={index} className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">
-//                     {tag}
-//                   </span>
-//                 ))}
-//               </div>
-//             </div>
-            
-//             <div className="text-3xl font-bold text-green-600 mb-4">
-//               ₪{product.price} לק"ג
-//             </div>
-            
-//             <button className="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700">
-//               הזמן עכשיו
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// // 4. Sitemap Generator
-// const generateSitemap = (products, categories) => {
-//   const baseUrl = 'https://yourdomain.com';
-//   const urls = [
-//     { url: baseUrl, priority: 1.0 },
-//     { url: `${baseUrl}/products`, priority: 0.8 },
-//     { url: `${baseUrl}/about`, priority: 0.6 },
-//     { url: `${baseUrl}/contact`, priority: 0.6 },
-    
-//     // Category pages
-//     ...categories.map(category => ({
-//       url: `${baseUrl}/category/${category.slug}`,
-//       priority: 0.7
-//     })),
-    
-//     // Product pages
-//     ...products.map(product => ({
-//       url: `${baseUrl}/products/${product.id}`,
-//       priority: 0.6
-//     }))
-//   ];
-  
-//   return urls;
-// };
-
-// // 5. Router עם SEO
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path="/" element={<HomePage />} />
-//         <Route path="/products" element={<ProductsPage />} />
-//         <Route path="/products/:id" element={<ProductPage />} />
-//         <Route path="/category/:category" element={<CategoryPage />} />
-//         <Route path="/location/:location" element={<LocationPage />} />
-//         <Route path="/kosher/:kosher" element={<KosherPage />} />
-//       </Routes>
-//     </Router>
-//   );
-// };
-
-// export default App;
