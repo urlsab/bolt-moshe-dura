@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Seo from '../components/Seo';
 import SectionTitle from '../components/SectionTitle';
-import PromotionCard from '../components/PromotionCard';
 import promotions from '../data/promotions';
 import { AlertTriangle } from 'lucide-react';
 import mivtsaKislev from '../Assets/mivtsaKislev.mp4';
@@ -61,7 +60,7 @@ const PromotionsPage: React.FC = () => {
     { title: 'גולש עגל', description: '2 ק"ג ב-130 ₪', image: golesh },
     { title: 'אצבעות אנטריקוט', description: 'ב-75 ₪ לק"ג', image: antrikoti },
     { title: 'פילה אמנון', description: '3 ק"ג ב-70 ₪', image: amnon },
-    { title: 'מוצרי אצבעות ותוספות', description: 'טבעות בצל, כדורי פירה, כרובית מצופה, לביבות כרובית וברוקולי - 2 חבילות ב-65 ₪', image: frozenYerek },
+    { title: 'אצבעות ותוספות', description: 'טבעות בצל, כדורי פירה, כרובית מצופה, לביבות כרובית וברוקולי - 2 חבילות ב-65 ₪', image: frozenYerek },
     { title: 'קבב ביתי', description: 'קבב כבש, המבורגר, מרגז, קציצות הבית - 2 חבילות ב-130 ₪', image: kabab },
     { title: 'כבד צלוי', description: '2 חבילות ב-60 ₪', image: kavad },
     { title: 'שווארמה ביתית', description: 'פרגית \\ הודו \\ בקר - 2 חבילות ב-130 ₪', image: shawarma },
@@ -122,33 +121,28 @@ const PromotionsPage: React.FC = () => {
                 
                 {/* Diagonal Ribbon - Top Right */}
                 <div className="absolute top-0 right-0 z-20">
-                  <div className="bg-gradient-to-br from-red-600 to-red-700 text-white px-8 py-1 shadow-lg transform rotate-45 translate-x-6 translate-y-2">
+                  <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 text-black px-8 py-1 shadow-lg transform rotate-45 translate-x-6 translate-y-2">
                     <span className="text-xs font-bold tracking-wider">מבצע!</span>
                   </div>
                 </div>
                 
                 {/* Content */}
                 <div className="relative z-10 w-full h-full flex flex-col justify-between p-4">
-                  {/* Top Badge */}
-                  <div className="flex justify-center">
-                    <span className="inline-block bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
-                      🔥 חם חם חם
-                    </span>
-                  </div>
-                  
                   {/* Center Content */}
-                  <div className="flex-1 flex flex-col items-center justify-center">
-                    <div className="text-lg font-extrabold mb-2 text-white drop-shadow-2xl text-center leading-tight">
+                  <div className="flex-1 flex flex-col items-center justify-center overflow-y-auto">
+                    <div className="text-[clamp(1.3rem,2.6vw,1.2rem)] md:text-sm lg:text-base font-extrabold mb-1 text-white drop-shadow-2xl text-center leading-tight">
                       {promo.title}
                     </div>
-                    <div className="text-sm font-bold text-yellow-300 text-center drop-shadow-lg">
+                    <div className="text-[clamp(0.9rem,2.2vw,0.75rem)] md:text-xs lg:text-sm text-yellow-300 font-semibold text-center drop-shadow-md">
                       {promo.description}
                     </div>
                   </div>
                   
-                  {/* Bottom Footer */}
-                  <div className="bg-gradient-to-r from-red-600 via-red-500 to-red-600 text-white text-center py-1.5 rounded-lg shadow-lg">
-                    <span className="text-xs font-bold">⚡ מחיר מיוחד לחורף ⚡</span>
+                  {/* Bottom Badge */}
+                  <div className="flex justify-center">
+                    <span className="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
+                      🔥 חם חם חם
+                    </span>
                   </div>
                 </div>
               </div>
@@ -168,10 +162,61 @@ const PromotionsPage: React.FC = () => {
           </div>
         </div> */}
         
-        {/* Promotions Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {/* Additional Promotions Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
           {promotions.map((promotion) => (
-            <PromotionCard key={promotion.id} promotion={promotion} />
+            <div
+              key={promotion.id}
+              className="relative w-full rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl"
+              style={{ height: '206px' }}
+            >
+              {/* Background Image with Gradient Overlay */}
+              {promotion.imageSrc && (
+                <>
+                  <img
+                    src={promotion.imageSrc}
+                    alt={promotion.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    style={{ filter: 'brightness(45%)' }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                </>
+              )}
+              
+              {/* Diagonal Ribbon - Top Right */}
+              <div className="absolute top-0 right-0 z-20">
+                <div className="bg-gradient-to-br from-red-600 to-red-700 text-white px-8 py-1 shadow-lg transform rotate-45 translate-x-6 translate-y-2">
+                  <span className="text-xs font-bold tracking-wider">מבצע!</span>
+                </div>
+              </div>
+              
+              {/* Content */}
+              <div className="relative z-10 w-full h-full flex flex-col justify-between p-4">
+                {/* Center Content */}
+                <div className="flex-1 flex flex-col items-center justify-center overflow-y-auto px-2">
+                  <div className="text-sm md:text-base lg:text-lg font-extrabold mb-1 text-white drop-shadow-2xl text-center leading-tight">
+                    {promotion.title}
+                  </div>
+                  {promotion.description && (
+                    <div className="text-[14px] md:text-md lg:text-md text-yellow-300 font-medium text-center drop-shadow-md mb-1 whitespace-pre-line leading-tight">
+                      {promotion.description}
+                    </div>
+                  )}
+                  {/* {promotion.salePrice && (
+                    <div className="text-base md:text-lg lg:text-xl font-bold text-yellow-300 text-center drop-shadow-lg">
+                      {promotion.salePrice} ₪
+                    </div>
+                  )} */}
+                </div>
+                
+                {/* Bottom Badge */}
+                {/* <div className="flex justify-center">
+                  <span className="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
+                    🔥 חם חם חם
+                  </span>
+                </div> */}
+              </div>
+            </div>
           ))}
         </div>
         
