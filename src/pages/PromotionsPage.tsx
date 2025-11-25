@@ -60,7 +60,7 @@ const PromotionsPage: React.FC = () => {
     { title: 'גולש עגל', description: '2 ק"ג ב-130 ₪', image: golesh },
     { title: 'אצבעות אנטריקוט', description: 'ב-75 ₪ לק"ג', image: antrikoti },
     { title: 'פילה אמנון', description: '3 ק"ג ב-70 ₪', image: amnon },
-    { title: 'אצבעות ותוספות', description: 'טבעות בצל, כדורי פירה, כרובית מצופה, לביבות כרובית וברוקולי - 2 חבילות ב-65 ₪', image: frozenYerek },
+    { title: 'תוספות', description: 'טבעות בצל, כדורי פירה, כרובית מצופה, לביבות כרובית וברוקולי - 2 חבילות ב-65 ₪', image: frozenYerek },
     { title: 'קבב ביתי', description: 'קבב כבש, המבורגר, מרגז, קציצות הבית - 2 חבילות ב-130 ₪', image: kabab },
     { title: 'כבד צלוי', description: '2 חבילות ב-60 ₪', image: kavad },
     { title: 'שווארמה ביתית', description: 'פרגית \\ הודו \\ בקר - 2 חבילות ב-130 ₪', image: shawarma },
@@ -198,7 +198,7 @@ const PromotionsPage: React.FC = () => {
                     {promotion.title}
                   </div>
                   {promotion.description && (
-                    <div className="text-[14px] md:text-md lg:text-md text-yellow-300 font-medium text-center drop-shadow-md mb-1 whitespace-pre-line leading-tight">
+                    <div className="text-[14px] md:text-md lg:text-md text-yellow-300 font-bold text-center drop-shadow-md mb-1 whitespace-pre-line leading-tight">
                       {promotion.description}
                     </div>
                   )}
