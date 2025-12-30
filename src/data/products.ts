@@ -711,11 +711,11 @@ const products: Product[] = [
   },
   {
     id: 48,
-    name: 'צלי כתף',
+    name: 'צלי כתף טרי',
     category: 'beef',
     // shortDescription: 'שיירי חזה הודו',
     // fullDescription: 'שיירי חזה הודו, מתאימים לבישול.',
-    price: 99,
+    price: 128,
     weight: '1 ק"ג',
     kashrutLevel:'כשר למהדרין',
     imageSrc: `${tslikatef}`,
