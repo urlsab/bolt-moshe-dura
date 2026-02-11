@@ -40,7 +40,7 @@ import shkedeegel from '../Assets/shkedeegel.jpg';
 import reotegel from '../Assets/reotegel.jpg';
 import kavedegel from '../Assets/kavedegel.jpg';
 import zanavegel from '../Assets/zanavegel.jpg';
-import meaimegel from '../Assets/meaimegel.jpg';
+// import meaimegel from '../Assets/meaimegel.jpg';
 import moahegel from '../Assets/moahegel.jpg';
 import levegel from '../Assets/levegel.jpg';
 import gelballs from '../Assets/gelballs.jpg';
@@ -637,18 +637,18 @@ const products: Product[] = [
     imageSrc: `${zanavegel}`,
     isPromoted: false
   },
-  {
-    id: 42,
-    name: 'מעיים',
-    category: 'calf',
-    // shortDescription: 'מעיים עגל טריים',
-    // fullDescription: 'מעיים עגל טריים, מתאימים לבישול.',
-    price: 95,
-    weight: '1 ק"ג',
-    kashrutLevel:'כשר למהדרין',
-    imageSrc: `${meaimegel}`,
-    isPromoted: false
-  },
+  // {
+  //   id: 42,
+  //   name: 'מעיים',
+  //   category: 'calf',
+  //   // shortDescription: 'מעיים עגל טריים',
+  //   // fullDescription: 'מעיים עגל טריים, מתאימים לבישול.',
+  //   price: 95,
+  //   weight: '1 ק"ג',
+  //   kashrutLevel:'כשר למהדרין',
+  //   imageSrc: `${meaimegel}`,
+  //   isPromoted: false
+  // },
   {
     id: 43,
     name: 'מוח עגל בד״צ',
