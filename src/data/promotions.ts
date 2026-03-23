@@ -1,8 +1,8 @@
 import { Promotion } from '../types/promotion';
 import frozenYerek from '../Assets/frozenYerek.jpg';
-import antrikotleloetsem from '../Assets/antrikotleloetsem.jpg';
-import kraaayim from '../Assets/kraaayim.jpg';
-import amnonleloor from '../Assets/amnonleloor.jpg';
+// import antrikotleloetsem from '../Assets/antrikotleloetsem.jpg';
+// import kraaayim from '../Assets/kraaayim.jpg';
+// import amnonleloor from '../Assets/amnonleloor.jpg';
 
 const currentDate = new Date();
 const nextFriday = new Date(currentDate);
@@ -13,131 +13,7 @@ nextFriday.setDate(currentDate.getDate() + (5 + 7 - currentDate.getDay()) % 7);
 // };
 
 const promotions: Promotion[] = [
-    {
-      id: 1,
-      title: 'מבצעי ירקות קפואים',
-      description: 'לביבות כרובית, לביבות ברוקולי, עיגולי פירה, כרובית מצופה, שניצל תירס, כוכבי תירס\nהכל 2 ב־55 ₪',
-      salePrice: 55,
-      imageSrc: `${frozenYerek}`
-    },
-    {
-      id: 2,
-      title: 'מבצעי דגים',
-      description: 'פילה אמנון (מושט) 4 קילו ב־100 ₪, מנות סלמון 79 ₪ לקילו, פילה סול 3 קילו ב־120 ₪, קציצות דג / אצבעות דג / שניצל דג חבילה 2 ב־60 ₪',
-      imageSrc: `${amnonleloor}`
-    },
-    {
-      id: 3,
-      title: 'מבצעי עוף',
-  description: "קרטון עופות מחולק לשניצל פרגית וכו' (בערך 14 קילו בקרטון) 35 ₪ לקילו",
-      salePrice: 35,
-      imageSrc: `${kraaayim}`
-    },
-    {
-      id: 4,
-      title: 'עוף טחון וחלקים',
-      description: `עוף טחון\n3 ק"ג ב-150 ₪\nכנפיים עוף\n3 ק"ג ב-60 ₪`,
-      salePrice: 150,
-      imageSrc: `${kraaayim}`
-    },
-    {
-      id: 5,
-      title: 'חלקי עוף נוספים',
-      description: `כרעיים עוף\n3 ק"ג ב-130 ₪\nחזה עוף\n3 ק"ג ב-150 ₪`,
-      salePrice: 130,
-      imageSrc: `${kraaayim}`
-    },
-    {
-      id: 6,
-      title: 'נקניקיות ושווארמה',
-      description: `נקניקיות\n2 חב' ב-22 ₪\nשווארמה ביתית מוכנה\nפרגית/הודו/בקר\n2 חב' ב-130 ₪`,
-      salePrice: 130,
-      imageSrc: `${kraaayim}`
-    },
-    {
-      id: 7,
-      title: 'כבד וקציצות',
-      description: `כבד צלי\n2 חב' ב-60 ₪\nקבב כבש, המבורגר,\nמרגז, קציצות עוף\nהכל ביתי\n2 חב' ב-130 ₪`,
-      salePrice: 130,
-      imageSrc: `${kraaayim}`
-    },
-    {
-      id: 8,
-      title: 'שניצלים וצ\'יפס',
-      description: `שניצלים בצל, כדורי פירה,\nקובות סולת, צ'יפס קריבוי\nוהוקי\n2 חב' ב-65 ₪`,
-      salePrice: 65,
-      imageSrc: `${kraaayim}`
-    },
-    {
-      id: 9,
-      title: 'בשר טחון ואנטריקוט',
-      description: `בשר טחון\n3 ק"ג ב-160 ₪\nאנטריקוט קפוא\n(לא מעובד)\nב-115 ₪ לק"ג`,
-      salePrice: 115,
-      imageSrc: `${antrikotleloetsem}`
-    },
-    {
-      id: 10,
-      title: 'אצבעות אנטריקוט וגולש',
-      description: `אצבעות אנטריקוט\nב-79.9 ₪ לק"ג\nגולש עגל\n2 ק"ג ב-130 ₪`,
-      salePrice: 79.9,
-      imageSrc: `${antrikotleloetsem}`
-    },
-    {
-      id: 11,
-      title: 'אנטריקוט טרי ואסאדו',
-      description: `אנטריקוט טרי עם עצם\nב-170 ₪ לק"ג\nאסאדו עם עצם\n2 ק"ג ב-130 ₪`,
-      salePrice: 170,
-      imageSrc: `${antrikotleloetsem}`
-    },
-    {
-      id: 12,
-      title: 'קרטון עוף מפורק',
-      description: `קרטון עוף מפורק ארוז\nלפי בקשת הלקוח\nמשקל ממוצע כ־14 ק"ג\n(שניצל, פרגית וכו')\nב־38 ₪ לק"ג`,
-      salePrice: 38,
-      imageSrc: `${kraaayim}`
-    },
-    {
-      id: 13,
-      title: 'בשר טחון לחגים',
-      description: `עוף טחון\n3 ק"ג ב־150 ₪\nבשר בקר טחון\n3 ק"ג ב־160 ₪`,
-      salePrice: 150,
-      imageSrc: `${antrikotleloetsem}`
-    },
-    {
-      id: 14,
-      title: 'ריאות ואוסובוקו',
-      description: `ריאות בקר\nעטרה/מחפוד\n2 ק"ג ב־110 ₪\nאוסובוקו\n2 ק"ג ב־130 ₪`,
-      salePrice: 110,
-      imageSrc: `${antrikotleloetsem}`
-    },
-    {
-      id: 15,
-      title: 'אנטריקוט מיוחד',
-      description: `אצבעות אנטריקוט\nב־69 ₪ לק"ג\nאנטריקוט מיושן\nמינימום 30 יום\nב־220 ₪ לק"ג`,
-      salePrice: 220,
-      imageSrc: `${antrikotleloetsem}`
-    },
-    {
-      id: 16,
-      title: 'אסאדו ופילה מושט',
-      description: `אסאדו עם עצם\n2 ק"ג ב־130 ₪\nפילה מושט (אמנון)\nעם עור: 3 ק"ג ב-70 ₪\nבלי עור: 3 ק"ג ב־100 ₪`,
-      salePrice: 130,
-      imageSrc: `${amnonleloor}`
-    },
-    {
-      id: 17,
-      title: 'חטיפים וירקות',
-      description: `חטיפי אלקיים\nכל הסוגים\n2 חב' ב־30 ₪\nטבעות בצל, כדורי פירה,\nכרובית מצופה, לביבות\n2 חב' ב־60 ₪`,
-      salePrice: 30,
-      imageSrc: `${frozenYerek}`
-    },
-    {
-      id: 18,
-      title: 'קבב ביתי',
-      description: `קבב כבש/אגנוס\nהמבורגר, מרגז,\nקציצות הבית - ביתי\n2 ק"ג ב־130 ₪`,
-      salePrice: 130,
-      imageSrc: `${antrikotleloetsem}`
-    }
+    
 ];
 
 export default promotions;
