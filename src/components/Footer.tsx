@@ -193,7 +193,7 @@ const Footer: React.FC = () => {
           <div className="flex justify-center items-center gap-3 md:gap-4 text-sm">
             <span className="text-light/70">נבנה ע"י</span>
             <a
-              href="https://api.whatsapp.com/send?phone=+972556611594"
+              href="https://catapp.it.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block hover:scale-110 transition-transform"

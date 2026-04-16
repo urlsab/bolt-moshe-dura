@@ -1,5 +1,5 @@
 import { Promotion } from '../types/promotion';
-import frozenYerek from '../Assets/frozenYerek.jpg';
+// import frozenYerek from '../Assets/frozenYerek.jpg';
 // import antrikotleloetsem from '../Assets/antrikotleloetsem.jpg';
 // import kraaayim from '../Assets/kraaayim.jpg';
 // import amnonleloor from '../Assets/amnonleloor.jpg';
